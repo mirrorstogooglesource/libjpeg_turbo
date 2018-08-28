@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "19f54e29_e5ab6f5b",
+        "filename": "libjpeg.gyp",
+        "patchSetId": 3
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1001629
+      },
+      "writtenOn": "2018-08-28T16:20:07Z",
+      "side": 0,
+      "message": "We haven\u0027t supported building with VS2010 in a long time, so probably not.",
+      "parentUuid": "6b4ca074_f1852991",
+      "range": {
+        "startLine": 93,
+        "startChar": 0,
+        "endLine": 97,
+        "endChar": 50
+      },
+      "revId": "2555100c844a3b4fb0aa48196ac924138d123f2b",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "14c0f538_062cda7b",
         "filename": "libjpeg.gyp",
         "patchSetId": 3
@@ -36,6 +60,30 @@
       "writtenOn": "2018-08-28T16:16:57Z",
       "side": 0,
       "message": "I guess this is no longer relevant?",
+      "range": {
+        "startLine": 197,
+        "startChar": 0,
+        "endLine": 201,
+        "endChar": 60
+      },
+      "revId": "2555100c844a3b4fb0aa48196ac924138d123f2b",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "482b857a_c26f05a0",
+        "filename": "libjpeg.gyp",
+        "patchSetId": 3
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 1001629
+      },
+      "writtenOn": "2018-08-28T16:20:07Z",
+      "side": 0,
+      "message": "I believe we use patched-yasm everywhere now: https://cs.chromium.org/chromium/src/third_party/yasm/yasm_assemble.gni?type\u003dcs\u0026q\u003dyasm+file:%5C.gni\u0026sq\u003dpackage:chromium\u0026g\u003d0\u0026l\u003d121",
+      "parentUuid": "14c0f538_062cda7b",
       "range": {
         "startLine": 197,
         "startChar": 0,
