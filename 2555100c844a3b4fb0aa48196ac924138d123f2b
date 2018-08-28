@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6b4ca074_f1852991",
+        "filename": "libjpeg.gyp",
+        "patchSetId": 3
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2018-08-28T16:16:57Z",
+      "side": 0,
+      "message": "Is any of this still relevant?",
+      "range": {
+        "startLine": 93,
+        "startChar": 0,
+        "endLine": 97,
+        "endChar": 50
+      },
+      "revId": "2555100c844a3b4fb0aa48196ac924138d123f2b",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "14c0f538_062cda7b",
+        "filename": "libjpeg.gyp",
+        "patchSetId": 3
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2018-08-28T16:16:57Z",
+      "side": 0,
+      "message": "I guess this is no longer relevant?",
+      "range": {
+        "startLine": 197,
+        "startChar": 0,
+        "endLine": 201,
+        "endChar": 60
+      },
+      "revId": "2555100c844a3b4fb0aa48196ac924138d123f2b",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
