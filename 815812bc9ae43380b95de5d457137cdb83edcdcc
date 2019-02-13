@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "945d876e_462c7e1a",
+        "filename": "BUILD.gn",
+        "patchSetId": 6
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-02-13T05:20:19Z",
+      "side": 1,
+      "message": "I should add that if these need to be commented out here, they probably also need to be commented out in i386/. I haven\u0027t tried building for that.",
+      "parentUuid": "5c8c0bed_40873af7",
+      "range": {
+        "startLine": 84,
+        "startChar": 8,
+        "endLine": 84,
+        "endChar": 41
+      },
+      "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "3471cdba_10482809",
         "filename": "jdhuff.h",
         "patchSetId": 6
