@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5c8c0bed_40873af7",
+        "filename": "BUILD.gn",
+        "patchSetId": 6
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-02-13T05:16:05Z",
+      "side": 1,
+      "message": "Certain files here are commented out from the build.\nThey start off by missing a define that can be found in simd/nasm/jsimdcfg.inc. But these files never include that .inc.\n\nThe build file [1] shows how these files get included. But I haven\u0027t yet figured out how that works.\n\nEven if simd/nasm/jsimdcfg.inc is included, there are then other errors.\n\n[1] https://github.com/libjpeg-turbo/libjpeg-turbo/blob/master/simd/CMakeLists.txt#L145",
+      "range": {
+        "startLine": 84,
+        "startChar": 8,
+        "endLine": 84,
+        "endChar": 41
+      },
+      "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3471cdba_10482809",
+        "filename": "jdhuff.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-02-13T05:16:05Z",
+      "side": 1,
+      "message": "Leaving this out caused the graphical glitch.\nThe non-slowlabel code (upstream) has this \u0026 0xFF.",
+      "range": {
+        "startLine": 233,
+        "startChar": 58,
+        "endLine": 233,
+        "endChar": 64
+      },
+      "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}

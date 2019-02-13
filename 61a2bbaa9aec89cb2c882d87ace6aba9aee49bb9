@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1bc92ae3_1c34b748",
+        "filename": "README.chromium",
+        "patchSetId": 6
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-02-13T05:16:05Z",
+      "side": 0,
+      "message": "These already existed upstream but in a version after 1.4.90.\nSince we\u0027re updating to a newer version, we no longer need the cherrypick.",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 96
+      },
+      "revId": "61a2bbaa9aec89cb2c882d87ace6aba9aee49bb9",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ec587dcc_3d6c3eeb",
+        "filename": "README.chromium",
+        "patchSetId": 6
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-02-13T05:16:05Z",
+      "side": 0,
+      "message": "This has been fixed upstream.",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 25
+      },
+      "revId": "61a2bbaa9aec89cb2c882d87ace6aba9aee49bb9",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}
