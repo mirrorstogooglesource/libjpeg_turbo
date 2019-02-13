@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "939260c7_8eada984",
+        "filename": "BUILD.gn",
+        "patchSetId": 6
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2019-02-13T20:02:35Z",
+      "side": 1,
+      "message": "It might be helpful to look at my CL to update Android to 2.0.0 [1]. (Sorry I didn\u0027t think to send you that sooner!) It\u0027s updating from a slightly newer version, so maybe there\u0027s some differences there (though now that I look at it, it\u0027s 1.51 instead of 1.49, so not that different). Unfortunately, both Android and Chromium have their own build systems and therefore build files, but on the plus side, what I did there might be informative.\n\nAs I recall, there were several files that initially I thought I needed to add to Android.bp, but it turns out they were included from other files. I suspect these are some of the same files.\n\n[1] https://android-review.googlesource.com/c/platform/external/libjpeg-turbo/+/740162",
+      "parentUuid": "945d876e_462c7e1a",
+      "range": {
+        "startLine": 84,
+        "startChar": 8,
+        "endLine": 84,
+        "endChar": 41
+      },
+      "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "3471cdba_10482809",
         "filename": "jdhuff.h",
         "patchSetId": 6
@@ -69,6 +93,30 @@
       "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "519dfbae_44caa70e",
+        "filename": "jdhuff.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2019-02-13T20:02:35Z",
+      "side": 1,
+      "message": "Just to make sure I understand:\n- upstream has \"\u0026 0xFF\"?\n- our patch removed it?\n- you added it back, matching upstream, and fixing a glitch?",
+      "parentUuid": "3471cdba_10482809",
+      "range": {
+        "startLine": 233,
+        "startChar": 58,
+        "endLine": 233,
+        "endChar": 64
+      },
+      "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
