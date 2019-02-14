@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e99e41b9_6f4087b8",
+        "filename": "README.chromium",
+        "patchSetId": 8
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2019-02-14T18:20:34Z",
+      "side": 1,
+      "message": "How did you apply these? In some repositories, we keep track of diffs as their own patch files, so that they can be reapplied. Does our copy of libjpeg-turbo have this? I don\u0027t see it anywhere, but maybe I\u0027ve just overlooked it since there are so many changes to look at here. It seems like one of them should have changed, since you\u0027ve removed a piece of a change in jdhuff.h?",
+      "range": {
+        "startLine": 27,
+        "startChar": 56,
+        "endLine": 28,
+        "endChar": 50
+      },
+      "revId": "56248fb14c8009ec1fd2196568aa0f0687fbc0e9",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
