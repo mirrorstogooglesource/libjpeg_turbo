@@ -73,6 +73,30 @@
     },
     {
       "key": {
+        "uuid": "63c08928_785c91dd",
+        "filename": "BUILD.gn",
+        "patchSetId": 6
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-02-14T01:57:46Z",
+      "side": 1,
+      "message": "You are correct. I independently figured it out just now. This is nice since we both want to understand this library.\n\nSo the libjpeg-turbo CMakeLists.txt marks files like jccolor-avx2.asm as depending on jccolext-avx2.asm. That is all it is doing. It doesn\u0027t actually include jccolext-avx2.asm in the files to build. All of these ext files are similar.\n\n\njccolor-avx2.asm has:\n%include \"jsimdext.inc\"\n...\n%include \"jccolext-avx2.asm\"\n\n\njsimdext.inc has:\n%include \"jsimdcfg.inc\"  ; defines RGB_RED\n\n\njccolext-avx2.asm has:\n%include \"jcolsamp.inc\"  ; which needs RGB_RED\n\n\nSo essentially, jccolext-avx2.asm could have really been a .inc file.\n\n\n\nIn our BUILD.gn we include both .h and .cc files in the sources section. Our tooling knows to only build the .cc files. But since this is a .asm and not a .inc, it will try to build it separately without having first had jsimdext.inc included before it.\n\nI will remove the ext files from BUILD.gn.",
+      "parentUuid": "939260c7_8eada984",
+      "range": {
+        "startLine": 84,
+        "startChar": 8,
+        "endLine": 84,
+        "endChar": 41
+      },
+      "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3471cdba_10482809",
         "filename": "jdhuff.h",
         "patchSetId": 6
@@ -117,6 +141,30 @@
       "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0702fc89_93477169",
+        "filename": "jdhuff.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-02-14T01:57:46Z",
+      "side": 1,
+      "message": "\u003e upstream has \"\u0026 0xFF\"?\n\nYep:\nhttps://github.com/libjpeg-turbo/libjpeg-turbo/blob/bb3d325624526c91646bb9af9578d7198c082d51/jdhuff.h#L231\n\n\u003e our patch removed it?\nYes.\nNote that in 1.4.90 (the current version in Chromium before this CL), that \"\u0026 0xFF\" also existed, but our cherry-pick deliberately removed it:\nhttps://github.com/libjpeg-turbo/libjpeg-turbo/blob/056536f6605596d0246fd2b75a1ada2ac03b5bbe/jdhuff.h#L228\n\n\u003e you added it back, matching upstream, and fixing a glitch?\nCorrect.\nI assumed that we had removed it on purpose as part of adding this \"goto slowlabel\", which isn\u0027t upstream. That is custom to Chromium. \n\nIt *may* be the case that the \"goto slowlabel\" isn\u0027t required any more. But I haven\u0027t investigated that. I figure that could be a separate CL if we want to investigate it.",
+      "parentUuid": "519dfbae_44caa70e",
+      "range": {
+        "startLine": 233,
+        "startChar": 58,
+        "endLine": 233,
+        "endChar": 64
+      },
+      "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
