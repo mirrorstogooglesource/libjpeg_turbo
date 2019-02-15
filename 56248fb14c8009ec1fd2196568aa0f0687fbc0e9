@@ -22,6 +22,30 @@
       "revId": "56248fb14c8009ec1fd2196568aa0f0687fbc0e9",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c3cb6f84_3a3e5bea",
+        "filename": "README.chromium",
+        "patchSetId": 8
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-02-15T02:41:56Z",
+      "side": 1,
+      "message": "I think in general we\u0027re getting rid of the .patch files in favor of just using the git history.\n\nBut I did a manual comparison of our version to upstream, carefully understood what each change accomplished (and mildly understood why), and how it would look in the new version. Luckily, none of our changes were altered between the old and new versions. So reapplying them was easy.\n\nThe section I removed on the left was upstreamed but with slightly different syntax. In both cases, :private_extern / :hidden was applied to the end of a function in asm to make it not externally visible after linking. The local patch created a PRIVATE define for this. But upstream just put it in the existing function define.",
+      "parentUuid": "e99e41b9_6f4087b8",
+      "range": {
+        "startLine": 27,
+        "startChar": 56,
+        "endLine": 28,
+        "endChar": 50
+      },
+      "revId": "56248fb14c8009ec1fd2196568aa0f0687fbc0e9",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }

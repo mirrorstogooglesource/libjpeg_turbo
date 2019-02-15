@@ -189,6 +189,30 @@
       "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6491a099_ac951817",
+        "filename": "jdhuff.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-02-15T02:41:56Z",
+      "side": 1,
+      "message": "The \"goto slowlabel\" is indeed called out in the README:\nhttp://crbug.com/398235\n\nI read through it and believe it is still needed. My understanding is:\n- If you decode an entire jpeg there is no problem.\n- Because we get packets and decode the jpeg in pieces, there is a difference in behavior between libjpeg-turbo and libjpeg.\n- Turbo assumes the complete Huffman decoder table will be available.\n\nI don\u0027t have a great way to compare libjpeg and libjpeg-turbo\u0027s output. I could rig something up just to verify it is still needed. But at a glance, it seems like it is.",
+      "parentUuid": "61c40fd2_195fe7a8",
+      "range": {
+        "startLine": 233,
+        "startChar": 58,
+        "endLine": 233,
+        "endChar": 64
+      },
+      "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
