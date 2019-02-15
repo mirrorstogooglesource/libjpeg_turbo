@@ -46,6 +46,53 @@
       "revId": "56248fb14c8009ec1fd2196568aa0f0687fbc0e9",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d9fb4956_766beb6f",
+        "filename": "README.chromium",
+        "patchSetId": 8
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2019-02-15T16:38:36Z",
+      "side": 1,
+      "message": "\u003e I think in general we\u0027re getting rid of the .patch files in favor of just using the git history.\n\nReally? Is there an email or doc that describes that? That seems a lot harder to me.\n\nFWIW, it looks like this library *used to* have a patch file, but it got removed in https://codereview.chromium.org/1271803002/. There\u0027s no explanation for it in the code review, or in the bugs it references. The commit message does say:\n\npatch from issue 256280043 at patchset 50001 (http://crrev.com/256280043#ps50001)\n\nwhich I understand to mean that the code review started in another CL (and agable reports that noel approved the other one). But the link does not work (\"No issue exists with that id (256280043)\") - perhaps due to being on an older reitveld instance?\n\nSorry to make such a big deal about this, but IIUC, you have really applied a different patch on top of upstream than the one that was originally applied in one of these cases. https://codereview.appspot.com/229430043 removes \"\u0026 0xFF\". You have restored that \"\u0026 0xFF\", but that\u0027s not mentioned anywhere in the commit message or in the bug (crbug.com/398235).\n\n\u003e \n\u003e But I did a manual comparison of our version to upstream, carefully understood what each change accomplished (and mildly understood why), and how it would look in the new version. Luckily, none of our changes were altered between the old and new versions. So reapplying them was easy.\n\nGlad to hear that. It seems that since you already did that work, it would be easy to create the patch files.\n\n\u003e \n\u003e The section I removed on the left was upstreamed but with slightly different syntax. In both cases, :private_extern / :hidden was applied to the end of a function in asm to make it not externally visible after linking. The local patch created a PRIVATE define for this. But upstream just put it in the existing function define.\n\nSgtm.",
+      "parentUuid": "c3cb6f84_3a3e5bea",
+      "range": {
+        "startLine": 27,
+        "startChar": 56,
+        "endLine": 28,
+        "endChar": 50
+      },
+      "revId": "56248fb14c8009ec1fd2196568aa0f0687fbc0e9",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "aa473993_826208af",
+        "filename": "README.chromium",
+        "patchSetId": 8
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2019-02-15T16:38:36Z",
+      "side": 1,
+      "message": "Nit: It seems like you generated them and then possibly altered them afterwards?",
+      "range": {
+        "startLine": 36,
+        "startChar": 62,
+        "endLine": 36,
+        "endChar": 70
+      },
+      "revId": "56248fb14c8009ec1fd2196568aa0f0687fbc0e9",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }

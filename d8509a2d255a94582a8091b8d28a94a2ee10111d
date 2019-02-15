@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6d36aaad_6ef95a03",
+        "filename": "README.chromium",
+        "patchSetId": 9
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2019-02-15T16:38:36Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this go in the section below, with the other modifications?",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 96
+      },
+      "revId": "d8509a2d255a94582a8091b8d28a94a2ee10111d",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "894d3991_4f6e8675",
+        "filename": "simd/nasm/jsimdcfg.inc",
+        "patchSetId": 9
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2019-02-15T16:38:36Z",
+      "side": 1,
+      "message": "Hahaha. Odd that ours used to say \"int is changed to short\", even though it looks like the newer phrasing is 9 years old:\n\nhttps://github.com/libjpeg-turbo/libjpeg-turbo/blame/master/simd/nasm/jsimdcfg.inc",
+      "range": {
+        "startLine": 76,
+        "startChar": 27,
+        "endLine": 76,
+        "endChar": 57
+      },
+      "revId": "d8509a2d255a94582a8091b8d28a94a2ee10111d",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}
