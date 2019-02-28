@@ -237,6 +237,30 @@
       "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1d9a918a_252df470",
+        "filename": "jdhuff.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-02-28T06:47:53Z",
+      "side": 1,
+      "message": "\u003e Just to make things clear:\n\u003e * Chromium had applied a patch to upstream, removing \"\u0026 0xFF\"\n\nYes, but \"from upstream\".\n\n\nI just did a decent amount of investigation and I believe our previous removing of 0xFF was a mistake.\nThe patch which removed it is here:\nhttps://codereview.appspot.com/229430043/diff/1/jdhuff.h\n\nIn that patch, you can see we added \"if (nb \u003e 16) goto slowlabel;\" right before the section with the 0xFF.\n\nI can make some guesses as to why it was removed.\n\nIf we later did \"nb \u0026 0xF\" to trim off everything above 15 I could get why it was removed. It would have become redundant. BUT it is 0xFF. And it isn\u0027t trimming nb. It is trimming s + htbl-\u003evaloffset[nb].\n\n\n\n\nAnyway, the 0xFF trims the int to 0-255, which is the size of the array we\u0027re indexing into. Without trimming it, we could read past the end of the array rather then loop back.\n\nAs to why it worked previously but not now...*shrugs*. Not sure.\nThe way |s| and |nb| are set hasn\u0027t change. I spent a pretty long time looking at what might cause this change but didn\u0027t find anything.\n\nEither way, trimming our index so we don\u0027t read past the end of the array is likely always the correct move. I don\u0027t think it should have been removed in the first place.\n\n\n\n\n\n\u003e * You added it back in, so you\u0027ve applied a different change than the original\n\nYes. The change I applied is slightly different. But since the only difference is trimming the index, I think it is a good change to put back. It minimizes our deviation from upstream, provides safety....and importantly, fixes the glitch.",
+      "parentUuid": "a9e6a366_5af85596",
+      "range": {
+        "startLine": 233,
+        "startChar": 58,
+        "endLine": 233,
+        "endChar": 64
+      },
+      "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }

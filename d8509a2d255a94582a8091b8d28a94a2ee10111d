@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "cc1c7064_4e2c43d0",
+        "filename": "README.chromium",
+        "patchSetId": 9
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-02-28T06:47:53Z",
+      "side": 1,
+      "message": "I don\u0027t think so.\nThe section below is for modifications which were not merged upstream.\nSince this is a cherry pick from upstream, I think it belongs here.\n\nHappy to change things around if you disagree or think we could be more clear.",
+      "parentUuid": "6d36aaad_6ef95a03",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 96
+      },
+      "revId": "d8509a2d255a94582a8091b8d28a94a2ee10111d",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "894d3991_4f6e8675",
         "filename": "simd/nasm/jsimdcfg.inc",
         "patchSetId": 9
@@ -36,6 +60,30 @@
       "writtenOn": "2019-02-15T16:38:36Z",
       "side": 1,
       "message": "Hahaha. Odd that ours used to say \"int is changed to short\", even though it looks like the newer phrasing is 9 years old:\n\nhttps://github.com/libjpeg-turbo/libjpeg-turbo/blame/master/simd/nasm/jsimdcfg.inc",
+      "range": {
+        "startLine": 76,
+        "startChar": 27,
+        "endLine": 76,
+        "endChar": 57
+      },
+      "revId": "d8509a2d255a94582a8091b8d28a94a2ee10111d",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d98dc622_04d3183c",
+        "filename": "simd/nasm/jsimdcfg.inc",
+        "patchSetId": 9
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-02-28T06:47:53Z",
+      "side": 1,
+      "message": "Yeah. *shrugs* We should submit a correction to upstream.",
+      "parentUuid": "894d3991_4f6e8675",
       "range": {
         "startLine": 76,
         "startChar": 27,
