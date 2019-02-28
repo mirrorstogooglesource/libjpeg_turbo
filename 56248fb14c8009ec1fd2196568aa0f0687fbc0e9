@@ -97,6 +97,30 @@
     },
     {
       "key": {
+        "uuid": "fc621aac_fa437a24",
+        "filename": "README.chromium",
+        "patchSetId": 8
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2019-02-28T15:17:11Z",
+      "side": 1,
+      "message": "\u003e \u003e \u003e I think in general we\u0027re getting rid of the .patch files in favor of just using the git history.\n\u003e \u003e Really? Is there an email or doc that describes that? That seems a lot harder to me.\n\u003e \n\u003e You can ask Mike Klein about it. He mentioned it on a zlib code review here:\n\u003e https://chromium-review.googlesource.com/c/chromium/src/+/894856/\n\nGot it, thanks!\n\n\u003e \n\u003e \n\u003e \n\u003e \u003e Sorry to make such a big deal about this, but IIUC, you have really applied a different patch on top of upstream than the one that was originally applied in one of these cases. https://codereview.appspot.com/229430043 removes \"\u0026 0xFF\". You have restored that \"\u0026 0xFF\", but that\u0027s not mentioned anywhere in the commit message or in the bug (crbug.com/398235).\n\u003e \n\u003e No worries. :)\n\u003e I talked about this in another comment within this reply.\n\nAck. Responded there.\n\n\u003e \n\u003e You are right that I should call it out in the commit message. I\u0027ll update that.\n\nCool, thanks.",
+      "parentUuid": "96d45575_f2dc7932",
+      "range": {
+        "startLine": 27,
+        "startChar": 56,
+        "endLine": 28,
+        "endChar": 50
+      },
+      "revId": "56248fb14c8009ec1fd2196568aa0f0687fbc0e9",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "aa473993_826208af",
         "filename": "README.chromium",
         "patchSetId": 8

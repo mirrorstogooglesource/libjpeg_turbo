@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7b065f52_d2425c5e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 11
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2019-02-28T15:17:11Z",
+      "side": 1,
+      "message": "I\u0027d be more explicit about this. We know exactly when it was removed (https://codereview.appspot.com/229430043/), and I feel pretty confident we now know why (to make it look more like jpeg_huff_decode). I\u0027d say something like:\n\nUpdate our local patch that was applied to fix http://crbug.com/398235 (https://codereview.appspot.com/229430043/). The original patch incorrectly removed \"\u0026 0xFF\" which limited an array index to within that array\u0027s bounds (effectively reverting https://github.com/libjpeg-turbo/libjpeg-turbo/commit/fa1d18385d904d530b4aec83ab7757a33397de6e). Restore the mask, making the array access safe and fixing a graphical glitch which would otherwise be introduced by this change.\n\nSay what you want, but I\u0027ll find something along those lines more helpful if I come across it spelunking through the git history sometime in the future.\n\nAlso, crbug.com/398235 has a layout test, so if this breaks it, we should know quickly. (And it might be worthwhile to add some kind of test for the glitch you saw.)",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 55
+      },
+      "revId": "2a1ef566d18e801b22b1e484659d98730f09f633",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "94a0f223_c726ccc2",
+        "filename": "README.chromium",
+        "patchSetId": 11
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2019-02-28T15:17:11Z",
+      "side": 1,
+      "message": "Maybe mention that relative to the patch that is explicitly in the attached bug, you\u0027ve restored https://github.com/libjpeg-turbo/libjpeg-turbo/commit/fa1d18385d904d530b4aec83ab7757a33397de6e ?\n\n(Re-reading this comment now, it seems it is very explicit about everything about the change *except* the removal of \"\u0026 0xFF\".)",
+      "range": {
+        "startLine": 34,
+        "startChar": 2,
+        "endLine": 37,
+        "endChar": 25
+      },
+      "revId": "2a1ef566d18e801b22b1e484659d98730f09f633",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}

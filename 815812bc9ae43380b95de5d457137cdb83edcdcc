@@ -261,6 +261,30 @@
       "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0599dd9a_c0ccd0de",
+        "filename": "jdhuff.h",
+        "patchSetId": 6
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2019-02-28T15:17:11Z",
+      "side": 1,
+      "message": "I\u0027ll try to summarize what you said:\n\n\u003e At worst, \"\u0026 0xFF\" is harmless (an extra instruction?), and at best it prevents us from\n\u003e reading beyond the end of the array.\n\nYes, we should definitely restore it, even if it doesn\u0027t fix the glitch.\n\n\u003e It also fixes a glitch.\n\nGreat!\n\nI think I figured out why noel@ originally removed it. This macro is based on jpeg_huff_decode() in libjpeg-6b. Here it is for comparison:\n\nGLOBAL(int)\njpeg_huff_decode (bitread_working_state * state,\n\t\t  register bit_buf_type get_buffer, register int bits_left,\n\t\t  d_derived_tbl * htbl, int min_bits)\n{\n  register int l \u003d min_bits;\n  register INT32 code;\n\n  /* HUFF_DECODE has determined that the code is at least min_bits */\n  /* bits long, so fetch that many bits in one swoop. */\n\n  CHECK_BIT_BUFFER(*state, l, return -1);\n  code \u003d GET_BITS(l);\n\n  /* Collect the rest of the Huffman code one bit at a time. */\n  /* This is per Figure F.16 in the JPEG spec. */\n\n  while (code \u003e htbl-\u003emaxcode[l]) {\n    code \u003c\u003c\u003d 1;\n    CHECK_BIT_BUFFER(*state, 1, return -1);\n    code |\u003d GET_BITS(1);\n    l++;\n  }\n\n  /* Unload the local registers */\n  state-\u003eget_buffer \u003d get_buffer;\n  state-\u003ebits_left \u003d bits_left;\n\n  /* With garbage input we may reach the sentinel value l \u003d 17. */\n\n  if (l \u003e 16) {\n    WARNMS(state-\u003ecinfo, JWRN_HUFF_BAD_CODE);\n    return 0;\t\t\t/* fake a zero as the safest result */\n  }\n\n  return htbl-\u003epub-\u003ehuffval[ (int) (code + htbl-\u003evaloffset[l]) ];\n}\n\n(Oh, and it still exists in libjpeg-turbo. From my read-through it looks to be unchanged.)\n\nIn the macro HUFF_DECODE_FAST, variables are different (e.g. \"l\" is changed to \"nb\") etc, but you can see it\u0027s pretty similar. jpeg_huff_decode() contains this check for l \u003e 16, so this is why noel@ added the check for nb \u003e 16. If nb \u003e 16, noel@\u0027s code does a \"goto slowlabel\" - if you look at the call sites, those will return FALSE, returning back to the slower implementation (which IIUC will go back to the original jpeg_huff_decode).\n\nFWIW, when HUFF_DECODE_FAST was written (https://github.com/libjpeg-turbo/libjpeg-turbo/commit/e2816648d8744343896a7044b35a8f082447dc43), it did *not* include the \"\u0026 0xFF\" - that was added later, in https://github.com/libjpeg-turbo/libjpeg-turbo/commit/fa1d18385d904d530b4aec83ab7757a33397de6e \"Further protect against invalid Huffman codes\".\n\nSo I suspect that noel@\u0027s goal was to make HUFF_DECODE_FAST behave more like jpeg_decode_slow(), to fix the problem he was seeing, and changed a little more than necessary.",
+      "parentUuid": "1d9a918a_252df470",
+      "range": {
+        "startLine": 233,
+        "startChar": 58,
+        "endLine": 233,
+        "endChar": 64
+      },
+      "revId": "815812bc9ae43380b95de5d457137cdb83edcdcc",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
