@@ -22,6 +22,29 @@
       "revId": "b278e39864bd608c42cccf06a3537e2ce71f29e5",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "78721f93_8d0bf80e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2019-04-17T14:42:31Z",
+      "side": 1,
+      "message": "Another typo.",
+      "range": {
+        "startLine": 14,
+        "startChar": 42,
+        "endLine": 14,
+        "endChar": 43
+      },
+      "revId": "b278e39864bd608c42cccf06a3537e2ce71f29e5",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
