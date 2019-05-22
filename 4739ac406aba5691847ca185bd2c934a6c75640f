@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "75aa3805_cff6aa79",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-22T13:39:03Z",
+      "side": 1,
+      "message": "I will check our position on this but it shouldn\u0027t be a problem to change it.",
+      "parentUuid": "a42214e4_ff547dac",
+      "range": {
+        "startLine": 4,
+        "startChar": 1,
+        "endLine": 4,
+        "endChar": 55
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "35cfcaa7_803211d3",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2019-05-22T00:50:42Z",
       "side": 1,
       "message": "Just leaving a comment to confirm I looked carefully at this.\nThis is the zlib license as specified in LICENSE.md. And LICENSE.md calls out that the SIMD extensions use this.\nAdditionally, other files include the license text again like simd/arm/jsimd_neon.S (now simd/arm/arm/jsimd_neon.S). So everything fits here.",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 77
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a595c31a_b5c2da13",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-22T13:39:03Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "35cfcaa7_803211d3",
       "range": {
         "startLine": 6,
         "startChar": 0,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "71efee73_9cb648fa",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-22T13:39:03Z",
+      "side": 1,
+      "message": "Yes, these functions do make that assumption - relying on the control code to call them correctly based on what components have been downsampled.\n\nI\u0027ll change the comment to \"The diagram below shows a grid-window of samples (luma or chroma) produced by h2v2 downsampling.\" to reflect the agnosticism.",
+      "parentUuid": "18dafb95_bdd05eec",
+      "range": {
+        "startLine": 34,
+        "startChar": 44,
+        "endLine": 35,
+        "endChar": 21
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "52fa3abd_715cb44e",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 1
@@ -82,6 +154,30 @@
       "writtenOn": "2019-05-22T00:50:42Z",
       "side": 1,
       "message": "(p12-p15)",
+      "range": {
+        "startLine": 57,
+        "startChar": 34,
+        "endLine": 58,
+        "endChar": 11
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "29d60c0d_323ea779",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-22T13:39:03Z",
+      "side": 1,
+      "message": "Good catch - will change.",
+      "parentUuid": "52fa3abd_715cb44e",
       "range": {
         "startLine": 57,
         "startChar": 34,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "3eb674eb_bad2882b",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-22T13:39:03Z",
+      "side": 1,
+      "message": "I\u0027m not sure what you mean here. When downsampling using 2:1 vertical and 2:1 horizontal, we just sum a block of 4 pixel values and divide by 4 (adding an appropriate dither pattern): https://cs.chromium.org/chromium/src/third_party/libjpeg_turbo/jcsample.c?l\u003d280.\n\nI think this method of \"fancy\" upsampling is based on a geometric argument: if you draw a square - the same size as a sample in the above diagram - centered on one of these \"pixel centeres\", the area overlaying each of the samples would be in the ratio 9/16 : 3/16 : 3/16 : 1/16.",
+      "parentUuid": "424b39dc_97963e11",
+      "range": {
+        "startLine": 78,
+        "startChar": 10,
+        "endLine": 78,
+        "endChar": 71
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "18fffd0f_f66eb31a",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 1
@@ -137,6 +257,30 @@
       "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e61ffbbf_299515da",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-22T13:39:03Z",
+      "side": 1,
+      "message": "This looked very dodgy to me when I first saw it in the reference code (https://cs.chromium.org/chromium/src/third_party/libjpeg_turbo/jdsample.c?q\u003dlibjpeg_turbo/jdsample\u0026sq\u003dpackage:chromium\u0026g\u003d0\u0026l\u003d355) but it\u0027s actually fine - they \"demand context\" from the previous row group and the top row is duplicated into the previous row group when we\u0027re processing the top row.",
+      "parentUuid": "18fffd0f_f66eb31a",
+      "range": {
+        "startLine": 107,
+        "startChar": 24,
+        "endLine": 107,
+        "endChar": 33
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     },
     {
       "key": {
@@ -163,6 +307,30 @@
     },
     {
       "key": {
+        "uuid": "8cbf546e_eb05d9af",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-22T13:39:03Z",
+      "side": 1,
+      "message": "This is fine, same reasoning as above - see comments above the reference implementation of h2v2_fancy_upsample in jdsample.c.",
+      "parentUuid": "9471dd24_37fccb60",
+      "range": {
+        "startLine": 109,
+        "startChar": 24,
+        "endLine": 109,
+        "endChar": 33
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "62106cea_95858ab0",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 1
@@ -186,6 +354,30 @@
     },
     {
       "key": {
+        "uuid": "95fa5d27_17ed0e05",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-22T13:39:03Z",
+      "side": 1,
+      "message": "This is part of an ordered dithering pattern - we make sure 0.5 is rounded up at alternate horizontal pixel locations to prevent biasing higher or lower values. At even pixel locations (counting from 0) we round 0.5 up, and at odd pixel locations we round down. (Since we\u0027re dealing with h2v2, this dither pattern should be applied in the vertical dimension as well; but it isn\u0027t for some reason - and it would be a lot of effort to change the existing SIMD to comply. See the comments here for more: https://github.com/libjpeg-turbo/libjpeg-turbo/pull/356)\n\nWe apply this dither pattern using a combination of shim values (as here: +8 to round up. +7 is used at odd pixel locations to round down) and in the common case, rounding SIMD instructions. \n\nThe multiply by 4: Usually we\u0027d be blending 3:1 both vertically and horizontally. However, since this is the first pixel of the row, it only contains components from the first column of samples - hence the 4, rather than multiply by 3 and +1 of some other component.",
+      "parentUuid": "62106cea_95858ab0",
+      "range": {
+        "startLine": 117,
+        "startChar": 15,
+        "endLine": 117,
+        "endChar": 50
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7f4b68bb_479601fb",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 1
@@ -206,6 +398,30 @@
       "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bc9f5f7b_97ac2894",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-22T13:39:03Z",
+      "side": 1,
+      "message": "The +7 and +8 are correct as is - see the dither pattern comments above.\n\nWhen we\u0027ve done our blending, we\u0027ve got a value that\u0027s 16 times too large - 3:1 vertical + 3:1 horizontal - since we defer the divide by 16 (shift right by 4) to the very end. At this point the binary values look like |integer_pixel_value.fraction| where the fractional part takes 4 bits. We want to round the pixel value up or down based on the magnitude of the fractional part: \u003e0.5 gets rounded up, \u003c0.5 gets rounded down, and 0.5 is rounded up or down depending on whether the pixel location is odd or even. To accomplish this rounding scheme we add +7 or +8 before shifting the total value right by 4. Here, since the last pixel in the row is at an odd pixel location (which is always the case when h2 upsampling) we want to round 0.5 down -\u003e add +7 before shifting right.",
+      "parentUuid": "7f4b68bb_479601fb",
+      "range": {
+        "startLine": 247,
+        "startChar": 41,
+        "endLine": 247,
+        "endChar": 76
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
