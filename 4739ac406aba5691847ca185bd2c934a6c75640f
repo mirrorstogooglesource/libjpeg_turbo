@@ -1,0 +1,211 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a42214e4_ff547dac",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-05-22T00:50:42Z",
+      "side": 1,
+      "message": "I know this one is weird, especially since Arm is surely very careful about IP. But I believe the copyright notice needs to be for the Chromium project.\n\nIf this was upstream it would be less of an issue. But since this is going in the Chromium \"fork\" (until we can upstream it) it needs to fall under the Chromium copyright notice, I believe.",
+      "range": {
+        "startLine": 4,
+        "startChar": 1,
+        "endLine": 4,
+        "endChar": 55
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "35cfcaa7_803211d3",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-05-22T00:50:42Z",
+      "side": 1,
+      "message": "Just leaving a comment to confirm I looked carefully at this.\nThis is the zlib license as specified in LICENSE.md. And LICENSE.md calls out that the SIMD extensions use this.\nAdditionally, other files include the license text again like simd/arm/jsimd_neon.S (now simd/arm/arm/jsimd_neon.S). So everything fits here.",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 77
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "18dafb95_bdd05eec",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-05-22T00:50:42Z",
+      "side": 1,
+      "message": "I assume all these hXvY functions assume the chroma channels are downsampled?\n(The jpeg standard allows any channel to be downsampled. Someone could in theory downsample the luminance channel. Why? I have no idea.)\n\nSince chroma channels being downsampled is the common case, I assume that is what the optimizations are targeted at. But do you happen to know if any of the hXvY functions are flexible about which channel is being downsampled? Maybe it doesn\u0027t matter since the channels might be combined in a later step?\n\n(Potentially answering my own question, in jinit_upsampler() I see the upsampler being applied to any component.)",
+      "range": {
+        "startLine": 34,
+        "startChar": 44,
+        "endLine": 35,
+        "endChar": 21
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "52fa3abd_715cb44e",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-05-22T00:50:42Z",
+      "side": 1,
+      "message": "(p12-p15)",
+      "range": {
+        "startLine": 57,
+        "startChar": 34,
+        "endLine": 58,
+        "endChar": 11
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "424b39dc_97963e11",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-05-22T00:50:42Z",
+      "side": 1,
+      "message": "Is this because pixel sample weights are:\n1, 2, 1,\n2, 4, 2,\n1, 2, 1\n?\n\nThat would also be consistent with edge pixels which would look like:\n2, 1, //r0\n4, 2, //r1\n2, 1  //r1\n\nsum(r1)\u003d9, sum(r0)\u003d3, hence 3:1 ratio.",
+      "range": {
+        "startLine": 78,
+        "startChar": 10,
+        "endLine": 78,
+        "endChar": 71
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "18fffd0f_f66eb31a",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-05-22T00:50:42Z",
+      "side": 1,
+      "message": "Is this okay?\ninput_data is of type JSAMPARRAY, which is an array of JSAMPROWs.\nWhen we start with inrow \u003d 0, this will be trying to read the -1th JSAMPROW.\n\nIf our jpeg is 100 rows tall, this will be reading far outside the JSAMPARRAY height to get a pointer to that row.\n\nEven if we never read a pixel from that bad row, we\u0027re still trying to read outside the initial array\u0027s bounds. That could go to a page that hasn\u0027t been allocated, right? \u003d page fault",
+      "range": {
+        "startLine": 107,
+        "startChar": 24,
+        "endLine": 107,
+        "endChar": 33
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9471dd24_37fccb60",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-05-22T00:50:42Z",
+      "side": 1,
+      "message": "I think this \u0026 the outputrow++ lines below are okay because inside jinit_upsampler() it makes sure there are at least enough rows/columns to need this h2v2 anyway.\n\n...so long as we don\u0027t read past the end.",
+      "range": {
+        "startLine": 109,
+        "startChar": 24,
+        "endLine": 109,
+        "endChar": 33
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "62106cea_95858ab0",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-05-22T00:50:42Z",
+      "side": 1,
+      "message": "I don\u0027t fully understand this part.\nI assume this is to round up.\nBut why 4? Is that because we have a 3:1 ratio (so factor-of-4 sampling)?\n\nI *think* that is what it is. But I just want to make sure I follow correctly.\n\nAlso, below we have the same thing but +7 instead of +8. I think they do the same thing and I think the +7 is correct. Can you double check me?",
+      "range": {
+        "startLine": 117,
+        "startChar": 15,
+        "endLine": 117,
+        "endChar": 50
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7f4b68bb_479601fb",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-05-22T00:50:42Z",
+      "side": 1,
+      "message": "Above, we did +8. Here, we do +7.\nI suspect they should be the same?\nAnd I think the +7 is the correct behavior?\n\nIf the inptr1 and inptr0 samples were both 1, s1colsum0 would be 4.\n4*4\u003d16 \u003d0b10000\n+7\u003d23 \u003d0b10111\nshift right 4 and those 0b111 we added with the 7 didn\u0027t change anything.\n\nIf inptr1 was 1 and inptr0 was 0, s1colsum0 would be 3.\n4*3\u003d12 \u003d0b1100\n+7\u003d19 \u003d0b10011\nshifting right 4 will result in 0b1, which effectively rounded up.\n\nIf inptr1 was 0 and inptr0 was 1, s1colsum0 would be 1.\n4*1\u003d4 \u003d0b100\n+7\u003d11 \u003d0b1011\nshifting right 4 will result in 0 and do nothing.\n\n0s in both inptr1 and inptr0 will do nothing.\n\nSo in these 4 cases, the +7 rounds up only if the majority of samples suggest it should round up, right?",
+      "range": {
+        "startLine": 247,
+        "startChar": 41,
+        "endLine": 247,
+        "endChar": 76
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
