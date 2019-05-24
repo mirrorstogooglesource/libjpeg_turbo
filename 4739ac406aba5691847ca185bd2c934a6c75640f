@@ -237,6 +237,30 @@
     },
     {
       "key": {
+        "uuid": "df9eb87c_8047243b",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-05-24T02:00:00Z",
+      "side": 1,
+      "message": "Ah, got ya. Turns out we\u0027re saying the same thing but approaching it from a different angle.\n\nI drew out what you described so I could understand it better. It ended up realizing the similarity and drew that, too:\nhttps://drive.google.com/file/d/1-5AnJ2sC3C7YVSMjG_5y62A7QT_faDBb/view?usp\u003ddrivesdk",
+      "parentUuid": "3eb674eb_bad2882b",
+      "range": {
+        "startLine": 78,
+        "startChar": 10,
+        "endLine": 78,
+        "endChar": 71
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "18fffd0f_f66eb31a",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 1
@@ -272,6 +296,30 @@
       "side": 1,
       "message": "This looked very dodgy to me when I first saw it in the reference code (https://cs.chromium.org/chromium/src/third_party/libjpeg_turbo/jdsample.c?q\u003dlibjpeg_turbo/jdsample\u0026sq\u003dpackage:chromium\u0026g\u003d0\u0026l\u003d355) but it\u0027s actually fine - they \"demand context\" from the previous row group and the top row is duplicated into the previous row group when we\u0027re processing the top row.",
       "parentUuid": "18fffd0f_f66eb31a",
+      "range": {
+        "startLine": 107,
+        "startChar": 24,
+        "endLine": 107,
+        "endChar": 33
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "038aa17c_315329ea",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-05-24T02:00:00Z",
+      "side": 1,
+      "message": "OH WOW. Okay. I\u0027m not a fan of the way that works, but okay.\nSo it turns out using a signed type as an index will indeed index backwards, not cast to an unsigned type and wrap around.\nAdditionally, the pointer given to us is for the 1st row, not the 0th row.\nSo asking for row -1 actually does work in this case.\n\nThank you for helping me understand all this.",
+      "parentUuid": "e61ffbbf_299515da",
       "range": {
         "startLine": 107,
         "startChar": 24,
@@ -378,6 +426,53 @@
     },
     {
       "key": {
+        "uuid": "e1f44f7b_e4634396",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-05-24T02:00:00Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "95fa5d27_17ed0e05",
+      "range": {
+        "startLine": 117,
+        "startChar": 15,
+        "endLine": 117,
+        "endChar": 50
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b132fd87_2ce05fe8",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-05-24T02:00:00Z",
+      "side": 1,
+      "message": "Thank you so much for this.",
+      "range": {
+        "startLine": 184,
+        "startChar": 4,
+        "endLine": 189,
+        "endChar": 70
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7f4b68bb_479601fb",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 1
@@ -413,6 +508,30 @@
       "side": 1,
       "message": "The +7 and +8 are correct as is - see the dither pattern comments above.\n\nWhen we\u0027ve done our blending, we\u0027ve got a value that\u0027s 16 times too large - 3:1 vertical + 3:1 horizontal - since we defer the divide by 16 (shift right by 4) to the very end. At this point the binary values look like |integer_pixel_value.fraction| where the fractional part takes 4 bits. We want to round the pixel value up or down based on the magnitude of the fractional part: \u003e0.5 gets rounded up, \u003c0.5 gets rounded down, and 0.5 is rounded up or down depending on whether the pixel location is odd or even. To accomplish this rounding scheme we add +7 or +8 before shifting the total value right by 4. Here, since the last pixel in the row is at an odd pixel location (which is always the case when h2 upsampling) we want to round 0.5 down -\u003e add +7 before shifting right.",
       "parentUuid": "7f4b68bb_479601fb",
+      "range": {
+        "startLine": 247,
+        "startChar": 41,
+        "endLine": 247,
+        "endChar": 76
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fd728348_11ce346c",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-05-24T02:00:00Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "bc9f5f7b_97ac2894",
       "range": {
         "startLine": 247,
         "startChar": 41,
