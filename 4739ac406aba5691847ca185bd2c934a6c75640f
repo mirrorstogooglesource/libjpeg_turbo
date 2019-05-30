@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "9a54c438_42cbb359",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-30T16:03:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "75aa3805_cff6aa79",
+      "range": {
+        "startLine": 4,
+        "startChar": 1,
+        "endLine": 4,
+        "endChar": 55
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "35cfcaa7_803211d3",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 1
@@ -143,6 +167,30 @@
     },
     {
       "key": {
+        "uuid": "4d09ea75_a1bb6012",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-30T16:03:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "71efee73_9cb648fa",
+      "range": {
+        "startLine": 34,
+        "startChar": 44,
+        "endLine": 35,
+        "endChar": 21
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "52fa3abd_715cb44e",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 1
@@ -187,6 +235,30 @@
       "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b836c580_5d53ed7f",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-30T16:03:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "29d60c0d_323ea779",
+      "range": {
+        "startLine": 57,
+        "startChar": 34,
+        "endLine": 58,
+        "endChar": 11
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     },
     {
       "key": {
@@ -261,6 +333,30 @@
     },
     {
       "key": {
+        "uuid": "a60e1a7f_fde0ddc4",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-30T16:03:38Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "df9eb87c_8047243b",
+      "range": {
+        "startLine": 78,
+        "startChar": 10,
+        "endLine": 78,
+        "endChar": 71
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "18fffd0f_f66eb31a",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 1
@@ -320,6 +416,30 @@
       "side": 1,
       "message": "OH WOW. Okay. I\u0027m not a fan of the way that works, but okay.\nSo it turns out using a signed type as an index will indeed index backwards, not cast to an unsigned type and wrap around.\nAdditionally, the pointer given to us is for the 1st row, not the 0th row.\nSo asking for row -1 actually does work in this case.\n\nThank you for helping me understand all this.",
       "parentUuid": "e61ffbbf_299515da",
+      "range": {
+        "startLine": 107,
+        "startChar": 24,
+        "endLine": 107,
+        "endChar": 33
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f0d15d88_ca0cbb0e",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-30T16:03:38Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "038aa17c_315329ea",
       "range": {
         "startLine": 107,
         "startChar": 24,
@@ -461,6 +581,30 @@
       "writtenOn": "2019-05-24T02:00:00Z",
       "side": 1,
       "message": "Thank you so much for this.",
+      "range": {
+        "startLine": 184,
+        "startChar": 4,
+        "endLine": 189,
+        "endChar": 70
+      },
+      "revId": "4739ac406aba5691847ca185bd2c934a6c75640f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f17b6beb_2922867b",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-30T16:03:38Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "b132fd87_2ce05fe8",
       "range": {
         "startLine": 184,
         "startChar": 4,
