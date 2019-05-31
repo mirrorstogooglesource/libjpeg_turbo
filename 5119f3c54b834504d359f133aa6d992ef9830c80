@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ea4fbe30_96cee6ee",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-31T15:05:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "765dc716_e8c646bd",
+      "range": {
+        "startLine": 52,
+        "startChar": 52,
+        "endLine": 52,
+        "endChar": 58
+      },
+      "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a97ef38a_a1b22cd3",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 2
@@ -45,6 +69,30 @@
       "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4decf371_a4e6b25c",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-31T15:05:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a97ef38a_a1b22cd3",
+      "range": {
+        "startLine": 53,
+        "startChar": 3,
+        "endLine": 53,
+        "endChar": 9
+      },
+      "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "c57d3f52_d8be1cf5",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-31T15:05:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eb62089c_80ad504b",
+      "range": {
+        "startLine": 55,
+        "startChar": 24,
+        "endLine": 55,
+        "endChar": 30
+      },
+      "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "709dd8bd_38458d0d",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 2
@@ -91,6 +163,30 @@
       "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "df3fb8b9_db581df5",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-31T15:05:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "709dd8bd_38458d0d",
+      "range": {
+        "startLine": 56,
+        "startChar": 9,
+        "endLine": 56,
+        "endChar": 15
+      },
+      "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     },
     {
       "key": {
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "fdc8071a_d35a9b2c",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-31T15:05:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a15fb2ef_394a2097",
+      "range": {
+        "startLine": 61,
+        "startChar": 24,
+        "endLine": 61,
+        "endChar": 30
+      },
+      "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f16066a5_bc605464",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 2
@@ -137,6 +257,30 @@
       "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3fe9b383_dc3f7796",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-31T15:05:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f16066a5_bc605464",
+      "range": {
+        "startLine": 68,
+        "startChar": 12,
+        "endLine": 68,
+        "endChar": 18
+      },
+      "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     },
     {
       "key": {
@@ -163,6 +307,30 @@
     },
     {
       "key": {
+        "uuid": "425ccb40_39551600",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-31T15:05:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1d3a0cc2_98af2a95",
+      "range": {
+        "startLine": 71,
+        "startChar": 12,
+        "endLine": 71,
+        "endChar": 18
+      },
+      "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fc5348dc_c39f5714",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 2
@@ -183,6 +351,30 @@
       "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ab7bcf5f_c81da4a9",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-31T15:05:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fc5348dc_c39f5714",
+      "range": {
+        "startLine": 74,
+        "startChar": 62,
+        "endLine": 74,
+        "endChar": 68
+      },
+      "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     },
     {
       "key": {
@@ -209,6 +401,30 @@
     },
     {
       "key": {
+        "uuid": "7e8ea8b2_26d60aab",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-31T15:05:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "271f8f9c_ff6e8beb",
+      "range": {
+        "startLine": 87,
+        "startChar": 27,
+        "endLine": 87,
+        "endChar": 33
+      },
+      "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4639a5f9_a3e431f7",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 2
@@ -229,6 +445,30 @@
       "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7a58b822_51d1acaa",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-31T15:05:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4639a5f9_a3e431f7",
+      "range": {
+        "startLine": 115,
+        "startChar": 27,
+        "endLine": 115,
+        "endChar": 33
+      },
+      "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     },
     {
       "key": {
@@ -255,6 +495,30 @@
     },
     {
       "key": {
+        "uuid": "7a1c5e88_10d32e9f",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-31T15:05:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "361e7eb1_22defb6f",
+      "range": {
+        "startLine": 177,
+        "startChar": 19,
+        "endLine": 177,
+        "endChar": 26
+      },
+      "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3ebf2b43_57fb7680",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 2
@@ -278,6 +542,30 @@
     },
     {
       "key": {
+        "uuid": "d5bfbd5c_8d965dd5",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 239,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-31T15:05:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3ebf2b43_57fb7680",
+      "range": {
+        "startLine": 239,
+        "startChar": 21,
+        "endLine": 239,
+        "endChar": 27
+      },
+      "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7f736e9c_f6814764",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 2
@@ -298,6 +586,30 @@
       "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "18cc708d_ee4707c1",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 244,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-05-31T15:05:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7f736e9c_f6814764",
+      "range": {
+        "startLine": 244,
+        "startChar": 26,
+        "endLine": 244,
+        "endChar": 32
+      },
+      "revId": "5119f3c54b834504d359f133aa6d992ef9830c80",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
