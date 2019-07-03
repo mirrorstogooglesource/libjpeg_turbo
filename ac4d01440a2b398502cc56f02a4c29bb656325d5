@@ -143,6 +143,30 @@
     },
     {
       "key": {
+        "uuid": "8f35c6a7_2dcc5fd3",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-07-03T18:56:16Z",
+      "side": 1,
+      "message": "Understood. Your comment mentions using software pipelining which explains it, too.",
+      "parentUuid": "163b18d2_1c79630d",
+      "range": {
+        "startLine": 119,
+        "startChar": 59,
+        "endLine": 128,
+        "endChar": 71
+      },
+      "revId": "ac4d01440a2b398502cc56f02a4c29bb656325d5",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dc20c832_ebfd00e8",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 2
