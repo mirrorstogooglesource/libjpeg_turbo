@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ad9d155d_27eb1c6c",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-07-03T15:06:31Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "cc1ef11e_41eca772",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 66,
+        "endChar": 3
+      },
+      "revId": "ac4d01440a2b398502cc56f02a4c29bb656325d5",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "24e50135_fb0c4491",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 2
@@ -45,6 +69,30 @@
       "revId": "ac4d01440a2b398502cc56f02a4c29bb656325d5",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "589bc2a9_ad7c4d55",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-07-03T15:06:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "24e50135_fb0c4491",
+      "range": {
+        "startLine": 105,
+        "startChar": 21,
+        "endLine": 105,
+        "endChar": 31
+      },
+      "revId": "ac4d01440a2b398502cc56f02a4c29bb656325d5",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "163b18d2_1c79630d",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-07-03T15:06:31Z",
+      "side": 1,
+      "message": "Unfortunately this has to be the way it is for the compiler to do what we want. I certainly agree that it would be tidier if we could at all get away without it. If we did change it we\u0027d be seeing a regression of ~3% on AArch32 and minimal gain (over baseline) on AArch64.",
+      "parentUuid": "fd1527bb_1b84c462",
+      "range": {
+        "startLine": 119,
+        "startChar": 59,
+        "endLine": 128,
+        "endChar": 71
+      },
+      "revId": "ac4d01440a2b398502cc56f02a4c29bb656325d5",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dc20c832_ebfd00e8",
         "filename": "simd/arm/common/jdsample-neon.c",
         "patchSetId": 2
@@ -91,6 +163,30 @@
       "revId": "ac4d01440a2b398502cc56f02a4c29bb656325d5",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a0013715_04e7c64b",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-07-03T15:06:31Z",
+      "side": 1,
+      "message": "See comment above - will keep as is to avoid regressing on AArch32.",
+      "parentUuid": "dc20c832_ebfd00e8",
+      "range": {
+        "startLine": 142,
+        "startChar": 6,
+        "endLine": 144,
+        "endChar": 37
+      },
+      "revId": "ac4d01440a2b398502cc56f02a4c29bb656325d5",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
