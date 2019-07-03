@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cc1ef11e_41eca772",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-07-03T00:04:11Z",
+      "side": 1,
+      "message": "I love these so much. Thank you.",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 66,
+        "endChar": 3
+      },
+      "revId": "ac4d01440a2b398502cc56f02a4c29bb656325d5",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "24e50135_fb0c4491",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-07-03T00:04:11Z",
+      "side": 1,
+      "message": "due to having\n?",
+      "range": {
+        "startLine": 105,
+        "startChar": 21,
+        "endLine": 105,
+        "endChar": 31
+      },
+      "revId": "ac4d01440a2b398502cc56f02a4c29bb656325d5",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fd1527bb_1b84c462",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-07-03T00:04:11Z",
+      "side": 1,
+      "message": "I think we can move the output_pixels.val[x] \u003d lines above the sx \u003d lines. That would move the indented code together.\n\nAlthough, maybe these are placed the way they are to indicate that we want to do something while the values for sx are being loaded. I hope the compiler sorts this out without our help.",
+      "range": {
+        "startLine": 119,
+        "startChar": 59,
+        "endLine": 128,
+        "endChar": 71
+      },
+      "revId": "ac4d01440a2b398502cc56f02a4c29bb656325d5",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dc20c832_ebfd00e8",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-07-03T00:04:11Z",
+      "side": 1,
+      "message": "We could probably move this up, below the output_pixels.val[x] \u003d lines.\n\nThat would let us get rid of the indentation completely.\nIt could instead read something like:\n\n// Write out the last computed value.\noutput_pixels.val[x] \u003d ...\n...\n\n// Compute next value.\nsx \u003d ...\n...\n\n\nBut maybe things aren\u0027t that simple and the compiler unrolls more cleanly this way. *shrugs* I hope not but I do not know.",
+      "range": {
+        "startLine": 142,
+        "startChar": 6,
+        "endLine": 144,
+        "endChar": 37
+      },
+      "revId": "ac4d01440a2b398502cc56f02a4c29bb656325d5",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
