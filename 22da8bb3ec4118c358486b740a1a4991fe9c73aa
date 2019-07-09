@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6e0c67d8_5d238216",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-07-09T09:48:03Z",
+      "side": 1,
+      "message": "Nit: could you line-wrap the body of the commit message at 72 characters.",
+      "range": {
+        "startLine": 11,
+        "startChar": 73,
+        "endLine": 11,
+        "endChar": 92
+      },
+      "revId": "22da8bb3ec4118c358486b740a1a4991fe9c73aa",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ca193769_199a0c0c",
+        "filename": "README.chromium",
+        "patchSetId": 5
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-07-09T09:48:03Z",
+      "side": 1,
+      "message": "Nit: Could you remove the white space at the end of these lines? (Depending on your editor, you could configure it to remove trailing white space automatically so you don\u0027t have to worry about it again.)",
+      "range": {
+        "startLine": 45,
+        "startChar": 81,
+        "endLine": 45,
+        "endChar": 82
+      },
+      "revId": "22da8bb3ec4118c358486b740a1a4991fe9c73aa",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "59b8d5f7_1ed5e489",
+        "filename": "README.chromium",
+        "patchSetId": 5
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-07-09T09:48:03Z",
+      "side": 1,
+      "message": "Also a nit: could you make the line wrapping consistent here please?",
+      "range": {
+        "startLine": 48,
+        "startChar": 81,
+        "endLine": 48,
+        "endChar": 93
+      },
+      "revId": "22da8bb3ec4118c358486b740a1a4991fe9c73aa",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
