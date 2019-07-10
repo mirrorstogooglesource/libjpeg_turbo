@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "56ef58ad_6bd353a3",
+        "filename": "README.chromium",
+        "patchSetId": 7
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-07-10T00:01:26Z",
+      "side": 1,
+      "message": "Still have trailing whitespace here :)",
+      "range": {
+        "startLine": 49,
+        "startChar": 58,
+        "endLine": 49,
+        "endChar": 60
+      },
+      "revId": "566a87e59b29d161ceb64cc1f9bef0dcaa439ffa",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
