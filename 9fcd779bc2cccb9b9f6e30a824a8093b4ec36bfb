@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e697545a_54452062",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 506,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-07-29T18:20:40Z",
+      "side": 1,
+      "message": "the the\n2x the",
+      "range": {
+        "startLine": 505,
+        "startChar": 71,
+        "endLine": 506,
+        "endChar": 12
+      },
+      "revId": "9fcd779bc2cccb9b9f6e30a824a8093b4ec36bfb",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
