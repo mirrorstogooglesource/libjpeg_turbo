@@ -22,6 +22,30 @@
       "revId": "75b809827c72c8d24df2e04c59c381aa82ccc1aa",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1d49de39_54a65bdd",
+        "filename": "simd/arm/common/jdsample-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 548,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-07-30T13:55:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "37e22a1b_53dfc689",
+      "range": {
+        "startLine": 547,
+        "startChar": 71,
+        "endLine": 548,
+        "endChar": 12
+      },
+      "revId": "75b809827c72c8d24df2e04c59c381aa82ccc1aa",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
