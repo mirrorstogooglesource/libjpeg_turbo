@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4be78ac2_130814d8",
+        "filename": "simd/arm/common/jdcolext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-07-31T20:16:36Z",
+      "side": 1,
+      "message": "I had to go over this a few times to understand it. Seems good.\n\nAre there ARM docs that show this more clearly that I\u0027ve perhaps missed? I see this blog post https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/coding-for-neon---part-4-shifting-left-and-right but would have loved if those diagrams were in the docs.\n\nThe docs for vsriq_n_u16 for example just give it a name but don\u0027t help me understand what bits are going where: http://infocenter.arm.com/help/index.jsp?topic\u003d/com.arm.doc.dui0472j/chr1360928368573.html",
+      "range": {
+        "startLine": 139,
+        "startChar": 6,
+        "endLine": 141,
+        "endChar": 66
+      },
+      "revId": "f742822a6f1c810a36ce0974f48c1cc32881f00c",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}
