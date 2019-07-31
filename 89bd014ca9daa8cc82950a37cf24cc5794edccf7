@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "eab534bb_fdc8447a",
+        "filename": "simd/arm/common/jdcolext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-07-31T17:46:01Z",
+      "side": 1,
+      "message": "I know it\u0027s weird but adding a negative is a technical necessity here. Given we\u0027re trying to subtract -128 from unsigned 8-bit elements, it\u0027s the only way to do it given the type system and the instructions we have available. Of course, you could first do a vmovl to widen the Cb and Cr data before subtracting (positive) 128; but that\u0027s an extra 4 instructions per loop iteration.\n\nLooking at the code generated for -F_0_344, the compiler just injects 0xD3F3, which is -11277 (note I put 11277 in jdcolor-neon.c) so it\u0027s doing the right thing.",
+      "parentUuid": "90d459cc_08f94fcc",
+      "range": {
+        "startLine": 86,
+        "startChar": 65,
+        "endLine": 86,
+        "endChar": 73
+      },
+      "revId": "89bd014ca9daa8cc82950a37cf24cc5794edccf7",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bf882f78_55620fed",
         "filename": "simd/arm/common/jdcolext-neon.c",
         "patchSetId": 1
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "9746d640_206baebb",
+        "filename": "simd/arm/common/jdcolext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-07-31T17:46:01Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "bf882f78_55620fed",
+      "range": {
+        "startLine": 155,
+        "startChar": 62,
+        "endLine": 155,
+        "endChar": 71
+      },
+      "revId": "89bd014ca9daa8cc82950a37cf24cc5794edccf7",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "925c12d9_e6fb9447",
         "filename": "simd/arm/common/jdcolext-neon.c",
         "patchSetId": 1
@@ -64,6 +112,53 @@
         "startChar": 62,
         "endLine": 212,
         "endChar": 70
+      },
+      "revId": "89bd014ca9daa8cc82950a37cf24cc5794edccf7",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8f608441_1e7f5c02",
+        "filename": "simd/arm/common/jdcolext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 212,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-07-31T17:46:01Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "925c12d9_e6fb9447",
+      "range": {
+        "startLine": 212,
+        "startChar": 62,
+        "endLine": 212,
+        "endChar": 70
+      },
+      "revId": "89bd014ca9daa8cc82950a37cf24cc5794edccf7",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "91fe957d_cc8f6329",
+        "filename": "simd/arm/common/jdcolext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 257,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-07-31T17:46:01Z",
+      "side": 1,
+      "message": "The 64-bit compiler seems to arbitrarily generate rubbish for the color channel orderings we care about - EXT_RGBA (Android) and EXT_BGRA (everything else). I\u0027ll write a path to avoid this code by shifting the last load and store back (8 - cols_remaining) bytes (when output_width \u003e 8) so we can do a full vector store.\n\nHere\u0027s the nonsense currently:\n                                sub\tx10, x10, #0x4\n     fd0:\t4ea11c33 \tmov\tv19.16b, v1.16b\n     fd4:\t0d203553 \tst4\t{v19.b-v22.b}[5], [x10]\n     fd8:\t4ea11c37 \tmov\tv23.16b, v1.16b\n     fdc:\t4eb41e98 \tmov\tv24.16b, v20.16b\n     fe0:\t4eb51eb9 \tmov\tv25.16b, v21.16b\n     fe4:\td100114a \tsub\tx10, x10, #0x4\n     fe8:\t4eb61eda \tmov\tv26.16b, v22.16b\n     fec:\t0d203157 \tst4\t{v23.b-v26.b}[4], [x10]\n     ff0:\t4ea11c37 \tmov\tv23.16b, v1.16b\n     ff4:\t4eb41e98 \tmov\tv24.16b, v20.16b\n     ff8:\t4eb51eb9 \tmov\tv25.16b, v21.16b\n     ffc:\td100114a \tsub\tx10, x10, #0x4\n    1000:\t4eb61eda \tmov\tv26.16b, v22.16b\n    1004:\t0d202d57 \tst4\t{v23.b-v26.b}[3], [x10]\n    1008:\t4ea11c37 \tmov\tv23.16b, v1.16b\n    100c:\t4eb41e98 \tmov\tv24.16b, v20.16b\n    1010:\t4eb51eb9 \tmov\tv25.16b, v21.16b\n    1014:\td100114a \tsub\tx10, x10, #0x4\n    1018:\t4eb61eda \tmov\tv26.16b, v22.16b\n    101c:\t0d202957 \tst4\t{v23.b-v26.b}[2], [x10]\n    1020:\t4ea11c37 \tmov\tv23.16b, v1.16b\n    1024:\t4eb41e98 \tmov\tv24.16b, v20.16b\n    1028:\t4eb51eb9 \tmov\tv25.16b, v21.16b\n    102c:\td100114a \tsub\tx10, x10, #0x4\n    1030:\t4eb61eda \tmov\tv26.16b, v22.16b\n    1034:\t0d202557 \tst4\t{v23.b-v26.b}[1], [x10]\n    1038:\td100114a \tsub\tx10, x10, #0x4\n    103c:\t4ea11c33 \tmov\tv19.16b, v1.16b\n    1040:\t0d202153 \tst4\t{v19.b-v22.b}[0], [x10]",
+      "range": {
+        "startLine": 240,
+        "startChar": 6,
+        "endLine": 257,
+        "endChar": 7
       },
       "revId": "89bd014ca9daa8cc82950a37cf24cc5794edccf7",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
