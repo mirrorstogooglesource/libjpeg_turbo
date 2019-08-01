@@ -46,6 +46,30 @@
       "revId": "f742822a6f1c810a36ce0974f48c1cc32881f00c",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "41a90a00_8f293dab",
+        "filename": "simd/arm/common/jdcolext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-08-01T19:30:23Z",
+      "side": 1,
+      "message": "Holy moly, thank you",
+      "parentUuid": "ba08d93b_9739eeea",
+      "range": {
+        "startLine": 139,
+        "startChar": 6,
+        "endLine": 141,
+        "endChar": 66
+      },
+      "revId": "f742822a6f1c810a36ce0974f48c1cc32881f00c",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
