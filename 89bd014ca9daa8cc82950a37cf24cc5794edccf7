@@ -187,6 +187,30 @@
       "revId": "89bd014ca9daa8cc82950a37cf24cc5794edccf7",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "264a19ca_0abb715c",
+        "filename": "simd/arm/common/jdcolext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 257,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-08-05T19:24:41Z",
+      "side": 1,
+      "message": "That\u0027s a bummer.\nThe unaligned loads/stores issue makes sense.\n\nWhen you said \"The 64-bit compiler seems to arbitrarily generate rubbish for the color channel orderings\" do you mean it generates weird assembly (but still works) or that the color channel data is filled with wrong values?\n\nWhen I first read your comment I thought you meant there was a bug in the compiler and we are getting bad values in memory.\n\nIf the memory values are okay and we\u0027re just getting bad code gen I am less worried. Especially since this is only for handling the tail. In that case, still LGTM",
+      "parentUuid": "6a73d5cc_f0f9e824",
+      "range": {
+        "startLine": 240,
+        "startChar": 6,
+        "endLine": 257,
+        "endChar": 7
+      },
+      "revId": "89bd014ca9daa8cc82950a37cf24cc5794edccf7",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
