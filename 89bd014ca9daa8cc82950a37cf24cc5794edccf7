@@ -211,6 +211,30 @@
       "revId": "89bd014ca9daa8cc82950a37cf24cc5794edccf7",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "74efa237_3c4c64f7",
+        "filename": "simd/arm/common/jdcolext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 257,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-08-06T15:49:00Z",
+      "side": 1,
+      "message": "Sorry for the ambiguous comment - the values in memory are fine, it\u0027s just very inefficient code that\u0027s been generated.",
+      "parentUuid": "264a19ca_0abb715c",
+      "range": {
+        "startLine": 240,
+        "startChar": 6,
+        "endLine": 257,
+        "endChar": 7
+      },
+      "revId": "89bd014ca9daa8cc82950a37cf24cc5794edccf7",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
