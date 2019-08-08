@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "82c8fa0b_4fac53a3",
+        "filename": "simd/i386/jchuff-sse2.asm",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2019-08-08T18:54:53Z",
+      "side": 1,
+      "message": "Should we add this to README.chromium?\n\nAlso, have you attempted to upstream these changes?",
+      "range": {
+        "startLine": 30,
+        "startChar": 4,
+        "endLine": 30,
+        "endChar": 38
+      },
+      "revId": "589258a3950389d6fa95862091fb38e0a07be796",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
