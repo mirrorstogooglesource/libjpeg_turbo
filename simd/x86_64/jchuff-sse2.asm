@@ -27,10 +27,9 @@
 
     alignz      32
     GLOBAL_DATA(jconst_huff_encode_one_block)
+    EXTERN      EXTN(jpeg_nbits_table)
 
 EXTN(jconst_huff_encode_one_block):
-
-%include "jpeg_nbits_table.inc"
 
     alignz      32
 
@@ -222,7 +221,7 @@ EXTN(jsimd_huff_encode_one_block_sse2):
     add         ebx, esi                ; temp2 += temp3;
 
     ; Find the number of bits needed for the magnitude of the coefficient
-    lea         r11, [rel jpeg_nbits_table]
+    lea         r11, [rel EXTN(jpeg_nbits_table)]
     movzx       rdi, byte [r11 + rdi]         ; nbits = JPEG_NBITS(temp);
     ; Emit the Huffman-coded symbol for the number of bits
     mov         r11d,  INT [r14 + rdi * 4]    ; code = dctbl->ehufco[nbits];
