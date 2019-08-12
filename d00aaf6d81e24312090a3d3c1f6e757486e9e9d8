@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "de3cc1f8_409f097b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1128439
+      },
+      "writtenOn": "2019-08-12T20:05:27Z",
+      "side": 1,
+      "message": "This phrasing confused me at first:\n\n\"This change marks the usage as external\"\n\nMerely marking an array as external wouldn\u0027t be sufficient. What this change actually does is (to use C/C++ terminology) to remove a definition of the array and replaced it with a declaration - an external reference. Maybe rephrase for clarity?",
+      "revId": "d00aaf6d81e24312090a3d3c1f6e757486e9e9d8",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
