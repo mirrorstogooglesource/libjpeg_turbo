@@ -46,6 +46,30 @@
       "revId": "589258a3950389d6fa95862091fb38e0a07be796",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "06e5c877_27482464",
+        "filename": "simd/i386/jchuff-sse2.asm",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1354609
+      },
+      "writtenOn": "2019-08-13T03:26:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eafd9603_7c7a77ef",
+      "range": {
+        "startLine": 30,
+        "startChar": 4,
+        "endLine": 30,
+        "endChar": 38
+      },
+      "revId": "589258a3950389d6fa95862091fb38e0a07be796",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
