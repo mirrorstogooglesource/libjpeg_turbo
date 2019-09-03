@@ -117,6 +117,30 @@
       "revId": "2c21f9996e1f9be9df559e44a5695e89ce15440a",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "77db901c_d1a976e9",
+        "filename": "simd/arm/common/jdmrgext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-09-03T18:40:05Z",
+      "side": 1,
+      "message": "Sounds good to me. I wasn\u0027t sure if that would apply here. I\u0027ll go ahead and submit. :)",
+      "parentUuid": "fafbd3f9_5a2d8a28",
+      "range": {
+        "startLine": 49,
+        "startChar": 3,
+        "endLine": 51,
+        "endChar": 13
+      },
+      "revId": "2c21f9996e1f9be9df559e44a5695e89ce15440a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
