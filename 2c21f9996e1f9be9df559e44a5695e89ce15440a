@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "b829c945_403271dd",
+        "filename": "simd/arm/arm/jsimd.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 508,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-09-03T18:12:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7f78f22c_25d25643",
+      "range": {
+        "startLine": 508,
+        "startChar": 4,
+        "endLine": 508,
+        "endChar": 12
+      },
+      "revId": "2c21f9996e1f9be9df559e44a5695e89ce15440a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2298f9af_c8d033d5",
         "filename": "simd/arm/common/jdmrgext-neon.c",
         "patchSetId": 1
@@ -69,6 +93,30 @@
       "revId": "2c21f9996e1f9be9df559e44a5695e89ce15440a",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fafbd3f9_5a2d8a28",
+        "filename": "simd/arm/common/jdmrgext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-09-03T18:12:40Z",
+      "side": 1,
+      "message": "We introduced a compile-time check a while back [1] to prevent issues like this. Given we have this check I don\u0027t believe there\u0027s a need for an assert here - unless I\u0027m missing something. \n\n[1] https://chromium-review.googlesource.com/c/chromium/deps/libjpeg_turbo/+/1635527",
+      "parentUuid": "2298f9af_c8d033d5",
+      "range": {
+        "startLine": 49,
+        "startChar": 3,
+        "endLine": 51,
+        "endChar": 13
+      },
+      "revId": "2c21f9996e1f9be9df559e44a5695e89ce15440a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
