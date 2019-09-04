@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "304b5cfc_0b6f3720",
+        "filename": "simd/arm/common/jdmrgext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 305,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-09-04T23:35:53Z",
+      "side": 1,
+      "message": "I wondered about perhaps giving these a named constant rather than the existing magic numbers.\n\nI see that existing x86(_64) code for this is in assembly and doesn\u0027t do that.\nI also see the PowerPC code doesn\u0027t give them names [1].\n\nSo as much as I feel like a named constant is objectively better, that competes with the idea of being consistent.\n\nI think in this case we should leave it and be consistent. If we want to name these, that could be done in a separate patch and would require buy-in from upstream.\n\n[1] https://github.com/libjpeg-turbo/libjpeg-turbo/blob/master/simd/powerpc/jdmrgext-altivec.c#L81",
+      "range": {
+        "startLine": 305,
+        "startChar": 23,
+        "endLine": 305,
+        "endChar": 24
+      },
+      "revId": "e74446a1d352b53efdb4f1e9fbd65836942819a8",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}
