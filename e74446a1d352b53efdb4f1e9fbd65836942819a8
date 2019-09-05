@@ -22,6 +22,30 @@
       "revId": "e74446a1d352b53efdb4f1e9fbd65836942819a8",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "266f7c90_d55114e5",
+        "filename": "simd/arm/common/jdmrgext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 305,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-09-05T10:37:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "304b5cfc_0b6f3720",
+      "range": {
+        "startLine": 305,
+        "startChar": 23,
+        "endLine": 305,
+        "endChar": 24
+      },
+      "revId": "e74446a1d352b53efdb4f1e9fbd65836942819a8",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
