@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "eb923a73_ab0d5f2f",
+        "filename": "simd/arm/common/jidctred-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-09-25T12:55:27Z",
+      "side": 1,
+      "message": "I just realized, maybe these comments should be up above with the defines?",
+      "range": {
+        "startLine": 164,
+        "startChar": 3,
+        "endLine": 174,
+        "endChar": 33
+      },
+      "revId": "38c693569427129fd8c22f4bba67685d7e176094",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "58a58fe0_aa624ce2",
+        "filename": "simd/arm/common/jidctred-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 186,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-09-25T12:55:27Z",
+      "side": 1,
+      "message": "I believe we already decided elsewhere not to support VC but I can\u0027t seem to recall exactly where.\n\nIn VC this would look like __declspec(align(8))\n\nAlternatively, if are okay with C++ we could use alignas(8). I bet there is a C version but I don\u0027t know it.",
+      "range": {
+        "startLine": 186,
+        "startChar": 0,
+        "endLine": 186,
+        "endChar": 28
+      },
+      "revId": "38c693569427129fd8c22f4bba67685d7e176094",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
