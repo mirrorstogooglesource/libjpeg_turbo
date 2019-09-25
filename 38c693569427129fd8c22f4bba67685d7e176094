@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "58092ba6_57c66335",
+        "filename": "simd/arm/common/jidctred-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-09-25T14:18:50Z",
+      "side": 1,
+      "message": "Umm, unless you\u0027re really keen, I prefer them with the function declarations because (in my mind) it makes explicit which constants are required for which IDCT calculation. (Since we have both 2x2 and 4x4 in the same file.)",
+      "parentUuid": "eb923a73_ab0d5f2f",
+      "range": {
+        "startLine": 164,
+        "startChar": 3,
+        "endLine": 174,
+        "endChar": 33
+      },
+      "revId": "38c693569427129fd8c22f4bba67685d7e176094",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "58a58fe0_aa624ce2",
         "filename": "simd/arm/common/jidctred-neon.c",
         "patchSetId": 1
@@ -45,6 +69,30 @@
       "revId": "38c693569427129fd8c22f4bba67685d7e176094",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a606aa05_eccbbde5",
+        "filename": "simd/arm/common/jidctred-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 186,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-09-25T14:18:50Z",
+      "side": 1,
+      "message": "As far as I know, Clang is the only officially supported compiler for Chrome on all platforms. That said, libjpeg-turbo as a standalone project supports building using VisualC++ compilers. As we\u0027ve stripped a lot of the upstream project\u0027s code away in Chromium, I\u0027m inclined to say that we commit as is and I cross this portability bridge when I push this upstream. (The maintainer has used the __attribute__ (aligned(blah)) syntax in the PowerPC Altivec code when defining buffers like this.)\n\nAs for C++ constructs, these are not allowed in the libjpeg-turbo codebase. (Life would be so much better if they were!)",
+      "parentUuid": "58a58fe0_aa624ce2",
+      "range": {
+        "startLine": 186,
+        "startChar": 0,
+        "endLine": 186,
+        "endChar": 28
+      },
+      "revId": "38c693569427129fd8c22f4bba67685d7e176094",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
