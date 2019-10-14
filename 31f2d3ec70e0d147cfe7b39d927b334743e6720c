@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "079ac612_e95721bd",
+        "filename": "simd/arm/common/jidctint-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-10-14T19:42:56Z",
+      "side": 1,
+      "message": "coderules.txt says identifiers should be unique within the first 15 characters.\nBut given you are following existing naming convention (from the .S files), maybe it is okay here.\n\n*shrugs* I\u0027ll leave it to you.",
+      "range": {
+        "startLine": 78,
+        "startChar": 44,
+        "endLine": 78,
+        "endChar": 59
+      },
+      "revId": "31f2d3ec70e0d147cfe7b39d927b334743e6720c",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "89ef7479_583a2d50",
+        "filename": "simd/arm/common/jidctint-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 571,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-10-14T19:42:56Z",
+      "side": 1,
+      "message": "This was super useful. It would be helpful to put towards the top of this file.\nMaybe we could move the comment and this function to the top (and forward declare the functions it calls)?",
+      "range": {
+        "startLine": 522,
+        "startChar": 0,
+        "endLine": 571,
+        "endChar": 3
+      },
+      "revId": "31f2d3ec70e0d147cfe7b39d927b334743e6720c",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
