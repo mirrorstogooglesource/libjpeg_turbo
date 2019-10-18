@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "e4cccdc9_e7210159",
+        "filename": "simd/arm/common/jidctint-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-10-18T15:04:20Z",
+      "side": 1,
+      "message": "I\u0027d like to keep the existing conventions from the .S file :)",
+      "parentUuid": "079ac612_e95721bd",
+      "range": {
+        "startLine": 78,
+        "startChar": 44,
+        "endLine": 78,
+        "endChar": 59
+      },
+      "revId": "31f2d3ec70e0d147cfe7b39d927b334743e6720c",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "89ef7479_583a2d50",
         "filename": "simd/arm/common/jidctint-neon.c",
         "patchSetId": 1
@@ -45,6 +69,30 @@
       "revId": "31f2d3ec70e0d147cfe7b39d927b334743e6720c",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "54155ed3_01abc246",
+        "filename": "simd/arm/common/jidctint-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 571,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-10-18T15:04:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "89ef7479_583a2d50",
+      "range": {
+        "startLine": 522,
+        "startChar": 0,
+        "endLine": 571,
+        "endChar": 3
+      },
+      "revId": "31f2d3ec70e0d147cfe7b39d927b334743e6720c",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
