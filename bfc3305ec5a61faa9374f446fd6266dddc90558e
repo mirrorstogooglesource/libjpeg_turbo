@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c9d29021_d52db019",
+        "filename": "README.chromium",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-12-10T18:36:42Z",
+      "side": 1,
+      "message": "Thinking about this more, we probably don\u0027t need an entry for this.",
+      "range": {
+        "startLine": 70,
+        "startChar": 0,
+        "endLine": 70,
+        "endChar": 58
+      },
+      "revId": "bfc3305ec5a61faa9374f446fd6266dddc90558e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
