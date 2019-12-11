@@ -46,6 +46,30 @@
       "revId": "bfc3305ec5a61faa9374f446fd6266dddc90558e",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e2cca2ad_fd349430",
+        "filename": "README.chromium",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2019-12-11T19:59:11Z",
+      "side": 1,
+      "message": "I don\u0027t 100% follow \"patch-patch\" but I think that might be what I meant.\n\nThe way I see it, this could have been a piece of the patch that added the intrinsic version of the IDCT functions. The person who comes along later wanting to know what is different probably cares about the intrinsics and not about the cleanup. So it might not need a special call-out.",
+      "parentUuid": "bc60d55e_fba532b7",
+      "range": {
+        "startLine": 70,
+        "startChar": 0,
+        "endLine": 70,
+        "endChar": 58
+      },
+      "revId": "bfc3305ec5a61faa9374f446fd6266dddc90558e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
