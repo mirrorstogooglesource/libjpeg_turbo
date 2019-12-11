@@ -22,6 +22,30 @@
       "revId": "bfc3305ec5a61faa9374f446fd6266dddc90558e",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bc60d55e_fba532b7",
+        "filename": "README.chromium",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-12-11T11:22:16Z",
+      "side": 1,
+      "message": "Umm - could you expand? When I push the IDCT patches to the real upstream, they will have this change incorporated. If you\u0027re considering this as a \"patch-patch\" then sure - I\u0027ll remove the listing here.",
+      "parentUuid": "c9d29021_d52db019",
+      "range": {
+        "startLine": 70,
+        "startChar": 0,
+        "endLine": 70,
+        "endChar": 58
+      },
+      "revId": "bfc3305ec5a61faa9374f446fd6266dddc90558e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
