@@ -94,6 +94,30 @@
       "revId": "bfc3305ec5a61faa9374f446fd6266dddc90558e",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0e8cdebd_386ae07b",
+        "filename": "README.chromium",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-12-12T12:14:49Z",
+      "side": 1,
+      "message": "\"The way I see it, this could have been a piece of the patch that added the intrinsic version of the IDCT functions.\"\n\n^ This is what I meant by \"patch-patch\" ;)\n\nI\u0027m using this to list every change we\u0027ve made relating to Arm NEON so that everything can be easily cherry-picked - e.g. these optimizations may go to AOSP\u0027s libjpeg-turbo before a new upstream release containing our changes is made.",
+      "parentUuid": "7d4e6bf5_30326e46",
+      "range": {
+        "startLine": 70,
+        "startChar": 0,
+        "endLine": 70,
+        "endChar": 58
+      },
+      "revId": "bfc3305ec5a61faa9374f446fd6266dddc90558e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
