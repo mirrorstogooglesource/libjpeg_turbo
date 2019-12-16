@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "a5e29ad3_d70557e1",
+        "filename": "simd/arm/common/jidctfst-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-12-16T11:35:04Z",
+      "side": 1,
+      "message": "I have tried to write it like this but the compiler doesn\u0027t obey - it just uses a single register to accumulate the results as here in the source code.",
+      "parentUuid": "97a0cdbe_cc88f22a",
+      "range": {
+        "startLine": 80,
+        "startChar": 2,
+        "endLine": 85,
+        "endChar": 35
+      },
+      "revId": "ce0e57e8e636f5132fe6f0590a4dba91f92fd935",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d353afe9_8f5f84b9",
         "filename": "simd/arm/common/jidctfst-neon.c",
         "patchSetId": 1
@@ -45,6 +69,30 @@
       "revId": "ce0e57e8e636f5132fe6f0590a4dba91f92fd935",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9c6d7ec3_6bcfd5c0",
+        "filename": "simd/arm/common/jidctfst-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2019-12-16T11:35:04Z",
+      "side": 1,
+      "message": "These phases are references to the different stages set out in this paper: https://source.chromium.org/chromium/chromium/src/+/master:third_party/libjpeg_turbo/jidctfst.c;l\u003d20?originalUrl\u003dhttps:%2F%2Fcs.chromium.org%2F",
+      "parentUuid": "d353afe9_8f5f84b9",
+      "range": {
+        "startLine": 122,
+        "startChar": 46,
+        "endLine": 122,
+        "endChar": 59
+      },
+      "revId": "ce0e57e8e636f5132fe6f0590a4dba91f92fd935",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
