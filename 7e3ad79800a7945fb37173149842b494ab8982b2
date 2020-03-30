@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f263a5fb_80780ae7",
+        "filename": "simd/nasm/jsimdext.inc",
+        "patchSetId": 1
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 1001250
+      },
+      "writtenOn": "2020-03-30T18:59:08Z",
+      "side": 1,
+      "message": "Up to you: %elif might work",
+      "revId": "7e3ad79800a7945fb37173149842b494ab8982b2",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
