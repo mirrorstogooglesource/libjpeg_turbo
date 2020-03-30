@@ -16,6 +16,24 @@
       "revId": "7e3ad79800a7945fb37173149842b494ab8982b2",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e642c18e_e68b6e72",
+        "filename": "simd/nasm/jsimdext.inc",
+        "patchSetId": 1
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-03-30T19:02:10Z",
+      "side": 1,
+      "message": "I just pulled what they had upstream.\nIf I were to write it, I would have done an %elif __NASM_VER__. But I supposed YASM and NASM are the only supported assemblers in libjpeg-turbo anyway.",
+      "parentUuid": "f263a5fb_80780ae7",
+      "revId": "7e3ad79800a7945fb37173149842b494ab8982b2",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
