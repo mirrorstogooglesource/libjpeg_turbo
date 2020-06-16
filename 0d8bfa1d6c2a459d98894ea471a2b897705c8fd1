@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5d20805f_744b74e5",
+        "filename": "README.chromium",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-06-16T21:18:25Z",
+      "side": 1,
+      "message": "Resolved in the CL that reinstated it.",
+      "parentUuid": "31d4c7f9_82d639c5",
+      "range": {
+        "startLine": 21,
+        "startChar": 59,
+        "endLine": 21,
+        "endChar": 62
+      },
+      "revId": "0d8bfa1d6c2a459d98894ea471a2b897705c8fd1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "69c1a67a_b98d5001",
         "filename": "README.chromium",
         "patchSetId": 1
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "574b4ced_c68868ff",
+        "filename": "README.chromium",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-06-16T21:18:25Z",
+      "side": 1,
+      "message": "Resolved in the CL that reinstated it.",
+      "parentUuid": "69c1a67a_b98d5001",
+      "range": {
+        "startLine": 22,
+        "startChar": 42,
+        "endLine": 22,
+        "endChar": 52
+      },
+      "revId": "0d8bfa1d6c2a459d98894ea471a2b897705c8fd1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "65b3f1ff_23e57c70",
         "filename": "tjbench.c",
         "patchSetId": 1
@@ -59,6 +107,30 @@
       "writtenOn": "2020-06-16T17:20:04Z",
       "side": 1,
       "message": "Would it be crazy to instead define a local macro \"printf\" that calls \"fprintf(stderr, \" instead? That would mean less changes and perhaps fewer conflicts in the future.",
+      "range": {
+        "startLine": 41,
+        "startChar": 2,
+        "endLine": 41,
+        "endChar": 9
+      },
+      "revId": "0d8bfa1d6c2a459d98894ea471a2b897705c8fd1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "124f59a9_b9959cd3",
+        "filename": "tjbench.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-06-16T21:18:25Z",
+      "side": 1,
+      "message": "I\u0027d prefer not to turn functions from the standard library into macros - it would confuse me not long after I made the change ;)\n\nAs Chris mentioned on the patch where I did the same thing to tjunittest.c, I think these have a good shot at getting upstream without much bother.\n\nLet me know if you\u0027re alright with that approach.",
+      "parentUuid": "65b3f1ff_23e57c70",
       "range": {
         "startLine": 41,
         "startChar": 2,
