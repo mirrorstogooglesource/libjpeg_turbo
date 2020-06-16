@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "31d4c7f9_82d639c5",
+        "filename": "README.chromium",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-06-16T17:20:04Z",
+      "side": 1,
+      "message": "I think one of your changes restores this?",
+      "range": {
+        "startLine": 21,
+        "startChar": 59,
+        "endLine": 21,
+        "endChar": 62
+      },
+      "revId": "0d8bfa1d6c2a459d98894ea471a2b897705c8fd1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "69c1a67a_b98d5001",
+        "filename": "README.chromium",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-06-16T17:20:04Z",
+      "side": 1,
+      "message": "Same here. (That one - https://chromium-review.googlesource.com/c/chromium/deps/libjpeg_turbo/+/2247693 - doesn\u0027t modify this file, so doesn\u0027t provide a good place to comment.)",
+      "range": {
+        "startLine": 22,
+        "startChar": 42,
+        "endLine": 22,
+        "endChar": 52
+      },
+      "revId": "0d8bfa1d6c2a459d98894ea471a2b897705c8fd1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "65b3f1ff_23e57c70",
+        "filename": "tjbench.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-06-16T17:20:04Z",
+      "side": 1,
+      "message": "Would it be crazy to instead define a local macro \"printf\" that calls \"fprintf(stderr, \" instead? That would mean less changes and perhaps fewer conflicts in the future.",
+      "range": {
+        "startLine": 41,
+        "startChar": 2,
+        "endLine": 41,
+        "endChar": 9
+      },
+      "revId": "0d8bfa1d6c2a459d98894ea471a2b897705c8fd1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
