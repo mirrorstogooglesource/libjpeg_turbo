@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bc596103_bccd77e6",
+        "filename": "tjbench-gtest-wrapper.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-06-19T18:33:30Z",
+      "side": 1,
+      "message": "Can these be factored out into a method so we only have one ifdef?",
+      "range": {
+        "startLine": 70,
+        "startChar": 0,
+        "endLine": 76,
+        "endChar": 6
+      },
+      "revId": "2a97341c47c6018ed8cc1b405bf40efe0993bbf7",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
