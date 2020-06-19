@@ -349,8 +349,13 @@ bailout:
 static void writeJPEG(unsigned char *jpegBuf, unsigned long jpegSize,
                       char *filename)
 {
+#if defined(ANDROID) && defined(GTEST)
+  char path[1024];
+  snprintf(path, 1024, "/sdcard/%s", filename);
+  FILE *file = fopen(path, "wb");
+#else
   FILE *file = fopen(filename, "wb");
-
+#endif
   if (!file || fwrite(jpegBuf, jpegSize, 1, file) != 1) {
     fprintf(stderr, "ERROR: Could not write to %s.\n%s\n", filename,
             strerror(errno));
@@ -749,8 +754,13 @@ static int doBmpTest(const char *ext, int width, int align, int height, int pf,
     _throw("Could not allocate memory");
   initBitmap(buf, width, pitch, height, pf, flags);
 
+#if defined(ANDROID) && defined(GTEST)
+  snprintf(filename, 80, "/sdcard/test_bmp_%s_%d_%s.%s", pixFormatStr[pf],
+           align, (flags & TJFLAG_BOTTOMUP) ? "bu" : "td", ext);
+#else
   snprintf(filename, 80, "test_bmp_%s_%d_%s.%s", pixFormatStr[pf], align,
            (flags & TJFLAG_BOTTOMUP) ? "bu" : "td", ext);
+#endif
   _tj(tjSaveImage(filename, buf, width, pitch, height, pf, flags));
   md5sum = MD5File(filename, md5buf);
   if (strcasecmp(md5sum, md5ref))
