@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "031ddc1f_1418135d",
+        "filename": "tjunittest.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 354,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-06-22T22:24:03Z",
+      "side": 1,
+      "message": "Maybe make this magic number a\nconst size_t pathSize \u003d 1024;\nto remove the chance of a change to only location.",
+      "range": {
+        "startLine": 354,
+        "startChar": 17,
+        "endLine": 354,
+        "endChar": 21
+      },
+      "revId": "fb5f1e3a0661e50188077a8c9369e3b7b4e0a5a3",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "55b49b72_2f281e1f",
+        "filename": "tjunittest.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 758,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-06-22T22:24:03Z",
+      "side": 1,
+      "message": "Similar thing here.",
+      "range": {
+        "startLine": 758,
+        "startChar": 21,
+        "endLine": 758,
+        "endChar": 23
+      },
+      "revId": "fb5f1e3a0661e50188077a8c9369e3b7b4e0a5a3",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
