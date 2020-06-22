@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "487589aa_8d3fb84f",
+        "filename": "cjpeg.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 504,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-06-22T20:05:33Z",
+      "side": 1,
+      "message": "nit: My preference would be to make this\n\n  #ifdef GTEST\n\nso the code that goes with GTEST goes right next to it.",
+      "range": {
+        "startLine": 504,
+        "startChar": 0,
+        "endLine": 504,
+        "endChar": 13
+      },
+      "revId": "51934df53c73c40476b6ac7893b1f688b72ec9ce",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
