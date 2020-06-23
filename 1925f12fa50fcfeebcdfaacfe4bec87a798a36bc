@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b96de1e8_34d45dbd",
+        "filename": "jpegtran-gtest-wrapper.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-06-23T16:57:53Z",
+      "side": 1,
+      "message": "Note this code is largely the same as that used for one of the cjpeg compression tests introduced in a previous commit.",
+      "range": {
+        "startLine": 62,
+        "startChar": 0,
+        "endLine": 84,
+        "endChar": 1
+      },
+      "revId": "1925f12fa50fcfeebcdfaacfe4bec87a798a36bc",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
