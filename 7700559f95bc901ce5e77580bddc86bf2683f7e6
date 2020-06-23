@@ -22,6 +22,30 @@
       "revId": "7700559f95bc901ce5e77580bddc86bf2683f7e6",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6faa190b_183a87f2",
+        "filename": "cjpeg-gtest-wrapper.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-06-23T21:32:19Z",
+      "side": 1,
+      "message": "I\u0027m copying what upstream does - the tests are defined here: https://github.com/libjpeg-turbo/libjpeg-turbo/blob/master/CMakeLists.txt#L997",
+      "parentUuid": "4fd57928_1534f711",
+      "range": {
+        "startLine": 70,
+        "startChar": 0,
+        "endLine": 78,
+        "endChar": 53
+      },
+      "revId": "7700559f95bc901ce5e77580bddc86bf2683f7e6",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
