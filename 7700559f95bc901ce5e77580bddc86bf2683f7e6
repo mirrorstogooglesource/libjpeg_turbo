@@ -70,6 +70,30 @@
       "revId": "7700559f95bc901ce5e77580bddc86bf2683f7e6",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "93ed765f_53e1fc16",
+        "filename": "cjpeg-gtest-wrapper.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-06-24T16:13:20Z",
+      "side": 1,
+      "message": "Added the link to the design doc and the chromium.README section listing these changes.",
+      "parentUuid": "da530b20_fb431c9d",
+      "range": {
+        "startLine": 70,
+        "startChar": 0,
+        "endLine": 78,
+        "endChar": 53
+      },
+      "revId": "7700559f95bc901ce5e77580bddc86bf2683f7e6",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
