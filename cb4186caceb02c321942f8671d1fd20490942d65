@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5c188b73_31750a8f",
+        "filename": "BUILD.gn",
+        "patchSetId": 3
+      },
+      "lineNbr": 322,
+      "author": {
+        "id": 1001934
+      },
+      "writtenOn": "2020-06-30T09:43:18Z",
+      "side": 1,
+      "message": "This needs to be guarded by the same if-condition as the test.gni import.",
+      "revId": "cb4186caceb02c321942f8671d1fd20490942d65",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
