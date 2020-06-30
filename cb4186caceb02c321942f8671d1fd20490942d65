@@ -52,6 +52,24 @@
       "revId": "cb4186caceb02c321942f8671d1fd20490942d65",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "eb48c514_a222d2a5",
+        "filename": "BUILD.gn",
+        "patchSetId": 3
+      },
+      "lineNbr": 322,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-06-30T13:58:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "75598c61_6213e38d",
+      "revId": "cb4186caceb02c321942f8671d1fd20490942d65",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
