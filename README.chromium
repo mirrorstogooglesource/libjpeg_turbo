@@ -81,6 +81,7 @@ following changes which are not merged to upstream:
   - Implement fast DCT using Arm NEON intrinsics
   - Implement accurate DCT using Arm NEON intrinsics
   - Add Arm NEON implementation of encode_mcu_AC_first_prepare
+  - Add Arm NEON implementation of encode_mcu_AC_refine_prepare
 * Patches to enable running the upstream unit tests through gtest.
   The upstream unit tests are defined here under the section 'TESTS':
   https://github.com/libjpeg-turbo/libjpeg-turbo/blob/master/CMakeLists.txt

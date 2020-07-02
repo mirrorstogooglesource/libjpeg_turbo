@@ -1150,3 +1150,7 @@ EXTERN(int) jsimd_encode_mcu_AC_refine_prepare_sse2
 EXTERN(void) jsimd_encode_mcu_AC_first_prepare_neon
   (const JCOEF *block, const int *jpeg_natural_order_start, int Sl, int Al,
    JCOEF *values, size_t *zerobits);
+
+EXTERN(int) jsimd_encode_mcu_AC_refine_prepare_neon
+  (const JCOEF *block, const int *jpeg_natural_order_start, int Sl, int Al,
+   JCOEF *absvalues, size_t *bits);
