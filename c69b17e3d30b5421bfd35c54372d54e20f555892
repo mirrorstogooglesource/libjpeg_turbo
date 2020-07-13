@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5328c902_b182a00b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-07-13T23:46:12Z",
+      "side": 1,
+      "message": "LGTM as well.\nAnd likewise, thank you for the small CLs",
+      "revId": "c69b17e3d30b5421bfd35c54372d54e20f555892",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}
