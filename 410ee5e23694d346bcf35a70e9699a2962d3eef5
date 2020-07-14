@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "06ea8e33_b09dac48",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-07-14T00:15:08Z",
+      "side": 1,
+      "message": "LGTM with nit",
+      "revId": "410ee5e23694d346bcf35a70e9699a2962d3eef5",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ee1bad34_1e168062",
+        "filename": "README.chromium",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-07-14T00:15:08Z",
+      "side": 1,
+      "message": "Since all of these files are part of Chromium\u0027s copy of libjpeg-turbo, we probably don\u0027t need a separate line item in the README.chromium calling out that we moved them.\n\nI mostly just imagine the README.chromium as a place to track when a deviation from upstream occurs so I can make sense of updating the local copy.\n\nThoughts?",
+      "range": {
+        "startLine": 90,
+        "startChar": 0,
+        "endLine": 90,
+        "endChar": 39
+      },
+      "revId": "410ee5e23694d346bcf35a70e9699a2962d3eef5",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
