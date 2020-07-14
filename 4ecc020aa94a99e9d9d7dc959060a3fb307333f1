@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4fcafddf_8ff09bfd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-07-14T00:28:37Z",
+      "side": 1,
+      "message": "I\u0027ll review this file tomorrow. The 900-line change will take me a little while.",
+      "revId": "4ecc020aa94a99e9d9d7dc959060a3fb307333f1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}
