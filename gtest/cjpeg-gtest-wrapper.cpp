@@ -185,7 +185,7 @@ TEST(CJPEGTest, FloatProg3x2) {
 
   base::FilePath input_image_path;
   GetTestFilePath(&input_image_path, "testorig.ppm");
-  base::FilePath output_path(GetTargetDirectory());
+  base::FilePath output_path(FILE_PATH_LITERAL(GetTargetDirectory()));
   output_path = output_path.AppendASCII("testout_3x2_float_prog.jpg");
 
   std::string prog_name = "cjpeg";
