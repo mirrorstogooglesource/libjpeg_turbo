@@ -39,6 +39,30 @@
       "revId": "60f2b477de2291996061bd1cb42d412171626772",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0860f8cd_111e8f4b",
+        "filename": "gtest/cjpeg-gtest-wrapper.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-07-23T21:42:16Z",
+      "side": 1,
+      "message": "Nope, nothing wrong with that - it\u0027s much cleaner too. Updated the code accordingly.",
+      "parentUuid": "e669fcaf_53c186dc",
+      "range": {
+        "startLine": 188,
+        "startChar": 29,
+        "endLine": 188,
+        "endChar": 46
+      },
+      "revId": "60f2b477de2291996061bd1cb42d412171626772",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
