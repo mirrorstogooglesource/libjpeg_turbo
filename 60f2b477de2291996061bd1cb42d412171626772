@@ -16,6 +16,29 @@
       "revId": "60f2b477de2291996061bd1cb42d412171626772",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e669fcaf_53c186dc",
+        "filename": "gtest/cjpeg-gtest-wrapper.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-07-23T17:50:22Z",
+      "side": 1,
+      "message": "When I searched for this macro in the code base, it seems like it\u0027s typically used to append an \"L\" to an actual string literal. I haven\u0027t found a case where it appends an \"L\" to a function name. Is there anything wrong with making both methods called simply\n\n  GetTargetDirectory();\n\nbut one returns an std::string and the other returns an std::wstring?",
+      "range": {
+        "startLine": 188,
+        "startChar": 29,
+        "endLine": 188,
+        "endChar": 46
+      },
+      "revId": "60f2b477de2291996061bd1cb42d412171626772",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
