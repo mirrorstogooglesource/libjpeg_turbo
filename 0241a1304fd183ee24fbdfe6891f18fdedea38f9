@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8ecfd19a_0ce7bca1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-07-30T00:30:37Z",
+      "side": 1,
+      "message": "Sorry for the super late reply.\nLGTM.\n\nInteresting aside:\nWindows filepaths are #if defined(UNICODE) wstring #else char #endif\nHowever, the last version of Windows without native wstring APIs is ancient. Chromium doesn\u0027t support Windows versions that old any more. So sticking to wstring-only is perfectly reasonable.",
+      "revId": "0241a1304fd183ee24fbdfe6891f18fdedea38f9",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}
