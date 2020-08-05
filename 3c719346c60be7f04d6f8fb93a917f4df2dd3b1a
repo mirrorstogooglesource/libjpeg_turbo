@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "fea7e51f_58e184e2",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1004789
+      },
+      "writtenOn": "2020-08-05T22:41:39Z",
+      "side": 1,
+      "message": "yeah, that\u0027s a googler-only bug (the interesting part of which is pasted into the commit message above).",
+      "parentUuid": "811662b3_7988e981",
+      "range": {
+        "startLine": 27,
+        "startChar": 5,
+        "endLine": 27,
+        "endChar": 23
+      },
+      "revId": "3c719346c60be7f04d6f8fb93a917f4df2dd3b1a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "08bae8ae_f004e362",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 1
@@ -54,6 +78,24 @@
       "side": 1,
       "message": "Yeah, we\u0027re not in Chromium/src so no CQ for us at the moment - we\u0027re working on it though.\n\nCould you - if you haven\u0027t already - build and run the libjpeg_turbo_unittests on an Intel platform to make sure everything\u0027s good. You will want to do \"--gtest_filter\u003d-CJPEGTest.IFastProg420Q100\" as that test triggers a known issue on Intel.\n\nRegarding the UBSan patches you mention in the bug ticket, those will be covered by us updating to v2.0.5. If Chris doesn\u0027t get there before me, I should have a patch for that late tomorrow or Friday (all being well.)",
       "parentUuid": "08bae8ae_f004e362",
+      "revId": "3c719346c60be7f04d6f8fb93a917f4df2dd3b1a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "55e33d8d_b1b746b1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004789
+      },
+      "writtenOn": "2020-08-05T22:41:39Z",
+      "side": 1,
+      "message": "\u003e Could you - if you haven\u0027t already - build and run the libjpeg_turbo_unittests\n\nassume the first time i built chrome was yesterday, and i don\u0027t know how to run those tests, and need something i can paste into a terminal :-)\n\n./out/Default/unit_tests seems to want to run *everything*, but there isn\u0027t a separate libjpeg_turbo_unittests binary like there would be in an Android build? and guessing that i could use --gtest_filter to select the jpeg tests doesn\u0027t seem to work. in particular, i can\u0027t even run the one you said to avoid:\n\n```\n~/chromium/src$ ./out/Default/unit_tests --gtest_filter\u003d\"CJPEGTest.*\"\nIMPORTANT DEBUGGING NOTE: batches of tests are run inside their\nown process. For debugging a test inside a debugger, use the\n--gtest_filter\u003d\u003cyour_test_name\u003e flag along with\n--single-process-tests.\nUsing sharding settings from environment. This is shard 0/1\nUsing 1 parallel jobs.\nWARNING: No matching tests to run.\nSUCCESS: all tests passed.\nTests took 0 seconds.\n~/chromium/src$ \n```\n\n\u003e If Chris doesn\u0027t get there before me, I should have a patch for that late tomorrow or Friday\n\nawesome, thanks! (we still have plenty of time to get this done, i just wanted this week to make sure i knew what else we needed and that there were no remaining major blockers. but as soon as you\u0027ve got those patches in, i should be able to get Android moved over...)",
+      "parentUuid": "35e4575f_0fff14e1",
       "revId": "3c719346c60be7f04d6f8fb93a917f4df2dd3b1a",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
