@@ -117,6 +117,29 @@
       "revId": "3c719346c60be7f04d6f8fb93a917f4df2dd3b1a",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "169b849d_3d6b79d2",
+        "filename": "jpeg_nbits_table.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-05T23:54:20Z",
+      "side": 1,
+      "message": "I think this syntax works in GCC and Clang but not VC, right?",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 37
+      },
+      "revId": "3c719346c60be7f04d6f8fb93a917f4df2dd3b1a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
