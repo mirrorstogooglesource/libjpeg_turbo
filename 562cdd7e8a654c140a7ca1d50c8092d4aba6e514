@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "c024df2d_f7b6a598",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-06T21:12:56Z",
+      "side": 1,
+      "message": "LGTM but please wait for Chris and or Leon to to +1 before submitting.",
+      "revId": "562cdd7e8a654c140a7ca1d50c8092d4aba6e514",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3b6faa3d_65d3fe1c",
         "filename": "jpeg_nbits_table.c",
         "patchSetId": 2
