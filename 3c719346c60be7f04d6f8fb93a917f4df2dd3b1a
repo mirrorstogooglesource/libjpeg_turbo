@@ -242,6 +242,30 @@
       "revId": "3c719346c60be7f04d6f8fb93a917f4df2dd3b1a",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c56c3ed2_494bbc44",
+        "filename": "jpeg_nbits_table.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-06T21:58:21Z",
+      "side": 1,
+      "message": "Sounds good",
+      "parentUuid": "39d29cc3_1cea02f0",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 37
+      },
+      "revId": "3c719346c60be7f04d6f8fb93a917f4df2dd3b1a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }

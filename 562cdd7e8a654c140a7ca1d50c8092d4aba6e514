@@ -37,6 +37,23 @@
     },
     {
       "key": {
+        "uuid": "655cadfe_ef205984",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-06T21:58:21Z",
+      "side": 1,
+      "message": "Might want to update the README.chromium to mention this change. Even though we\u0027ll be removing it soon. It would be the more correct thing to do.\n\nOnce that is done, it is LGTM. Let us know and we\u0027ll hit the button and roll it for you.",
+      "revId": "562cdd7e8a654c140a7ca1d50c8092d4aba6e514",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3b6faa3d_65d3fe1c",
         "filename": "jpeg_nbits_table.c",
         "patchSetId": 2
@@ -48,6 +65,24 @@
       "writtenOn": "2020-08-06T18:35:09Z",
       "side": 1,
       "message": "(i copy \u0026 pasted this comment [and the #if] from the other places in the project that check this. otherwise i\u0027d have used parens with `defined` :-) )",
+      "revId": "562cdd7e8a654c140a7ca1d50c8092d4aba6e514",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4084fc3d_8b6a8205",
+        "filename": "jpeg_nbits_table.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-06T21:58:21Z",
+      "side": 1,
+      "message": "When you say other places in the project, do you mean Chromium? I don\u0027t see anything like it in libjpeg-turbo.\n\nAnyway, this works for me.\n\n\nIf you really want (not needed), we could do something like\n#ifdef __GNUC__ \u003e\u003d 4\n__attribute__((visibility(\"hidden\"))\n#endif\n\nIt looks like this was added in GCC 4.0. But libjpeg-turbo has a minimum version of GCC 4.1 required. So when you provided is fine by me.",
+      "parentUuid": "3b6faa3d_65d3fe1c",
       "revId": "562cdd7e8a654c140a7ca1d50c8092d4aba6e514",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
