@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "f78732a5_9a27111e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-06T09:35:37Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "fea7e51f_58e184e2",
+      "range": {
+        "startLine": 27,
+        "startChar": 5,
+        "endLine": 27,
+        "endChar": 23
+      },
+      "revId": "3c719346c60be7f04d6f8fb93a917f4df2dd3b1a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "08bae8ae_f004e362",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 1
@@ -114,6 +138,42 @@
       "side": 1,
       "message": "hmm... do i need to build the tests in some special way?\n\n```\n~/chromium/src$ ./out/Default/unit_tests --gtest_list_tests | grep -i jpeg\n  NeedsEncodeImage_JpegFormat\n```\n\ni\u0027d used `autoninja -C out/Default unit_tests` which is what go/chrome-linux-build#running-test-targets (which also won\u0027t work outside google) said to do...",
       "parentUuid": "55e33d8d_b1b746b1",
+      "revId": "3c719346c60be7f04d6f8fb93a917f4df2dd3b1a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "63977fc2_f672cd18",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-06T09:35:37Z",
+      "side": 1,
+      "message": "To build the unit tests: ninja -C out/Default third_party/libjpeg_turbo:libjpeg_turbo_unittests\n\nAnd to run (assuming locally compiled on Linux x86_64): \n./out/Default/libjpeg_turbo_unittests --gtest_filter\u003d-CJPEGTest.IFastProg420Q100 2\u003etest.log",
+      "parentUuid": "3cb90b83_f1bb9880",
+      "revId": "3c719346c60be7f04d6f8fb93a917f4df2dd3b1a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "78a389a1_2b1c1639",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-06T09:35:37Z",
+      "side": 1,
+      "message": "See above reply ;)",
+      "parentUuid": "3cb90b83_f1bb9880",
       "revId": "3c719346c60be7f04d6f8fb93a917f4df2dd3b1a",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
