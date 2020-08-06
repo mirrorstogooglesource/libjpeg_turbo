@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "83052d3e_48d1c310",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004789
+      },
+      "writtenOn": "2020-08-06T23:23:25Z",
+      "side": 1,
+      "message": "done.",
+      "parentUuid": "655cadfe_ef205984",
+      "revId": "562cdd7e8a654c140a7ca1d50c8092d4aba6e514",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3b6faa3d_65d3fe1c",
         "filename": "jpeg_nbits_table.c",
         "patchSetId": 2
@@ -83,6 +101,24 @@
       "side": 1,
       "message": "When you say other places in the project, do you mean Chromium? I don\u0027t see anything like it in libjpeg-turbo.\n\nAnyway, this works for me.\n\n\nIf you really want (not needed), we could do something like\n#ifdef __GNUC__ \u003e\u003d 4\n__attribute__((visibility(\"hidden\"))\n#endif\n\nIt looks like this was added in GCC 4.0. But libjpeg-turbo has a minimum version of GCC 4.1 required. So when you provided is fine by me.",
       "parentUuid": "3b6faa3d_65d3fe1c",
+      "revId": "562cdd7e8a654c140a7ca1d50c8092d4aba6e514",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "966ae09a_ee314462",
+        "filename": "jpeg_nbits_table.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1004789
+      },
+      "writtenOn": "2020-08-06T23:23:25Z",
+      "side": 1,
+      "message": "i meant these:\n```\njcphuff.c:/* NOTE: Both GCC and Clang define __GNUC__ */\njcphuff.c:#if defined __GNUC__ \u0026\u0026 (defined __arm__ || defined __aarch64__)\njchuff.c:/* NOTE: Both GCC and Clang define __GNUC__ */\njchuff.c:#if defined __GNUC__ \u0026\u0026 (defined __arm__ || defined __aarch64__)\n```\n\nthey\u0027re in upstream libjpeg-turbo too, not just the chromium copy.",
+      "parentUuid": "4084fc3d_8b6a8205",
       "revId": "562cdd7e8a654c140a7ca1d50c8092d4aba6e514",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
