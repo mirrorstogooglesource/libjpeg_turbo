@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3b6faa3d_65d3fe1c",
+        "filename": "jpeg_nbits_table.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1004789
+      },
+      "writtenOn": "2020-08-06T18:35:09Z",
+      "side": 1,
+      "message": "(i copy \u0026 pasted this comment [and the #if] from the other places in the project that check this. otherwise i\u0027d have used parens with `defined` :-) )",
+      "revId": "562cdd7e8a654c140a7ca1d50c8092d4aba6e514",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}
