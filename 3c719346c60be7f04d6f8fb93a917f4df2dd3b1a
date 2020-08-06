@@ -180,6 +180,24 @@
     },
     {
       "key": {
+        "uuid": "a5fcadda_d1508531",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004789
+      },
+      "writtenOn": "2020-08-06T18:33:14Z",
+      "side": 1,
+      "message": "ah, that worked. thanks! (this copy \u0026 paste is from ps2.)\n```\n[\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d] 225 tests from 8 test suites ran. (54073 ms total)\n[  PASSED  ] 225 tests.\n```\n\nand to answer the \"does this patch actually do what it\u0027s supposed to?\" question:\n```\n~/chromium/src$ readelf -aW out/Default/obj/third_party/libjpeg_turbo/libjpeg/jpeg_nbits_table.o | grep nbits\n0000000000000000  0000000700000001 R_X86_64_64            0000000000000000 jpeg_nbits_table + 0\n     1: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS jpeg_nbits_table.c\n     7: 0000000000000000 65536 OBJECT  GLOBAL HIDDEN     3 jpeg_nbits_table\n~/chromium/src$ \n```",
+      "parentUuid": "78a389a1_2b1c1639",
+      "revId": "3c719346c60be7f04d6f8fb93a917f4df2dd3b1a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "169b849d_3d6b79d2",
         "filename": "jpeg_nbits_table.c",
         "patchSetId": 1
@@ -191,6 +209,30 @@
       "writtenOn": "2020-08-05T23:54:20Z",
       "side": 1,
       "message": "I think this syntax works in GCC and Clang but not VC, right?",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 37
+      },
+      "revId": "3c719346c60be7f04d6f8fb93a917f4df2dd3b1a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "39d29cc3_1cea02f0",
+        "filename": "jpeg_nbits_table.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1004789
+      },
+      "writtenOn": "2020-08-06T18:33:14Z",
+      "side": 1,
+      "message": "correct. ps2 adds a `__GNUC__` check. (aiui from the internet, it looks like MSVC defaults to hidden and you have to \"dllexport\" things explicitly for them to be non-hidden? but if there\u0027s something i should add for MSVC, let me know.)",
+      "parentUuid": "169b849d_3d6b79d2",
       "range": {
         "startLine": 3,
         "startChar": 0,
