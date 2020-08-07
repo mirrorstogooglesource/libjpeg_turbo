@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e221382b_77653b83",
+        "filename": "README.chromium",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-08-07T15:40:45Z",
+      "side": 0,
+      "message": "It looks like appveyor.yml is still missing from Chromium\u0027s version, but still exists upstream?",
+      "range": {
+        "startLine": 23,
+        "startChar": 24,
+        "endLine": 23,
+        "endChar": 36
+      },
+      "revId": "341272d909285da90e44015ca41f956fd00b9dd8",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
