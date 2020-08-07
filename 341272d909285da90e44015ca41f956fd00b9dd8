@@ -16,6 +16,24 @@
       "revId": "341272d909285da90e44015ca41f956fd00b9dd8",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e2403e36_ce065d4a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-08-07T15:13:20Z",
+      "side": 1,
+      "message": "\u003e ps4 fixes the typo in ps3.\n\nLooks good, thanks!\n\n\u003e \n\u003e (and, too late, i\u0027ve now understood what `git cl upload`\u0027s question about \"title for patchset\" is all about. that\u0027s clever! we don\u0027t have that on Android :-( )\n\nI\u0027m a fan of it, too! Btw, it occurred to me that repo might have something similar, so I ran\n\n  repo help upload\n\nand discovered\n\n  -l LABELS, --label\u003dLABELS\n                        Add a label when uploading.\n\nI haven\u0027t tried it yet, but I\u0027m guessing it does the same thing. I also discovered something I like that I wasn\u0027t looking for:\n\n  --ne, --no-emails     If specified, do not send emails on upload.\n\nI\u0027m not a big fan of the default of sending emails on upload, since typically I want to reply to comments before I send the email.",
+      "parentUuid": "ea90a762_2ad24563",
+      "revId": "341272d909285da90e44015ca41f956fd00b9dd8",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
