@@ -16,6 +16,24 @@
       "revId": "9d4f8005bc6c888e66b00fd00188531ee9bd3344",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cd1d78f5_409762ef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-08-10T16:55:20Z",
+      "side": 1,
+      "message": "It couldn\u0027t hurt? On the other hand, I suppose upstream is testing the C paths, and we don\u0027t expect to modify/break those?",
+      "parentUuid": "15cc784b_6dbf5b43",
+      "revId": "9d4f8005bc6c888e66b00fd00188531ee9bd3344",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
