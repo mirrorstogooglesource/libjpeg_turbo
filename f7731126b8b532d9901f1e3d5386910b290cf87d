@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a36d94d_4f4f28ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-10T14:16:02Z",
+      "side": 1,
+      "message": "Just a bit of tidying up. PTAL.",
+      "revId": "f7731126b8b532d9901f1e3d5386910b290cf87d",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}
