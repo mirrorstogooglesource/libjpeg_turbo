@@ -34,6 +34,24 @@
       "revId": "9d4f8005bc6c888e66b00fd00188531ee9bd3344",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6f3724d1_9ea61cf8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-10T17:54:55Z",
+      "side": 1,
+      "message": "It\u0027s pretty low effort to add the target in the BUILD.gn file but, as you say, we aren\u0027t going to be fiddling with the code. Let\u0027s hold off for the time being and revisit when we\u0027ve got the bots/CQ that could make use of it.",
+      "parentUuid": "cd1d78f5_409762ef",
+      "revId": "9d4f8005bc6c888e66b00fd00188531ee9bd3344",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
