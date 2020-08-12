@@ -56,6 +56,30 @@
       "revId": "64fc43d52351ed52143208ce6a656c03db56462b",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5fab3cfc_c04fbb8d",
+        "filename": "simd/arm/common/jcsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-12T10:18:46Z",
+      "side": 1,
+      "message": ":)",
+      "parentUuid": "69622f66_00e4e4b9",
+      "range": {
+        "startLine": 91,
+        "startChar": 16,
+        "endLine": 91,
+        "endChar": 22
+      },
+      "revId": "64fc43d52351ed52143208ce6a656c03db56462b",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
