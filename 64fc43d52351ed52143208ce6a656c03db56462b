@@ -16,6 +16,46 @@
       "revId": "64fc43d52351ed52143208ce6a656c03db56462b",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6a362602_f1c6ff5b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-12T09:54:20Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "64fc43d52351ed52143208ce6a656c03db56462b",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "69622f66_00e4e4b9",
+        "filename": "simd/arm/common/jcsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-12T09:54:20Z",
+      "side": 1,
+      "message": "nit: Probably just \"row\" is fine. We use it for both input and output, since it is v1.\n\nAlthough I guess \"outrow\" is normal for cases where it is v2+ so there is a good case for being consistent.\n\nYeah, I guess I just talked myself into keeping \"outrow\". Nevermind.",
+      "range": {
+        "startLine": 91,
+        "startChar": 16,
+        "endLine": 91,
+        "endChar": 22
+      },
+      "revId": "64fc43d52351ed52143208ce6a656c03db56462b",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
