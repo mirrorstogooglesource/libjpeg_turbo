@@ -56,6 +56,30 @@
       "revId": "c7fb4c5dcfb72be3edac5941ee4632c8a69cf8a4",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ef474d5f_fb9f1593",
+        "filename": "simd/arm/common/jcsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-13T13:51:40Z",
+      "side": 1,
+      "message": "So the idea behind the bias is to apply a dither pattern - round output sample values, that end in 0.5 after the division, up or down every other pixel. The idea is the same for h2v1 downsampling and h2v2 downsampling.\n\n(The following is certainly at rick of being a bit verbose...)\n\nFor h2v1 downsampling, output sample values (ending in 0.5) would be rounded down with a bias value of 0, and rounded up with a bias value of 1. Given we\u0027re dividing by 2, the bias is a contribution of 0.5.\n\nFor h2v2 downsampling, output sample values (ending in 0.5) would be rounded down with a bias value of 1, and rounded up with a bias value of 2. Given we\u0027re dividing by 4 here, the bias values 1 and 2 are contributing 0.25 and 0.5 respectively.\n\nEnumerating the possible fractional values and adding the different biases for h2v2:\n\nIf we\u0027re adding 1:\n0.0  -\u003e 0.25 (round down)\n0.25 -\u003e 0.5  (round down - remember we\u0027re using truncating - not rounding - right shifts)\n0.5  -\u003e 0.75 (round down - same reasoning as above)\n0.75 -\u003e 1.0  (round up)\n\nIf we\u0027re adding 2:\n0.0  -\u003e 0.5  (round down)\n0.25 -\u003e 0.75 (round down)\n0.5  -\u003e 1.0  (round up)\n0.75 -\u003e 1.25 (round up)\n\nThus an alternating bias of {1,2,1,2,1,2, ...} ensures output sample values ending in 0.5 are rounded up/down at alternate pixel locations.",
+      "parentUuid": "e5d04a42_de91f7b9",
+      "range": {
+        "startLine": 155,
+        "startChar": 6,
+        "endLine": 158,
+        "endChar": 55
+      },
+      "revId": "c7fb4c5dcfb72be3edac5941ee4632c8a69cf8a4",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
