@@ -53,6 +53,41 @@
     },
     {
       "key": {
+        "uuid": "01c70cbe_e5ad0dd1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-20T23:06:42Z",
+      "side": 1,
+      "message": "Oh. Yes.\nSorry. I had read this and then not commented.\n\nThank you for the explanation. It makes sense to me now.",
+      "parentUuid": "56a29fb7_ef350ef9",
+      "revId": "c7fb4c5dcfb72be3edac5941ee4632c8a69cf8a4",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e71bab92_992cf36e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-20T23:06:42Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "c7fb4c5dcfb72be3edac5941ee4632c8a69cf8a4",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e5d04a42_de91f7b9",
         "filename": "simd/arm/common/jcsample-neon.c",
         "patchSetId": 1
@@ -97,6 +132,30 @@
       "revId": "c7fb4c5dcfb72be3edac5941ee4632c8a69cf8a4",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "22b9a488_ca87a70a",
+        "filename": "simd/arm/common/jcsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-20T23:06:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "ef474d5f_fb9f1593",
+      "range": {
+        "startLine": 155,
+        "startChar": 6,
+        "endLine": 158,
+        "endChar": 55
+      },
+      "revId": "c7fb4c5dcfb72be3edac5941ee4632c8a69cf8a4",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
