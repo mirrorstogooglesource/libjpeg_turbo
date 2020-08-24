@@ -39,6 +39,30 @@
       "revId": "2fa3dfece3033b3c00c613e39a0753936c4abecf",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9e50f9eb_8fa4bcf8",
+        "filename": "simd/arm/arm64/jccolext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-24T09:48:03Z",
+      "side": 1,
+      "message": "Yeah - just as well we don\u0027t have more than 32 NEON registers on AArch64 or the family would be even bigger! ;)",
+      "parentUuid": "7c2142aa_b6b65b37",
+      "range": {
+        "startLine": 83,
+        "startChar": 19,
+        "endLine": 83,
+        "endChar": 21
+      },
+      "revId": "2fa3dfece3033b3c00c613e39a0753936c4abecf",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
