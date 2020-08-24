@@ -16,6 +16,52 @@
       "revId": "09caedd340984b44a4c97337d172039b40920a01",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "792cd8c9_ed602bfa",
+        "filename": "simd/arm/common/jcgryext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-24T11:31:20Z",
+      "side": 1,
+      "message": "I suspect I already mentioned this before and forgot. But do we want to worry about MSVC? I think we should. libjpeg-turbo supports MSVC 2005+.\n\nWe could do something like:\n#if defined(_MSC_VER)\n#define ALIGN(ALIGNMENT, THING) __declspec(align((ALIGNMENT))) (THING);\n#elif defined(__clang__) || defined(__GNUC__)\n#define ALIGN(ALIGNMENT, THING) (THING) __attribute__((aligned((ALIGNMENT))))\n#else\n#error \"Unknown compiler\"\n#endif\n\nBut surely libjpeg-turbo already has some sort of alignment macro, right?\nI\u0027m looking now and I don\u0027t see it. That...blows my mind. Surely I missed it?",
+      "range": {
+        "startLine": 61,
+        "startChar": 16,
+        "endLine": 61,
+        "endChar": 43
+      },
+      "revId": "09caedd340984b44a4c97337d172039b40920a01",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "991c7a08_1d3b6daf",
+        "filename": "simd/arm/common/jcgryext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-24T11:31:20Z",
+      "side": 1,
+      "message": "I may have missed something earlier.\nWe aren\u0027t shifting this right? We\u0027re taking the lower 8 bits of y_l and y_h?",
+      "range": {
+        "startLine": 100,
+        "startChar": 35,
+        "endLine": 100,
+        "endChar": 44
+      },
+      "revId": "09caedd340984b44a4c97337d172039b40920a01",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
