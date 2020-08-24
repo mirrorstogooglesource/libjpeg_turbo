@@ -19,6 +19,23 @@
     },
     {
       "key": {
+        "uuid": "2afc9ee8_f79728e0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-24T17:16:41Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "09caedd340984b44a4c97337d172039b40920a01",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "792cd8c9_ed602bfa",
         "filename": "simd/arm/common/jcgryext-neon.c",
         "patchSetId": 1
@@ -63,6 +80,30 @@
       "revId": "09caedd340984b44a4c97337d172039b40920a01",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "aea20584_f17545bb",
+        "filename": "simd/arm/common/jcgryext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-24T17:16:41Z",
+      "side": 1,
+      "message": "Yeah, a future CL makes sense.",
+      "parentUuid": "16f4a9df_6e4deb82",
+      "range": {
+        "startLine": 61,
+        "startChar": 16,
+        "endLine": 61,
+        "endChar": 43
+      },
+      "revId": "09caedd340984b44a4c97337d172039b40920a01",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     },
     {
       "key": {
@@ -113,6 +154,30 @@
     },
     {
       "key": {
+        "uuid": "7fb5a035_96584c00",
+        "filename": "simd/arm/common/jcgryext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-24T17:16:41Z",
+      "side": 1,
+      "message": "Sounds good.",
+      "parentUuid": "8f7bfbef_04d5ef76",
+      "range": {
+        "startLine": 71,
+        "startChar": 6,
+        "endLine": 71,
+        "endChar": 44
+      },
+      "revId": "09caedd340984b44a4c97337d172039b40920a01",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "991c7a08_1d3b6daf",
         "filename": "simd/arm/common/jcgryext-neon.c",
         "patchSetId": 1
@@ -148,6 +213,30 @@
       "side": 1,
       "message": "That\u0027s correct - there\u0027s no shift here, and we\u0027re taking the lower 8 bits of y_l and y_h.\n\nThe only scaling we had in this computation was the conversion constants being premultiplied by 2^16 - the rest of the multiplication is just the arithmetic that you see in the equation on line 78. We descaled Y by 2^16 on lines 93-96 so the result is already sat in the lower 8 bits of the 16-bit elements here.\n\nThere\u0027s no way this can overflow because 0.29900 + 0.58700 + 0.11400 \u003d 1. So even if R, G and B were all 255 (the maximum) the resulting Y would still only be 255.",
       "parentUuid": "991c7a08_1d3b6daf",
+      "range": {
+        "startLine": 100,
+        "startChar": 35,
+        "endLine": 100,
+        "endChar": 44
+      },
+      "revId": "09caedd340984b44a4c97337d172039b40920a01",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a3ebc52_ede72356",
+        "filename": "simd/arm/common/jcgryext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-24T17:16:41Z",
+      "side": 1,
+      "message": "Got it. Thank you. Perfect answer. :D",
+      "parentUuid": "d4c3a2b5_86f6cded",
       "range": {
         "startLine": 100,
         "startChar": 35,
