@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9b2e525a_8051ebab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-24T09:28:36Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "2fa3dfece3033b3c00c613e39a0753936c4abecf",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c2142aa_b6b65b37",
+        "filename": "simd/arm/arm64/jccolext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-24T09:28:36Z",
+      "side": 1,
+      "message": "low low \u0026 family sent me for a loop. 😄\nI read through it a few times and I think I get it now.",
+      "range": {
+        "startLine": 83,
+        "startChar": 19,
+        "endLine": 83,
+        "endChar": 21
+      },
+      "revId": "2fa3dfece3033b3c00c613e39a0753936c4abecf",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
