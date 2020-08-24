@@ -42,6 +42,29 @@
     },
     {
       "key": {
+        "uuid": "55563550_a007f271",
+        "filename": "simd/arm/common/jcgryext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-24T12:09:19Z",
+      "side": 1,
+      "message": "Also this is probably a silly question but I figure I should ask just to be sure.\n\nIn x86, the mul instruction (non-SIMD) stores the output in two registers. So you can get a 64-bit result of multiplying two 32-bit numbers. I see ARM SIMD vmull_n_u16 does that.\n\nBut we\u0027re expanding first.\n\nI *think* that is because there is no vmull_n_u8, right?\nOr maybe it is because we want the extra precision when doing the Y\u003dRGB conversion?",
+      "range": {
+        "startLine": 71,
+        "startChar": 6,
+        "endLine": 71,
+        "endChar": 44
+      },
+      "revId": "09caedd340984b44a4c97337d172039b40920a01",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "991c7a08_1d3b6daf",
         "filename": "simd/arm/common/jcgryext-neon.c",
         "patchSetId": 1
