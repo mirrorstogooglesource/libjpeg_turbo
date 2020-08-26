@@ -1,0 +1,182 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4cbcd83a_c8db6dd4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-26T09:52:19Z",
+      "side": 1,
+      "message": "LGTM\n\nA number of these changed from 8-byte or unspecified alignment to 16-byte alignment. I believe these are correct. But I wanted to mark them just so you could confirm those changes are intentional and all that.",
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "afa89486_40c6eb3d",
+        "filename": "simd/arm/arm/jccolext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-26T09:52:19Z",
+      "side": 1,
+      "message": "Used to be 8",
+      "range": {
+        "startLine": 81,
+        "startChar": 14,
+        "endLine": 81,
+        "endChar": 16
+      },
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bcb2ccc8_95ed22ba",
+        "filename": "simd/arm/arm64/jccolext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-26T09:52:19Z",
+      "side": 1,
+      "message": "Used to be 8",
+      "range": {
+        "startLine": 255,
+        "startChar": 12,
+        "endLine": 255,
+        "endChar": 14
+      },
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9565ac30_1edf2918",
+        "filename": "simd/arm/common/jccolor-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-26T09:52:19Z",
+      "side": 1,
+      "message": "Used to be unspecified",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 9
+      },
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fcfc369b_315b59b2",
+        "filename": "simd/arm/common/jcgryext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-26T09:52:19Z",
+      "side": 1,
+      "message": "Used to be 8",
+      "range": {
+        "startLine": 61,
+        "startChar": 14,
+        "endLine": 61,
+        "endChar": 16
+      },
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ff3b2ed4_7161cc83",
+        "filename": "simd/arm/common/jcsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-26T09:52:19Z",
+      "side": 1,
+      "message": "Used to be unspecified",
+      "range": {
+        "startLine": 35,
+        "startChar": 6,
+        "endLine": 35,
+        "endChar": 8
+      },
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c4167e54_776fc8d5",
+        "filename": "simd/arm/common/jidctint-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-26T09:52:19Z",
+      "side": 1,
+      "message": "Used to be 8",
+      "range": {
+        "startLine": 79,
+        "startChar": 6,
+        "endLine": 79,
+        "endChar": 8
+      },
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fda94622_9b77e246",
+        "filename": "simd/arm/common/jidctred-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 187,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-08-26T09:52:19Z",
+      "side": 1,
+      "message": "Used to be 8",
+      "range": {
+        "startLine": 187,
+        "startChar": 6,
+        "endLine": 187,
+        "endChar": 8
+      },
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    }
+  ]
+}
