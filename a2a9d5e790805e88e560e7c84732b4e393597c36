@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ea589bb0_d2a40ae5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-26T10:06:05Z",
+      "side": 1,
+      "message": "Thanks - yeah these are intentional. \n\nThey were 16-byte aligned in the assembly that we removed. I only specified 8-byte alignment (where necessary) to make 32-bit execution not crash. However, I had it pointed out to me recently that 16-byte alignment reduces the likelihood of loads reading across cache lines when using 128-bit SIMD register loads, or pairwise loads of 64-bit registers.",
+      "parentUuid": "4cbcd83a_c8db6dd4",
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "afa89486_40c6eb3d",
         "filename": "simd/arm/arm/jccolext-neon.c",
         "patchSetId": 1
@@ -39,6 +57,30 @@
       "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "11ad972b_c6962062",
+        "filename": "simd/arm/arm/jccolext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-26T10:06:05Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "afa89486_40c6eb3d",
+      "range": {
+        "startLine": 81,
+        "startChar": 14,
+        "endLine": 81,
+        "endChar": 16
+      },
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     },
     {
       "key": {
@@ -65,6 +107,30 @@
     },
     {
       "key": {
+        "uuid": "ce9bdb40_e8ab14c5",
+        "filename": "simd/arm/arm64/jccolext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-26T10:06:05Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "bcb2ccc8_95ed22ba",
+      "range": {
+        "startLine": 255,
+        "startChar": 12,
+        "endLine": 255,
+        "endChar": 14
+      },
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9565ac30_1edf2918",
         "filename": "simd/arm/common/jccolor-neon.c",
         "patchSetId": 1
@@ -85,6 +151,30 @@
       "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "10a0ed70_2bd07386",
+        "filename": "simd/arm/common/jccolor-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-26T10:06:05Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "9565ac30_1edf2918",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 9
+      },
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     },
     {
       "key": {
@@ -111,6 +201,30 @@
     },
     {
       "key": {
+        "uuid": "ab58af61_65a4b8a2",
+        "filename": "simd/arm/common/jcgryext-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-26T10:06:05Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "fcfc369b_315b59b2",
+      "range": {
+        "startLine": 61,
+        "startChar": 14,
+        "endLine": 61,
+        "endChar": 16
+      },
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ff3b2ed4_7161cc83",
         "filename": "simd/arm/common/jcsample-neon.c",
         "patchSetId": 1
@@ -131,6 +245,30 @@
       "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "14958acb_ce005d05",
+        "filename": "simd/arm/common/jcsample-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-26T10:06:05Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "ff3b2ed4_7161cc83",
+      "range": {
+        "startLine": 35,
+        "startChar": 6,
+        "endLine": 35,
+        "endChar": 8
+      },
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     },
     {
       "key": {
@@ -157,6 +295,30 @@
     },
     {
       "key": {
+        "uuid": "41a6f22b_48c9ef10",
+        "filename": "simd/arm/common/jidctint-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-26T10:06:05Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "c4167e54_776fc8d5",
+      "range": {
+        "startLine": 79,
+        "startChar": 6,
+        "endLine": 79,
+        "endChar": 8
+      },
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fda94622_9b77e246",
         "filename": "simd/arm/common/jidctred-neon.c",
         "patchSetId": 1
@@ -177,6 +339,30 @@
       "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "af44aaba_2e984f62",
+        "filename": "simd/arm/common/jidctred-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 187,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-08-26T10:06:05Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "fda94622_9b77e246",
+      "range": {
+        "startLine": 187,
+        "startChar": 6,
+        "endLine": 187,
+        "endChar": 8
+      },
+      "revId": "a2a9d5e790805e88e560e7c84732b4e393597c36",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
