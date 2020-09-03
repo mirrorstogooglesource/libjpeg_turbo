@@ -16,6 +16,23 @@
       "revId": "628b6a47cc8f16610d1ada02fc5c907652aa735d",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "06403d2c_6d3d148d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-09-03T22:23:49Z",
+      "side": 1,
+      "message": "LGTM.\n\nReading the old 32-bit assembly, I wonder why the author sometimes interleaved instructions to avoid stalls but other times didn\u0027t (data dependency). Actually, I guess load/sub isn\u0027t a data dependency so much as a fetch dependency. And I guess rather than do all 4 fetches early, they figured the CPU would OoO those?\n\nAnyway, thank you :)",
+      "revId": "628b6a47cc8f16610d1ada02fc5c907652aa735d",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
