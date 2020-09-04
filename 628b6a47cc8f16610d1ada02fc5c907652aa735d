@@ -33,6 +33,24 @@
       "revId": "628b6a47cc8f16610d1ada02fc5c907652aa735d",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "646e922a_301bc631",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-04T09:33:10Z",
+      "side": 1,
+      "message": "It is interesting that this is the case. I think this may be an optimization for in-order cores since instructions must be issued and retired in program order, regardless of the execution pipe capacity. If all of the load instructions were written before all of the substracts, the entire chain of slow load memory accesses would have to be issued before the first subtract could be issued - regardless of the first load having completed a good while before this.",
+      "parentUuid": "06403d2c_6d3d148d",
+      "revId": "628b6a47cc8f16610d1ada02fc5c907652aa735d",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
