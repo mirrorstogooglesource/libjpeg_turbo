@@ -33,6 +33,24 @@
       "revId": "493a1e55925c47abe9808b7422c7872e8bbbc14f",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4666b2a7_9cd4fa6a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1395734
+      },
+      "writtenOn": "2020-09-08T15:43:04Z",
+      "side": 1,
+      "message": "Yes, I\u0027ve been sending GCC fixes as I find them, as we depend on GCC toolchain for the Chromium builds in webOS. GCC compatibility is not supported (so breaking GCC is not a reason for reverting a patch), but patches fixing GCC are accepted in all Chromium.\n\n1) GCC 9 build options:\naarch64-poky-linux-g++  -mcpu\u003dcortex-a72+crc+crypto -fstack-protector-strong  -D_FORTIFY_SOURCE\u003d2 -Wformat -Wformat-security -Werror\u003dformat-security ... -fno-strict-aliasing --param\u003dssp-buffer-size\u003d4 -fstack-protector -fno-unwind-tables -fno-asynchronous-unwind-tables -fPIC -pipe -pthread -Wall -Wno-unused-local-typedefs -Wno-maybe-uninitialized -Wno-deprecated-declarations -Wno-comments -Wno-packed-not-aligned -Wno-missing-field-initializers -Wno-unused-parameter -O2 -fno-ident -fdata-sections -ffunction-sections -fno-omit-frame-pointer -g1 -fvisibility\u003dhidden -std\u003dgnu++14 -Wno-narrowing -Wno-class-memaccess -fno-exceptions -fno-rtti -fvisibility-inlines-hidden\n\nThese are the relevant build flags, coming from https://github.com/lgsvl/meta-lgsvl-browser and poky Dunfell.\n\n2) Yes, that bug is an umbrella bug for all build issues breaking Chromium build for GCC. It is the one being used, unless the complexity of the problem requires a more detailed bug discussion.",
+      "parentUuid": "009ab4f2_616dc44c",
+      "revId": "493a1e55925c47abe9808b7422c7872e8bbbc14f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
