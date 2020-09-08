@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0f5b09a7_e367a18a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1395734
+      },
+      "writtenOn": "2020-09-08T12:42:16Z",
+      "side": 1,
+      "message": "I have built this for Raspberry PI 4 64bits arch in yocto from Chromium. Running unit tests, it shows it fails in DJPEGTest.FloatProg3x2 with different MD5, but I could not verify if this is broken or if it is just an outdated md5 for that test and the target. All the other tests are successful, and apparently Chromium is running as expected in Poky dunfell in Weston.",
+      "revId": "493a1e55925c47abe9808b7422c7872e8bbbc14f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}
