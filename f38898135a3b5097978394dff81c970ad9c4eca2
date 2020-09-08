@@ -16,6 +16,52 @@
       "revId": "f38898135a3b5097978394dff81c970ad9c4eca2",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f162644f_04d36263",
+        "filename": "simd/arm/common/jquanti-neon.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-09-08T23:07:44Z",
+      "side": 1,
+      "message": ":D\nI\u0027m curious how this works on the microcode \u0026 chip level.\n\nI assume the chip can shift right by a non-immediate but there just isn\u0027t an instruction for it. So a negative left shift \u0026 microcode magic solves it.",
+      "range": {
+        "startLine": 163,
+        "startChar": 4,
+        "endLine": 164,
+        "endChar": 41
+      },
+      "revId": "f38898135a3b5097978394dff81c970ad9c4eca2",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6b3f62e0_56428f7b",
+        "filename": "simd/arm/common/jquanti-neon.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-09-08T23:07:44Z",
+      "side": 1,
+      "message": "I\u0027m not sure I follow this part.\n\nI\u0027m guessing the signed right shift that originally created sign_row0 will keep the sign bit. IE 110 shifted right becomes 111 and 011 shifted right becomes 001.\n\nThat way, when we get to this step:\nIf the number was originally positive, nothing happens.\nIf the number was originally negative, we flip the positive row0 bits and subtract -1. Presumably, that plays nicely with the two\u0027s compliment.\n\nAm I on the right path?",
+      "range": {
+        "startLine": 175,
+        "startChar": 4,
+        "endLine": 176,
+        "endChar": 38
+      },
+      "revId": "f38898135a3b5097978394dff81c970ad9c4eca2",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
