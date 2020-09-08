@@ -16,6 +16,23 @@
       "revId": "493a1e55925c47abe9808b7422c7872e8bbbc14f",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "009ab4f2_616dc44c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-08T14:15:58Z",
+      "side": 1,
+      "message": "(Adding Chris and Leon to CC for visibility.)\n\nThanks for this - officially, Clang/LLVM is the only supported compiler for Chromium but since this is third_party/libjpeg_turbo, and we want our patches to make it into the upstream repo, we\u0027ll fix this.\n\nA couple of questions first though:\n1) What compiler options are you using with GCC 9 to see this failure - I\u0027d like to replicate this myself.\n2) Could you help me understand the bug linked to this patch? I\u0027m probably missing something but I can\u0027t see any libjpeg-turbo stuff in it.\n\nRegarding the unit test failure, that is fine (well... sort of) - GCC and Clang provide different floating-point output for the same C code. We don\u0027t really care that much here since we don\u0027t use that code in Chromium.",
+      "revId": "493a1e55925c47abe9808b7422c7872e8bbbc14f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
