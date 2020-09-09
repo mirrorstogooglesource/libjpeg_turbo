@@ -42,6 +42,30 @@
     },
     {
       "key": {
+        "uuid": "997e897c_30e98795",
+        "filename": "simd/arm/common/jquanti-neon.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-09T09:24:13Z",
+      "side": 1,
+      "message": "I believe this is just to save instruction encoding space, here\u0027s the detail on the instruction: https://developer.arm.com/docs/ddi0596/h/simd-and-floating-point-instructions-alphabetic-order/ushl-unsigned-shift-left-register",
+      "parentUuid": "f162644f_04d36263",
+      "range": {
+        "startLine": 163,
+        "startChar": 4,
+        "endLine": 164,
+        "endChar": 41
+      },
+      "revId": "f38898135a3b5097978394dff81c970ad9c4eca2",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6b3f62e0_56428f7b",
         "filename": "simd/arm/common/jquanti-neon.c",
         "patchSetId": 3
@@ -62,6 +86,30 @@
       "revId": "f38898135a3b5097978394dff81c970ad9c4eca2",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "47dae55f_66c747b9",
+        "filename": "simd/arm/common/jquanti-neon.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-09T09:24:13Z",
+      "side": 1,
+      "message": "Yeah, this is two\u0027s compliment trickery as you describe: to go from positive to negative or vice versa, the steps are flip all the bit and add 1.\n\nAnd as you say, we only want to flip the bits and add one in the case that the original value was negative - nothing happens in the positive case.\n\n(Aside: This is a neat trick for computing a branchless-absolute value where an absolute value instruction is not available.)",
+      "parentUuid": "6b3f62e0_56428f7b",
+      "range": {
+        "startLine": 175,
+        "startChar": 4,
+        "endLine": 176,
+        "endChar": 38
+      },
+      "revId": "f38898135a3b5097978394dff81c970ad9c4eca2",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
