@@ -16,6 +16,69 @@
       "revId": "0f22f121350233b0e50f96076bd29f5b31d56e69",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "af0a992a_20cbdccf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-09T14:32:42Z",
+      "side": 1,
+      "message": "Thanks for making the changes, a couple need to be redone - I\u0027ve put comments inline.",
+      "revId": "0f22f121350233b0e50f96076bd29f5b31d56e69",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c5f3027a_b0c60e68",
+        "filename": "simd/arm/common/jidctint-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 634,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-09T14:32:42Z",
+      "side": 1,
+      "message": "Sorry, these were meant to be aligned under the vreinterpret - so it\u0027s clear that they\u0027re both arguments of the vadd.",
+      "range": {
+        "startLine": 634,
+        "startChar": 25,
+        "endLine": 634,
+        "endChar": 49
+      },
+      "revId": "0f22f121350233b0e50f96076bd29f5b31d56e69",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b45563a1_05bc5875",
+        "filename": "simd/arm/common/jidctint-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 736,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-09T14:32:42Z",
+      "side": 1,
+      "message": "Ditto",
+      "range": {
+        "startLine": 730,
+        "startChar": 25,
+        "endLine": 736,
+        "endChar": 51
+      },
+      "revId": "0f22f121350233b0e50f96076bd29f5b31d56e69",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
