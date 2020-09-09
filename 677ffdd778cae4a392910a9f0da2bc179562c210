@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "831edc7a_00865c02",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-09T15:33:37Z",
+      "side": 1,
+      "message": "Thanks for making the changes, this now looks good :) \n\nHowever, before merging I want to do a couple of things: I noticed that this was written on top of the revision marked by Chromium DEPS - which is fine. It does mean that it would have to be rebased on top of 7 new patches that are already in master - also fine because the rebase was clean. However, it may be the case that the 7 patches already in master may also require some modifications to be compliant with GCC 9 + your compiler options.\n\nBefore we merge this change, I\u0027ll roll in the other changes already committed to the master branch of libjpeg-turbo; you can then check that no more work needs to be done for GCC 9 builds to work properly. (I hope to save having to revisit this in a couple of days!)",
+      "revId": "677ffdd778cae4a392910a9f0da2bc179562c210",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}
