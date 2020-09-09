@@ -51,6 +51,184 @@
       "revId": "493a1e55925c47abe9808b7422c7872e8bbbc14f",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1e2e7965_2031730c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-09T13:17:17Z",
+      "side": 1,
+      "message": "Thanks for the information. The only other comments I have are style nitpicks - we should be good when these are addressed.",
+      "revId": "493a1e55925c47abe9808b7422c7872e8bbbc14f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "897daf5f_e8887794",
+        "filename": "simd/arm/common/jidctfst-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-09T13:17:17Z",
+      "side": 1,
+      "message": "Could you change these to:\n\nint64_t left_ac_bitmap \u003d vgetq_lane_s64(vreinterpretq_s64_s16(bitmap), 0);\nint64_t right_ac_bitmap \u003d vgetq_lane_s64(vreinterpretq_s64_s16(bitmap), 1);",
+      "range": {
+        "startLine": 87,
+        "startChar": 2,
+        "endLine": 88,
+        "endChar": 90
+      },
+      "revId": "493a1e55925c47abe9808b7422c7872e8bbbc14f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b4ad627c_b71c7dc3",
+        "filename": "simd/arm/common/jidctfst-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 409,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-09T13:17:17Z",
+      "side": 1,
+      "message": "We have a character limit of 80 - which makes things a bit messy. Could you put this all on one line and remove some of the whitespace before the \"vadd\" so it fits. E.g. \n\nuint8x16_t cols_01 \u003d vreinterpretq_u8_s8(\n        vaddq_s8(cols_01_s8, vreinterpretq_s8_u8(vdupq_n_u8(CENTERJSAMPLE))));",
+      "range": {
+        "startLine": 408,
+        "startChar": 2,
+        "endLine": 409,
+        "endChar": 86
+      },
+      "revId": "493a1e55925c47abe9808b7422c7872e8bbbc14f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "eae49e9c_8de6e5bc",
+        "filename": "simd/arm/common/jidctfst-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 418,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-09T13:17:17Z",
+      "side": 1,
+      "message": "Ditto for these.",
+      "range": {
+        "startLine": 411,
+        "startChar": 1,
+        "endLine": 418,
+        "endChar": 86
+      },
+      "revId": "493a1e55925c47abe9808b7422c7872e8bbbc14f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9fe94e5d_c7d95edc",
+        "filename": "simd/arm/common/jidctint-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 633,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-09T13:17:17Z",
+      "side": 1,
+      "message": "Due to the 80 character per line limit, could you put these vdups on the next line under the vreinterprets?",
+      "range": {
+        "startLine": 633,
+        "startChar": 65,
+        "endLine": 633,
+        "endChar": 91
+      },
+      "revId": "493a1e55925c47abe9808b7422c7872e8bbbc14f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ec416e6c_2e5b6e2e",
+        "filename": "simd/arm/common/jidctint-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 725,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-09T13:17:17Z",
+      "side": 1,
+      "message": "Ditto",
+      "range": {
+        "startLine": 725,
+        "startChar": 65,
+        "endLine": 725,
+        "endChar": 89
+      },
+      "revId": "493a1e55925c47abe9808b7422c7872e8bbbc14f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "162c025c_6418b3d7",
+        "filename": "simd/arm/common/jidctred-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 221,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-09T13:17:17Z",
+      "side": 1,
+      "message": "Could you change these to:\n\nint64_t left_ac_bitmap \u003d vgetq_lane_s64(vreinterpretq_s64_s16(bitmap), 0);\nint64_t right_ac_bitmap \u003d vgetq_lane_s64(vreinterpretq_s64_s16(bitmap), 1);",
+      "range": {
+        "startLine": 219,
+        "startChar": 0,
+        "endLine": 221,
+        "endChar": 90
+      },
+      "revId": "493a1e55925c47abe9808b7422c7872e8bbbc14f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a78322e3_1734f33c",
+        "filename": "simd/arm/common/jidctred-neon.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 456,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-09T13:17:17Z",
+      "side": 1,
+      "message": "To keep the upstream project\u0027s checkstyle happy, could you put this on the line below, aligned with the opening brace?",
+      "range": {
+        "startLine": 456,
+        "startChar": 72,
+        "endLine": 456,
+        "endChar": 74
+      },
+      "revId": "493a1e55925c47abe9808b7422c7872e8bbbc14f",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
