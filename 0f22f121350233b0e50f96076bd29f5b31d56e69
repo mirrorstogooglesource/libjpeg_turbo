@@ -59,6 +59,30 @@
     },
     {
       "key": {
+        "uuid": "2319024a_e33603d7",
+        "filename": "simd/arm/common/jidctint-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 634,
+      "author": {
+        "id": 1395734
+      },
+      "writtenOn": "2020-09-09T14:38:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c5f3027a_b0c60e68",
+      "range": {
+        "startLine": 634,
+        "startChar": 25,
+        "endLine": 634,
+        "endChar": 49
+      },
+      "revId": "0f22f121350233b0e50f96076bd29f5b31d56e69",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b45563a1_05bc5875",
         "filename": "simd/arm/common/jidctint-neon.c",
         "patchSetId": 2
@@ -79,6 +103,30 @@
       "revId": "0f22f121350233b0e50f96076bd29f5b31d56e69",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d944a681_e26b0b33",
+        "filename": "simd/arm/common/jidctint-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 736,
+      "author": {
+        "id": 1395734
+      },
+      "writtenOn": "2020-09-09T14:38:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b45563a1_05bc5875",
+      "range": {
+        "startLine": 730,
+        "startChar": 25,
+        "endLine": 736,
+        "endChar": 51
+      },
+      "revId": "0f22f121350233b0e50f96076bd29f5b31d56e69",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
