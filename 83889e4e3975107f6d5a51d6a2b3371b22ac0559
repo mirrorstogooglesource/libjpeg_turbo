@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "42f35b76_d7cb578d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-10T16:10:08Z",
+      "side": 1,
+      "message": "This patch hopefully fixes the issues that meant this DEPS roll[1] got reverted. PTAL.\n\n[1] https://chromium-review.googlesource.com/c/chromium/src/+/2401461",
+      "revId": "83889e4e3975107f6d5a51d6a2b3371b22ac0559",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}
