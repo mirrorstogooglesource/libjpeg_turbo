@@ -16,6 +16,23 @@
       "revId": "677ffdd778cae4a392910a9f0da2bc179562c210",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "be792027_07c4b445",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-10T14:48:45Z",
+      "side": 1,
+      "message": "Update: there have been a few issues with the DEPs roll (and it has been reverted): https://chromium-review.googlesource.com/c/chromium/src/+/2401461\n\nShort story is that it broke the new arm64-mac-rel bot. I\u0027ll need to fix this before we can move forward with merging your patch.",
+      "revId": "677ffdd778cae4a392910a9f0da2bc179562c210",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
