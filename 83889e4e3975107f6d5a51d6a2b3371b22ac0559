@@ -33,6 +33,24 @@
       "revId": "83889e4e3975107f6d5a51d6a2b3371b22ac0559",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b83f24e4_6d9e6852",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1001934
+      },
+      "writtenOn": "2020-09-10T23:23:29Z",
+      "side": 1,
+      "message": "Because Gerrit is git-based underneath, I believe even without landing this CL, \none can create a Chromium CL for testing to roll DEPS for libjpeg-turbo to \"refs/changes/42/2403542/2\", which is this CL. Then run that test CL through the Mac ARM64 try bot and see what happens.",
+      "parentUuid": "42f35b76_d7cb578d",
+      "revId": "83889e4e3975107f6d5a51d6a2b3371b22ac0559",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
