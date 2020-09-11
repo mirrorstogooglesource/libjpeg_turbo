@@ -50,6 +50,23 @@
       "revId": "677ffdd778cae4a392910a9f0da2bc179562c210",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e90fd1d9_c59eb842",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-11T18:56:31Z",
+      "side": 1,
+      "message": "The DEPS roll has now been merged: https://chromium-review.googlesource.com/c/chromium/src/+/2403464\n\nIf you could checkout the new code, rebase your patch and confirm the GCC build works with the new code, I\u0027ll merge this change.",
+      "revId": "677ffdd778cae4a392910a9f0da2bc179562c210",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
