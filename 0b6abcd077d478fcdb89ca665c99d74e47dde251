@@ -16,6 +16,23 @@
       "revId": "0b6abcd077d478fcdb89ca665c99d74e47dde251",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9fc4deff_9f468735",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-09-11T15:59:44Z",
+      "side": 1,
+      "message": "FYI: We\u0027ll need to roll this library into Chromium (as in https://chromium-review.googlesource.com/c/chromium/src/+/2401461).\n\nWe\u0027ve been rolling regularly as Jonathan adds some optimizations, but just wanted to let you know.",
+      "revId": "0b6abcd077d478fcdb89ca665c99d74e47dde251",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
