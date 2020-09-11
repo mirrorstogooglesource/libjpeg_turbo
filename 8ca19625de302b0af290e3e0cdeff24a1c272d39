@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f2d5d304_149077bd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-11T12:43:01Z",
+      "side": 1,
+      "message": "Thanks for the review! Submitting after trivial rebase on top of function alignment patch.",
+      "revId": "8ca19625de302b0af290e3e0cdeff24a1c272d39",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}
