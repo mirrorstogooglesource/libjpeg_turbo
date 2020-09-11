@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1dfc62b5_423a35bd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1115919
+      },
+      "writtenOn": "2020-09-11T07:26:21Z",
+      "side": 1,
+      "message": "Could you take a look?\nThanks,\n- hidehiko",
+      "revId": "0b6abcd077d478fcdb89ca665c99d74e47dde251",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    }
+  ]
+}
