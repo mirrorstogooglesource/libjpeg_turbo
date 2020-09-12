@@ -50,6 +50,41 @@
       "revId": "0b6abcd077d478fcdb89ca665c99d74e47dde251",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "74f09f5d_65662db0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1115919
+      },
+      "writtenOn": "2020-09-12T16:09:40Z",
+      "side": 1,
+      "message": "Good to know. Thanks!",
+      "parentUuid": "9fc4deff_9f468735",
+      "revId": "0b6abcd077d478fcdb89ca665c99d74e47dde251",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fd11e499_bd727734",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1115919
+      },
+      "writtenOn": "2020-09-12T16:09:40Z",
+      "side": 1,
+      "message": "Thank you for review.\n\nQuestion: how should I submit this? Is there any auto submit CI/CQ etc. for this repository like what we have for Chromium? Or should I just directly submit this?",
+      "revId": "0b6abcd077d478fcdb89ca665c99d74e47dde251",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
