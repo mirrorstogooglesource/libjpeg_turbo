@@ -16,6 +16,46 @@
       "revId": "4d2f2496895c1c1a2a985c80d6cc2486c15d1a9e",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e03b2c11_06a8de8c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-09-13T23:10:59Z",
+      "side": 1,
+      "message": "Phew. That was a pretty intense one.\nTake care of MSVC and we\u0027re good to go.",
+      "revId": "4d2f2496895c1c1a2a985c80d6cc2486c15d1a9e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "aa2bdd2d_4f547b8a",
+        "filename": "simd/arm/common/jfdctint-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2020-09-13T23:10:59Z",
+      "side": 1,
+      "message": "What about MSVC?",
+      "range": {
+        "startLine": 87,
+        "startChar": 0,
+        "endLine": 90,
+        "endChar": 8
+      },
+      "revId": "4d2f2496895c1c1a2a985c80d6cc2486c15d1a9e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": true
     }
   ]
 }
