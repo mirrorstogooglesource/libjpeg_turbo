@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "372b9e7d_a1a1ce49",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-14T09:51:45Z",
+      "side": 1,
+      "message": "Hahaha yeah, only a few to go - we are so close!",
+      "parentUuid": "e03b2c11_06a8de8c",
+      "revId": "4d2f2496895c1c1a2a985c80d6cc2486c15d1a9e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "aa2bdd2d_4f547b8a",
         "filename": "simd/arm/common/jfdctint-neon.c",
         "patchSetId": 2
@@ -56,6 +74,30 @@
       "revId": "4d2f2496895c1c1a2a985c80d6cc2486c15d1a9e",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "df705316_a3ff0490",
+        "filename": "simd/arm/common/jfdctint-neon.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-14T09:51:45Z",
+      "side": 1,
+      "message": "MSVC is fine, updated the ifdef and comments to make it clear.",
+      "parentUuid": "aa2bdd2d_4f547b8a",
+      "range": {
+        "startLine": 87,
+        "startChar": 0,
+        "endLine": 90,
+        "endChar": 8
+      },
+      "revId": "4d2f2496895c1c1a2a985c80d6cc2486c15d1a9e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
