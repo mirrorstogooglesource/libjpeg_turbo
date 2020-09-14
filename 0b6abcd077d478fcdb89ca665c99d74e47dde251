@@ -85,6 +85,24 @@
       "revId": "0b6abcd077d478fcdb89ca665c99d74e47dde251",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0afbaef8_46aeac08",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-09-14T09:55:10Z",
+      "side": 1,
+      "message": "We don\u0027t have a commit queue for this repository so you\u0027ll need to click the submit button. Please rebase the change first though. The buttons for rebasing and submitting should be visible here in Gerrit on the top right; if they\u0027re not, let us know and we can do it for you.",
+      "parentUuid": "fd11e499_bd727734",
+      "revId": "0b6abcd077d478fcdb89ca665c99d74e47dde251",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
