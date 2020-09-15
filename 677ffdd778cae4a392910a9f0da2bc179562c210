@@ -67,6 +67,42 @@
       "revId": "677ffdd778cae4a392910a9f0da2bc179562c210",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e46ae34e_a6b77c19",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1395734
+      },
+      "writtenOn": "2020-09-15T19:04:36Z",
+      "side": 1,
+      "message": "Yup, just checking yesterday the commits in master it looks to me there could be some extra changes required, so I expected to prepare a new commit after Chromium DEPS was updated.\n\nFeel free to choose landing now or waiting. In any case I will update the build in next round this or next week and fix the remaining points.\n\nThanks!",
+      "parentUuid": "831edc7a_00865c02",
+      "revId": "677ffdd778cae4a392910a9f0da2bc179562c210",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "392aa140_b1070a22",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1395734
+      },
+      "writtenOn": "2020-09-15T19:04:36Z",
+      "side": 1,
+      "message": "Will check on next official Chromium devel release this week. Thanks!",
+      "parentUuid": "e90fd1d9_c59eb842",
+      "revId": "677ffdd778cae4a392910a9f0da2bc179562c210",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
+      "unresolved": false
     }
   ]
 }
