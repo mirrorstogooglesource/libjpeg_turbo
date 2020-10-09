@@ -1,6 +1,7 @@
 {
   "comments": [
     {
+      "unresolved": false,
       "key": {
         "uuid": "daf7085b_73941e3c",
         "filename": "/PATCHSET_LEVEL",
@@ -14,8 +15,24 @@
       "side": 1,
       "message": "Patch ready for review - PTAL.",
       "revId": "b8d99011c62a13b70320a8580d513b932dbec8f4",
-      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba",
-      "unresolved": false
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0f86e0bf_a474174c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-10-09T10:31:59Z",
+      "side": 1,
+      "message": "Friendly ping here :)",
+      "revId": "b8d99011c62a13b70320a8580d513b932dbec8f4",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
