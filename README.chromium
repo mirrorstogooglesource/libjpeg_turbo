@@ -16,6 +16,8 @@ This consists of the components:
 * Patched header files used by Chromium
 * Cherry picked a fix from upstream master to enable AArch64 Windows builds:
   https://github.com/libjpeg-turbo/libjpeg-turbo/commit/6ee5d5f568fda1a7c6a49dd8995f2d89866ee42d
+* Cherry picked a fix from upstream master for jpeg_skip_scanlines:
+  https://github.com/libjpeg-turbo/libjpeg-turbo/commit/6d2e8837b440ce4d8befd805a5abc0d351028d70
 * Deleted unused directories: ci, cmakescripts, doc, java, release, sharedlib,
   simd/loongson, simd/mips, simd/powerpc, and win
 * Deleted unused files: appveyor.yml, CMakeLists.txt, doxygen.config,
