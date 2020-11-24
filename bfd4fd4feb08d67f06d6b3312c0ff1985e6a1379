@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c85e9191_16bd4e40",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-11-24T16:52:46Z",
+      "side": 1,
+      "message": "Could you explain what\u0027s meant by this?",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 14
+      },
+      "revId": "bfd4fd4feb08d67f06d6b3312c0ff1985e6a1379",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22244e27_837a02de",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-11-24T16:52:46Z",
+      "side": 1,
+      "message": "Looks fine - will lgtm after explanation of the commit message query.\n\nGeneral FYI:\n\nI intend to update Chromium to v2.1 beta when it gets released in a few weeks - I\u0027ve just finished sorting out the remaining pre-release issue: https://github.com/libjpeg-turbo/libjpeg-turbo/pull/475\n\nWe can commit this now if you want - or wait for me to update Chromium to 2.1 beta where this will be included. Up to you :)",
+      "revId": "bfd4fd4feb08d67f06d6b3312c0ff1985e6a1379",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
