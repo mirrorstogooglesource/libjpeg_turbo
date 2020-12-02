@@ -24,6 +24,30 @@
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "5ed70a91_d0295f03",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-12-02T17:08:50Z",
+      "side": 1,
+      "message": "So there isn\u0027t a new release (beta or otherwise) that includes these fixes at the moment - master is only ahead of 2.0.90 by four commits and two of those four are cherry-picked here.\n\nI would like to use a stable release but we don\u0027t know how long we\u0027ll be waiting for it. The last time significant changes were made such that a beta release was deemed necessary was in March 2018. The stable release came out in July 2018. Given we\u0027re wanting this in AOSP ASAP I don\u0027t think we should take the chance, hoping for a stable release before March.",
+      "parentUuid": "cba34515_bb941f6c",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 97
+      },
+      "revId": "bbb828223e9c8f83f0e84db1e98b116029e62765",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "0322b7fd_f50ee647",
@@ -73,6 +97,24 @@
       "side": 1,
       "message": "I responded there - yes, I think this was intentional and we should update the expected results. Although, wait, are the web_tests common to other browsers? Do we need them to have the same fix?",
       "parentUuid": "0ce23bc0_c88e987e",
+      "revId": "bbb828223e9c8f83f0e84db1e98b116029e62765",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8e37f79b_5f7fdb0a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-12-02T17:08:50Z",
+      "side": 1,
+      "message": "Cool, I\u0027ll set about updating the tests.\n\nI don\u0027t think I understand the second point about other browsers - you mean browsers that are not Chromium-based? I.e. get this fixed/updated in Firefox too?",
+      "parentUuid": "e149844b_0db2622c",
       "revId": "bbb828223e9c8f83f0e84db1e98b116029e62765",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
