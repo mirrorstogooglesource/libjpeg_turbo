@@ -50,6 +50,30 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "62e26853_3815e275",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-12-02T21:00:05Z",
+      "side": 1,
+      "message": "\u003e So there isn\u0027t a new release (beta or otherwise) that includes these fixes at the moment - master is only ahead of 2.0.90 by four commits and two of those four are cherry-picked here.\n\u003e \n\u003e I would like to use a stable release but we don\u0027t know how long we\u0027ll be waiting for it. The last time significant changes were made such that a beta release was deemed necessary was in March 2018. The stable release came out in July 2018.\n\nIt\u0027s not obvious to me that this beta release is significantly more stable than master\u0027s four commits ahead (or really two with our cherry-picks). Either way, I have confidence in Chromium\u0027s testing for stability.\n\n\u003e Given we\u0027re wanting this in AOSP ASAP I don\u0027t think we should take the chance, hoping for a stable release before March.\n\nSgtm.",
+      "parentUuid": "5ed70a91_d0295f03",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 97
+      },
+      "revId": "bbb828223e9c8f83f0e84db1e98b116029e62765",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "0322b7fd_f50ee647",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 1
@@ -115,6 +139,24 @@
       "side": 1,
       "message": "Cool, I\u0027ll set about updating the tests.\n\nI don\u0027t think I understand the second point about other browsers - you mean browsers that are not Chromium-based? I.e. get this fixed/updated in Firefox too?",
       "parentUuid": "e149844b_0db2622c",
+      "revId": "bbb828223e9c8f83f0e84db1e98b116029e62765",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a8651c3_638675da",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-12-02T21:00:05Z",
+      "side": 1,
+      "message": "I was thinking of web-platform-tests [1]. Those tests are run by FireFox.\n\n[1] https://chromium.googlesource.com/chromium/src/+/master/docs/testing/web_platform_tests.md",
+      "parentUuid": "8e37f79b_5f7fdb0a",
       "revId": "bbb828223e9c8f83f0e84db1e98b116029e62765",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
