@@ -1,6 +1,29 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "cba34515_bb941f6c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-12-02T16:55:09Z",
+      "side": 1,
+      "message": "Instead of cherry-picking these, would it make sense to just use a newer commit that includes them? (What are the other commits that would include?)\n\nThe argument against that (in my mind) is that those aren\u0027t part of an official release. But this is just a beta release; should Chromium wait for a more official release, which would include these fixes?",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 97
+      },
+      "revId": "bbb828223e9c8f83f0e84db1e98b116029e62765",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "0322b7fd_f50ee647",
@@ -32,6 +55,47 @@
       "side": 1,
       "message": "Ok, after bisecting and looking more closely, it seems that this change in behaviour was intentional and we need to update our expected results in the web_tests - see comment in the github issue.",
       "parentUuid": "0322b7fd_f50ee647",
+      "revId": "bbb828223e9c8f83f0e84db1e98b116029e62765",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e149844b_0db2622c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-12-02T16:55:09Z",
+      "side": 1,
+      "message": "I responded there - yes, I think this was intentional and we should update the expected results. Although, wait, are the web_tests common to other browsers? Do we need them to have the same fix?",
+      "parentUuid": "0ce23bc0_c88e987e",
+      "revId": "bbb828223e9c8f83f0e84db1e98b116029e62765",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3340ad55_aa12bc6c",
+        "filename": "jconfig.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-12-02T16:55:09Z",
+      "side": 1,
+      "message": "Thanks for updating this! I was looking in the Android update and noticing that it was already out of date 😊",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 36
+      },
       "revId": "bbb828223e9c8f83f0e84db1e98b116029e62765",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
