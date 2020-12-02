@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0322b7fd_f50ee647",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-12-02T14:32:48Z",
+      "side": 1,
+      "message": "Not for review just yet.\n\nI tested this on the bots here[1] and we have some failures that look legitimate.\n\nI\u0027ve opened a bug issue[2] on the upstream project\u0027s Github page.\n\n[1] https://chromium-review.googlesource.com/c/chromium/src/+/2564483\n[2] https://github.com/libjpeg-turbo/libjpeg-turbo/issues/477",
+      "revId": "bbb828223e9c8f83f0e84db1e98b116029e62765",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
