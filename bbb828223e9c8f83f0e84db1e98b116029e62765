@@ -163,6 +163,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "5abda5cb_375356c3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2020-12-03T16:13:27Z",
+      "side": 1,
+      "message": "Ah, ok. The tests that fail are part of the Chrome-only web_tests (used to be Layout Tests), residing in web_tests/images and web_tests/virtual, not the cross-browser web-platform-tests in web_tests/external/wpt.",
+      "parentUuid": "7a8651c3_638675da",
+      "revId": "bbb828223e9c8f83f0e84db1e98b116029e62765",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "3340ad55_aa12bc6c",
         "filename": "jconfig.h",
         "patchSetId": 1
