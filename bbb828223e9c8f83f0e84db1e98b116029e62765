@@ -198,6 +198,41 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "05323cac_b7a40771",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-12-04T15:08:44Z",
+      "side": 1,
+      "message": "Great, thanks!",
+      "parentUuid": "7f864aef_f62a5825",
+      "revId": "bbb828223e9c8f83f0e84db1e98b116029e62765",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "42160f9f_220052e5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2020-12-04T15:08:44Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "bbb828223e9c8f83f0e84db1e98b116029e62765",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "3340ad55_aa12bc6c",
         "filename": "jconfig.h",
         "patchSetId": 1
