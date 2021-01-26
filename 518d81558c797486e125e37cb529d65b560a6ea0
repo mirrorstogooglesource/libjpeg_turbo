@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac2b4e8f_88cb426e",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2021-01-26T00:40:50Z",
+      "side": 0,
+      "message": "Posting for anyone who might later review this CL.\n\nI believe it has been safe to assume a minimum of ARMv7 for Chromium builds for a long time.",
+      "range": {
+        "startLine": 153,
+        "startChar": 37,
+        "endLine": 153,
+        "endChar": 53
+      },
+      "revId": "518d81558c797486e125e37cb529d65b560a6ea0",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6828d43c_828a1903",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2021-01-26T00:40:50Z",
+      "side": 0,
+      "message": "I think it is good that this is removed.\n\nIt feels a bit weird to override the optimization settings.",
+      "range": {
+        "startLine": 176,
+        "startChar": 4,
+        "endLine": 177,
+        "endChar": 59
+      },
+      "revId": "518d81558c797486e125e37cb529d65b560a6ea0",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
