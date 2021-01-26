@@ -26,6 +26,30 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "a4f9c552_ad80175b",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-01-26T11:23:38Z",
+      "side": 0,
+      "message": "Just to add an additional point: Even if this assumption is not valid, this logic still works based on the Arm build configs here[1]. (arm_use_neon \u003d false for Armv6.)\n\n[1] https://source.chromium.org/chromium/chromium/src/+/master:build/config/arm.gni;l\u003d1?q\u003darm.gni\u0026sq\u003d\u0026ss\u003dchromium",
+      "parentUuid": "ac2b4e8f_88cb426e",
+      "range": {
+        "startLine": 153,
+        "startChar": 37,
+        "endLine": 153,
+        "endChar": 53
+      },
+      "revId": "518d81558c797486e125e37cb529d65b560a6ea0",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "6828d43c_828a1903",
         "filename": "BUILD.gn",
         "patchSetId": 1
