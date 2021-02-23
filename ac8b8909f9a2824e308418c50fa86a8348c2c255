@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "49a2e224_1d4507e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2021-02-23T17:09:46Z",
+      "side": 1,
+      "message": "Jonathan, was this intentionally removed? Should we add it back in?\n\nThe description refers to \"bbb8282\", which is this commit: https://chromium-review.googlesource.com/c/chromium/deps/libjpeg_turbo/+/2565390\n\nAnd sure enough, this part was removed in that commit: https://chromium-review.googlesource.com/c/chromium/deps/libjpeg_turbo/+/2565390/1/jpeglib.h",
+      "revId": "ac8b8909f9a2824e308418c50fa86a8348c2c255",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
