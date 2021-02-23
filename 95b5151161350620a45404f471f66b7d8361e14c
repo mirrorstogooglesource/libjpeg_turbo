@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "61b70fc8_37adbafa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1494646
+      },
+      "writtenOn": "2021-02-23T11:37:05Z",
+      "side": 1,
+      "message": "I made a small patch to fix a build flag issue.\n\nThis is my first contribution to Chromium.\nI\u0027ve checked the following documents.\n- https://chromium.googlesource.com/chromium/src/+/master/docs/contributing.md\n- https://www.chromium.org/developers/how-tos/get-the-code/working-with-branches\n\nIf there are any other documents I should read, please let me know.\n\nThanks.",
+      "revId": "95b5151161350620a45404f471f66b7d8361e14c",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
