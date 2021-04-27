@@ -93,6 +93,30 @@
       },
       "revId": "7b4981b6500ccba10733c352b9ed2dad14ce3c73",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a43fa20c_32b1ae12",
+        "filename": "jdhuff.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-04-27T18:17:39Z",
+      "side": 0,
+      "message": "Here\u0027s Noel\u0027s original patch adding the workaround: https://codereview.appspot.com/229430043",
+      "parentUuid": "e977f964_fc8739ba",
+      "range": {
+        "startLine": 220,
+        "startChar": 36,
+        "endLine": 220,
+        "endChar": 47
+      },
+      "revId": "7b4981b6500ccba10733c352b9ed2dad14ce3c73",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
