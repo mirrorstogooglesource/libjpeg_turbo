@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "097fe32a_62459532",
+        "filename": "jdhuff.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 665,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-04-27T18:11:01Z",
+      "side": 0,
+      "message": "See my reply to your other comment re. why this workaround isn\u0027t necessary anymore.\n\nGiven that this fix is part of the upstream 2.1.0 release, I\u0027m not sure why we need a separate CL to remove it after this update? Happy to be persuaded though :)",
+      "parentUuid": "9dabf543_e1944946",
+      "range": {
+        "startLine": 665,
+        "startChar": 32,
+        "endLine": 665,
+        "endChar": 49
+      },
+      "revId": "7b4981b6500ccba10733c352b9ed2dad14ce3c73",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "19d9320e_a65abe89",
         "filename": "jdhuff.h",
         "patchSetId": 1
@@ -37,6 +61,30 @@
       "writtenOn": "2021-04-27T17:34:31Z",
       "side": 0,
       "message": "This was a change added to the Chromium fork. I think we need to keep it.",
+      "range": {
+        "startLine": 220,
+        "startChar": 36,
+        "endLine": 220,
+        "endChar": 47
+      },
+      "revId": "7b4981b6500ccba10733c352b9ed2dad14ce3c73",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e977f964_fc8739ba",
+        "filename": "jdhuff.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-04-27T18:11:01Z",
+      "side": 0,
+      "message": "I removed this as per the second part of the commit message - the original bug is also linked.\n\nThe issue has been fixed upstream in these commits:\nhttps://github.com/libjpeg-turbo/libjpeg-turbo/commit/8fa70367ed5bbdc0685494e8212d975b5c89a77d\nhttps://github.com/libjpeg-turbo/libjpeg-turbo/commit/4de8f6922a9be7d0a51a429e367283fd40031b26",
+      "parentUuid": "19d9320e_a65abe89",
       "range": {
         "startLine": 220,
         "startChar": 36,
