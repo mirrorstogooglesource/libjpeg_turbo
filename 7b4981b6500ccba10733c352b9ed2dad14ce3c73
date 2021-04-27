@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9dabf543_e1944946",
+        "filename": "jdhuff.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 665,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2021-04-27T17:34:31Z",
+      "side": 0,
+      "message": "And here is where that is being called.\nAt the end of this file is the jump destination.\n\n(If we can prove this is no longer needed by going back and understanding why it was originally added, we should remove it in a separate CL.)\n\n(You can see why it took me so long to make these update patches.)",
+      "range": {
+        "startLine": 665,
+        "startChar": 32,
+        "endLine": 665,
+        "endChar": 49
+      },
+      "revId": "7b4981b6500ccba10733c352b9ed2dad14ce3c73",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "19d9320e_a65abe89",
+        "filename": "jdhuff.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2021-04-27T17:34:31Z",
+      "side": 0,
+      "message": "This was a change added to the Chromium fork. I think we need to keep it.",
+      "range": {
+        "startLine": 220,
+        "startChar": 36,
+        "endLine": 220,
+        "endChar": 47
+      },
+      "revId": "7b4981b6500ccba10733c352b9ed2dad14ce3c73",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
