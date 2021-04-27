@@ -48,6 +48,30 @@
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6e72e370_8cbbf39b",
+        "filename": "jdhuff.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 665,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2021-04-27T22:48:37Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "097fe32a_62459532",
+      "range": {
+        "startLine": 665,
+        "startChar": 32,
+        "endLine": 665,
+        "endChar": 49
+      },
+      "revId": "7b4981b6500ccba10733c352b9ed2dad14ce3c73",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "19d9320e_a65abe89",
@@ -109,6 +133,30 @@
       "side": 0,
       "message": "Here\u0027s Noel\u0027s original patch adding the workaround: https://codereview.appspot.com/229430043",
       "parentUuid": "e977f964_fc8739ba",
+      "range": {
+        "startLine": 220,
+        "startChar": 36,
+        "endLine": 220,
+        "endChar": 47
+      },
+      "revId": "7b4981b6500ccba10733c352b9ed2dad14ce3c73",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "775bce80_ed0fdf99",
+        "filename": "jdhuff.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2021-04-27T22:48:37Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "a43fa20c_32b1ae12",
       "range": {
         "startLine": 220,
         "startChar": 36,

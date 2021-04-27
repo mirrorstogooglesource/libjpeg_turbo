@@ -16,6 +16,23 @@
       "message": "All unit tests pass for platforms that I can manually test - Android (AArch64 and AArch32), Linux x86, Windows on Arm - so should be fine. PTAL.",
       "revId": "24e310554f07c0fdb8ee52e3e708e4f3e9eb6e20",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab9ecaf5_7f7cbe6b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2021-04-27T22:48:37Z",
+      "side": 1,
+      "message": "I apologize. I did not read the patch description and assumed you weren\u0027t as diligent as you are. And given I didn\u0027t read the description, *I* was the one not being diligent.\n\nI didn\u0027t intend to be condescending. Sorry.",
+      "revId": "24e310554f07c0fdb8ee52e3e708e4f3e9eb6e20",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
