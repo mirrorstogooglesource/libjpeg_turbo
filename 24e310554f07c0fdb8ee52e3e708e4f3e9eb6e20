@@ -33,6 +33,24 @@
       "message": "I apologize. I did not read the patch description and assumed you weren\u0027t as diligent as you are. And given I didn\u0027t read the description, *I* was the one not being diligent.\n\nI didn\u0027t intend to be condescending. Sorry.",
       "revId": "24e310554f07c0fdb8ee52e3e708e4f3e9eb6e20",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6c42440_0fe35df9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-04-28T10:10:05Z",
+      "side": 1,
+      "message": "No worries - all is well :)",
+      "parentUuid": "ab9ecaf5_7f7cbe6b",
+      "revId": "24e310554f07c0fdb8ee52e3e708e4f3e9eb6e20",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
