@@ -19,7 +19,9 @@
 #define JPEGLIB_H
 
 /* Begin chromium edits */
-#include "jpeglibmangler.h"
+#ifndef __ANDROID__
+    #include "jpeglibmangler.h"
+#endif
 /* End chromium edits */
 
 /*
