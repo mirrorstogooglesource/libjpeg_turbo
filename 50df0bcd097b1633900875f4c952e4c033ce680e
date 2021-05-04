@@ -3,6 +3,23 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "039a20bf_466aafa5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-05-04T21:43:11Z",
+      "side": 1,
+      "message": "Could you help me understand what\u0027s broken here please? (I don\u0027t have permission to read the linked bug ticket.) Presumably the breakage is not in Chromium at all - just when we try to use this libjpeg-turbo elsewhere as a system library and none of the symbols match (standard libjpeg) with the jpeglibmangler in place?",
+      "revId": "50df0bcd097b1633900875f4c952e4c033ce680e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "502ff688_781e2b72",
         "filename": "jpeglib.h",
         "patchSetId": 1
