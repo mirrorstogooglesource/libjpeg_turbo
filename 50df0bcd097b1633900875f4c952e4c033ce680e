@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "502ff688_781e2b72",
+        "filename": "jpeglib.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2021-05-04T21:26:40Z",
+      "side": 1,
+      "message": "I reversed this from my original suggestion [1], since this ifndef is also an edit to the Chromium fork.\n\n[1] https://buganizer.corp.google.com/issues/184745328#comment2",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 19
+      },
+      "revId": "50df0bcd097b1633900875f4c952e4c033ce680e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
