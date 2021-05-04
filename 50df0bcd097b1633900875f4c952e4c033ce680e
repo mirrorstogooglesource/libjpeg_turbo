@@ -53,6 +53,24 @@
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "686a546e_3a3dd7c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-05-04T22:11:48Z",
+      "side": 1,
+      "message": "Ok, thanks for clarifying. In that case, would it be better to define a new flag in the Chromium BUILD.gn (CHROME, say?) and guard on that so we don\u0027t break the \"use_system_libjpeg\" option for Android Chromium builds?\n\nI broke that flag by forgetting to include jpeglibmangler.h when updating to 2.1 beta 1: https://chromium-review.googlesource.com/c/chromium/deps/libjpeg_turbo/+/2714822",
+      "parentUuid": "125fd236_869f3e55",
+      "revId": "50df0bcd097b1633900875f4c952e4c033ce680e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "502ff688_781e2b72",
