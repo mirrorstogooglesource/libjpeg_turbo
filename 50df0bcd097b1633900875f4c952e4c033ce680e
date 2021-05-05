@@ -127,6 +127,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "0a958323_8927c18c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2021-05-05T20:35:54Z",
+      "side": 1,
+      "message": "\u003e no, __ANDROID__ is defined if you\u0027re targeting Android (either as part of the OS itself or as part of an app).\n\nThanks for clarifying!\n\n\u003e It should work fine just to create a \u0027defines\u0027 block for that source_set underneath the \u0027sources\u0027 block - look further down the file for similar examples. (I think MANGLE_JPEG_NAMES is a good name.)\n\nYes, that seems to work. (That said, I\u0027m not set up to build Chromium for Android, so I have not tested that.)\n\n\u003e \n\u003e I\u0027m not quite following the second part - why does it need to be included anywhere other than in the jpeglib.h as is currently the case?\n\nA previous version I tried ended up with linking errors like:\n\nld.lld: error: undefined symbol: jpeg_read_raw_data\n\u003e\u003e\u003e referenced by mjpeg_decoder.cc:554 (../../third_party/libyuv/source/mjpeg_decoder.cc:554)\n\u003e\u003e\u003e               libyuv_internal/mjpeg_decoder.o:(libyuv::MJpegDecoder::DecodeImcuRow()) in archive obj/third_party/libyuv/libyuv_internal.a\nclang: error: linker command failed with exit code 1 (use -v to see invocation)\n\nMy assumption is that libyuv was including jpeglib.h but without MANGLE_JPEG_NAMES defined. But obviously I was doing something wrong because your way works.",
+      "parentUuid": "6d300590_9753e0d0",
+      "revId": "50df0bcd097b1633900875f4c952e4c033ce680e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "502ff688_781e2b72",
         "filename": "jpeglib.h",
         "patchSetId": 1
