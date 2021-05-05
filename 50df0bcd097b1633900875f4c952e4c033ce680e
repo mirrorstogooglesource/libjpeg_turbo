@@ -107,6 +107,24 @@
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d300590_9753e0d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-05-05T20:23:55Z",
+      "side": 1,
+      "message": "It should work fine just to create a \u0027defines\u0027 block for that source_set underneath the \u0027sources\u0027 block - look further down the file for similar examples. (I think MANGLE_JPEG_NAMES is a good name.)\n\nI\u0027m not quite following the second part - why does it need to be included anywhere other than in the jpeglib.h as is currently the case?",
+      "parentUuid": "9dc793fc_cf3e10af",
+      "revId": "50df0bcd097b1633900875f4c952e4c033ce680e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "502ff688_781e2b72",
