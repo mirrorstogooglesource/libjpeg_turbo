@@ -71,6 +71,24 @@
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "c603e00c_7bf0eddf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2021-05-05T16:49:54Z",
+      "side": 1,
+      "message": "I *thought* that __ANDROID__ should only be defined when building the Android platform, but maybe I\u0027m misremembering? That said, I\u0027m fine with using a more specific build flag.\n\nMy GN skills aren\u0027t very solid - I think that would mean we\u0027d add a \"define\" (something like MANGLE_JPEG_NAMES?) anywhere we include jpeglib.h, and change jpeglib.h to say\n\n  #ifdef MANGLE_JPEG_NAMES\n     #include \"jpeglibmangler.h\"\n  #endif\n\n?\n\njpeglib.h is currently part of a \"source_set\" [1]; I think we\u0027d need to change that to something else so it can still be included? I think we\u0027ll need to make sure that propagates to other projects, like libyuv, which depends on libjpeg_turbo.\n\n[1] https://source.chromium.org/chromium/chromium/src/+/main:third_party/libjpeg_turbo/BUILD.gn;l\u003d15",
+      "parentUuid": "686a546e_3a3dd7c0",
+      "revId": "50df0bcd097b1633900875f4c952e4c033ce680e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "502ff688_781e2b72",
