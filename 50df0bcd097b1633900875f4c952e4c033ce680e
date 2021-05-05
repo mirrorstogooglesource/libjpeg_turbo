@@ -89,6 +89,24 @@
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "9dc793fc_cf3e10af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004789
+      },
+      "writtenOn": "2021-05-05T17:04:01Z",
+      "side": 1,
+      "message": "\u003e I *thought* that __ANDROID__ should only be defined when building the Android platform, but maybe I\u0027m misremembering?\n\nno, __ANDROID__ is defined if you\u0027re targeting Android (either as part of the OS itself or as part of an app).",
+      "parentUuid": "c603e00c_7bf0eddf",
+      "revId": "50df0bcd097b1633900875f4c952e4c033ce680e",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "502ff688_781e2b72",
