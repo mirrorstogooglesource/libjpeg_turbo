@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "82a99e33_daa80141",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-05-05T22:06:20Z",
+      "side": 1,
+      "message": "LGTM with nits.\n\nIf you\u0027d like to test this out on the bots before committing, you can use some git trickery (as Gerrit is git-based underneath): If you create a DEPS roll patch and add this change - \"refs/changes/69/2872069/3\" - where you would see the hash to checkout, you can then do a CQ dry-run and the bots will test with this change applied to libjpeg-turbo.\n\nI\u0027ve been doing this for DEPS rolls ever since I discovered the functionality - here\u0027s an example from when we updated last week: https://chromium-review.googlesource.com/c/chromium/src/+/2850714/2/DEPS",
+      "revId": "7a0ff15a6f37a701b82f0ba892e32bfae4869133",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0be24eb2_5acb1452",
+        "filename": "BUILD.gn",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-05-05T22:06:20Z",
+      "side": 1,
+      "message": "Sorry to nit-pick but could we have spaces either side of this to be consistent with the rest of the file please?",
+      "range": {
+        "startLine": 24,
+        "startChar": 13,
+        "endLine": 24,
+        "endChar": 32
+      },
+      "revId": "7a0ff15a6f37a701b82f0ba892e32bfae4869133",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "353559c8_b8e458fc",
+        "filename": "jpeglib.h",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-05-05T22:06:20Z",
+      "side": 1,
+      "message": "Nit: Let\u0027s remove the whitespace to be consistent with the rest of the includes here.",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 4
+      },
+      "revId": "7a0ff15a6f37a701b82f0ba892e32bfae4869133",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
