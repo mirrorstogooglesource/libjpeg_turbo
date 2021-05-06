@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3451a35e_1d54356c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-05-06T15:14:25Z",
+      "side": 1,
+      "message": "LGTM - I don\u0027t know why your test DEPS roll doesn\u0027t work.",
+      "revId": "764c5fca09cb558f88f3145d67b705f92ffee2d9",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}

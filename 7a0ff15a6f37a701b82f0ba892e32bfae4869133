@@ -36,6 +36,24 @@
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "39369e83_30484c6e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-05-06T15:14:25Z",
+      "side": 1,
+      "message": "FWIW I can\u0027t see why your DEPS roll test doesn\u0027t work - it looks like it should work, unless the infra is doing something funky - i.e. parses the commit message and thinks it\u0027s not a DEPS roll because you didn\u0027t use the roll-dep script... but that really shouldn\u0027t be the case.",
+      "parentUuid": "d53939a9_b314d83c",
+      "revId": "7a0ff15a6f37a701b82f0ba892e32bfae4869133",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0be24eb2_5acb1452",
@@ -73,6 +91,30 @@
       "side": 1,
       "message": "Done.\n\nFWIW, I had assumed that the upload step would make me format the file, which happens in Skia, so I don\u0027t tend to think too much about formatting these.\n\n(I just ran\n\n  gn format BUILD.gn\n\nand it made a whole bunch of unrelated changes. Let me know if you\u0027d like me to upload that here or in a separate CL.)",
       "parentUuid": "0be24eb2_5acb1452",
+      "range": {
+        "startLine": 24,
+        "startChar": 13,
+        "endLine": 24,
+        "endChar": 32
+      },
+      "revId": "7a0ff15a6f37a701b82f0ba892e32bfae4869133",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d0f6826e_063eb16c",
+        "filename": "BUILD.gn",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-05-06T15:14:25Z",
+      "side": 1,
+      "message": "Let\u0027s have that in a subsequent change, thanks!",
+      "parentUuid": "9eed12f0_216646d8",
       "range": {
         "startLine": 24,
         "startChar": 13,
