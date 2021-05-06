@@ -16,6 +16,24 @@
       "message": "LGTM - although how did you managed to upload this without a change ID?",
       "revId": "7c97964db2b315101c598e8802f3df7127985c73",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "db858f6e_f3b4253c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2021-05-06T20:21:08Z",
+      "side": 1,
+      "message": "Hmm, not sure. I just installed the hooks (https://gerrit-review.googlesource.com/Documentation/user-changeid.html) and added a Change-Id, but then I accidentally uploaded a separate issue at https://chromium-review.googlesource.com/c/chromium/deps/libjpeg_turbo/+/2877015. I tried to steal its Change-Id, but then I get the message\n\nError 409: wrong Change-Id footer\n\nEndpoint: /changes/*~*/message",
+      "parentUuid": "a4dee51f_5d0277e2",
+      "revId": "7c97964db2b315101c598e8802f3df7127985c73",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
