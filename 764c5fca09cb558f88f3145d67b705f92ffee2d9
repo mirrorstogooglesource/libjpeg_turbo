@@ -16,6 +16,24 @@
       "message": "LGTM - I don\u0027t know why your test DEPS roll doesn\u0027t work.",
       "revId": "764c5fca09cb558f88f3145d67b705f92ffee2d9",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "93e61842_e2d9ddcb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2021-05-06T16:07:47Z",
+      "side": 1,
+      "message": "Do you want me to get that to work before submitting? I\u0027m also confused, but it should be simple to fix if this does break something. (We should catch it in the presubmit for the actual roll.)",
+      "parentUuid": "3451a35e_1d54356c",
+      "revId": "764c5fca09cb558f88f3145d67b705f92ffee2d9",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
