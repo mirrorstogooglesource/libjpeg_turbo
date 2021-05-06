@@ -34,6 +34,24 @@
       "parentUuid": "a4dee51f_5d0277e2",
       "revId": "7c97964db2b315101c598e8802f3df7127985c73",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e29bdd0_e3414948",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-05-06T21:42:16Z",
+      "side": 1,
+      "message": "Hmmm, let\u0027s abandon this one and un-abandon the other one that has the change ID.\n\nThere\u0027s no change-ID on the DEPS roll patch either so we\u0027ll need to do the same dance on that too.",
+      "parentUuid": "db858f6e_f3b4253c",
+      "revId": "7c97964db2b315101c598e8802f3df7127985c73",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
