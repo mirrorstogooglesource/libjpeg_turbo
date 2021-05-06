@@ -125,6 +125,30 @@
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "589efaf8_c36a01e3",
+        "filename": "BUILD.gn",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2021-05-06T16:47:13Z",
+      "side": 1,
+      "message": "Follow on change is https://chromium-review.googlesource.com/c/chromium/deps/libjpeg_turbo/+/2877013",
+      "parentUuid": "d0f6826e_063eb16c",
+      "range": {
+        "startLine": 24,
+        "startChar": 13,
+        "endLine": 24,
+        "endChar": 32
+      },
+      "revId": "7a0ff15a6f37a701b82f0ba892e32bfae4869133",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "353559c8_b8e458fc",
