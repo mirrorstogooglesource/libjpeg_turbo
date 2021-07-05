@@ -47,6 +47,14 @@ following changes which are not merged to upstream:
   lld) arising from attempts to reference the table from assembler on
   32-bit x86. This only affects shared libraries, but that's important
   for downstream Android builds.
+* Fix potential for misaligned memory access in Arm AArch32 Huffman encoder.
+  Arm 32-bit architectures require memory access to be made through aligned
+  addresses. This patch uses memcpy() - instead of a casted-pointer dereference
+  - to store four bytes of Huffman-encoded bitstream to memory through a
+  potentially unaligned pointer. (This is safe becuase memcpy() has no
+  alignment requirements.) For further information see the upstream project's
+  Github page:
+  https://github.com/libjpeg-turbo/libjpeg-turbo/pull/529
 * Patches to enable running the upstream unit tests through GTest.
   The upstream unit tests are defined here under the section 'TESTS':
   https://github.com/libjpeg-turbo/libjpeg-turbo/blob/master/CMakeLists.txt

@@ -81,7 +81,8 @@ typedef struct {
     EMIT_BYTE(put_buffer >>  8) \
     EMIT_BYTE(put_buffer      ) \
   } else { \
-    *((uint32_t *)buffer) = BUILTIN_BSWAP32(put_buffer); \
+    put_buffer = BUILTIN_BSWAP32(put_buffer); \
+    memcpy(buffer, &put_buffer, sizeof(put_buffer)); \
     buffer += 4; \
   } \
 }
