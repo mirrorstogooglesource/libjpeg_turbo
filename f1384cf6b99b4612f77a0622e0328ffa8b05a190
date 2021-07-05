@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac32b399_2b9234f3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-07-05T12:21:02Z",
+      "side": 1,
+      "message": "I\u0027ve verified that the generated code doesn\u0027t change for AArch32 builds of Chromium, so there are no performance implications for this change.\n\nAArch64 doesn\u0027t require the same change because it doesn\u0027t have any memory alignment requirements.\n\nenh@ - we\u0027ll need this in AOSP too.\n\nPTAL, thanks.",
+      "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
