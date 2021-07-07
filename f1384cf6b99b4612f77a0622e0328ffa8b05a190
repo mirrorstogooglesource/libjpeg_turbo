@@ -16,6 +16,24 @@
       "message": "I\u0027ve verified that the generated code doesn\u0027t change for AArch32 builds of Chromium, so there are no performance implications for this change.\n\nAArch64 doesn\u0027t require the same change because it doesn\u0027t have any memory alignment requirements.\n\nenh@ - we\u0027ll need this in AOSP too.\n\nPTAL, thanks.",
       "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f35b4fee_12553a49",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004789
+      },
+      "writtenOn": "2021-07-07T15:44:36Z",
+      "side": 1,
+      "message": "\u003e enh@ - we\u0027ll need this in AOSP too.\n\ni don\u0027t think we do (so i won\u0027t be backporting this to S), because Android explicitly compiles this library for arm rather than thumb [https://source.corp.google.com/android/external/libjpeg-turbo/Android.bp;l\u003d112?q\u003dfile:external%2Flibjpeg.*android.bp\u0026sq\u003dpackage:%5Eandroid$], but i\u0027ll sync AOSP anyway...",
+      "parentUuid": "ac32b399_2b9234f3",
+      "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
