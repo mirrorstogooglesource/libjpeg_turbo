@@ -18,6 +18,24 @@
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "437d1d18_d0a7825c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000805
+      },
+      "writtenOn": "2021-07-08T15:25:44Z",
+      "side": 1,
+      "message": "There\u0027s very little upstream that we don\u0027t already have; the primary change, which is the one I want, is fixes for -Wimplicit-fallthrough.  However, I figure rebasing on ToT (which is what we do with most other third-party deps) will make future rolls easier than trying to cherry pick changes out (which will necessitate a future reapplication of everything local).",
+      "parentUuid": "481542af_8b67673b",
+      "revId": "58c8734d49a3aee94799b3a5cf16af2411257788",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "705df870_4a45a856",
