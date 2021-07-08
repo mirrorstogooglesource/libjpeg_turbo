@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "481542af_8b67673b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-07-08T14:56:47Z",
+      "side": 1,
+      "message": "Usually we cherry-pick specific changes (when they\u0027re necessary) on top of a major upstream release, rather than fast-forwarding to upstream tip. Is there a specific upstream commit you\u0027re wanting the benefit of?\n\n(I\u0027m not opposed to this patch, just curious :) I\u0027ll add the other OWNERs to check they\u0027re ok too.)",
+      "revId": "58c8734d49a3aee94799b3a5cf16af2411257788",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "705df870_4a45a856",
+        "filename": "README.chromium",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-07-08T14:56:47Z",
+      "side": 1,
+      "message": "Ditto",
+      "revId": "58c8734d49a3aee94799b3a5cf16af2411257788",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0e7c03f9_68a5e7c9",
+        "filename": "README.chromium",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-07-08T14:56:47Z",
+      "side": 1,
+      "message": "Can you add \"(post 2.1.0)\" after the hash here please, just so it\u0027s easy to tell what version this is based on.",
+      "revId": "58c8734d49a3aee94799b3a5cf16af2411257788",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
