@@ -34,6 +34,23 @@
       "parentUuid": "ac32b399_2b9234f3",
       "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dbe2d9f1_00d81f0f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004789
+      },
+      "writtenOn": "2021-07-08T23:51:46Z",
+      "side": 1,
+      "message": "lol, i hadn\u0027t noticed this wasn\u0027t merged yet so i have the fairly useless AOSP sync https://android-review.googlesource.com/c/platform/external/libjpeg-turbo/+/1761049 which gets the change before this one.\n\ni\u0027ll let scroggo decide whether to +2 that, or just wait until this CL is merged since i\u0027ll have to do another update anyway...",
+      "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
