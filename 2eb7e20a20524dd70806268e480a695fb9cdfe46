@@ -33,6 +33,23 @@
       "message": "LGTM but please wait for a comment from Chris/Leon.",
       "revId": "2eb7e20a20524dd70806268e480a695fb9cdfe46",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d6f6a7fa_483deb3d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2021-07-09T14:56:57Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "2eb7e20a20524dd70806268e480a695fb9cdfe46",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
