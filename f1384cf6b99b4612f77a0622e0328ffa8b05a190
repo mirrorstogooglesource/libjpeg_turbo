@@ -87,6 +87,23 @@
       "parentUuid": "f35b4fee_12553a49",
       "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6de26fd_752d2f0c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1125499
+      },
+      "writtenOn": "2021-07-09T15:14:23Z",
+      "side": 1,
+      "message": "Drive-by LGTM.\n\nLeon is more familiar with how this will matter to Android, so it is wise to get his approval.",
+      "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
