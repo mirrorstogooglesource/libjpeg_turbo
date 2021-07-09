@@ -121,6 +121,24 @@
       "message": "Whoops. LGTM from my @chromium account",
       "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5c5618a_9e077040",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004789
+      },
+      "writtenOn": "2021-07-09T15:38:15Z",
+      "side": 1,
+      "message": "yeah, makes sense, but still below the bar for backporting to S (since we won\u0027t be changing the compiler version in that branch, and the current version doesn\u0027t do this).\n\n(tbh, before this CL i didn\u0027t realize that STM/LDM still had alignment restrictions. https://www.keil.com/support/man/docs/armasm/armasm_dom1359731171041.htm answers the question i was going to ask you about LDRD/STRD, but if you have any influence over your documentation folks, it would be really nice if \"Other data-accessing instructions always cause an alignment exception for unaligned data\" actually listed the instructions. seems weird to list the _safe_ instructions but not the _unsafe_ ones! tbh, i think if you\u0027d asked me last week i\u0027d have said there weren\u0027t any unsafe ones, and then admitted i didn\u0027t know about LDRD/STRD. LDM/STM wouldn\u0027t have occurred to me.)\n\nbtw, do you have a canonical reference for \"nor - for the most part - do cores executing in AArch64 mode incur a performance penalty when making unaligned memory accesses\" which you said on the github bug? that very question came up in a different context the other day, and while we all _believe_ this, you as an Arm employee are so far the most authoritative source i\u0027ve seen for this :-)",
+      "parentUuid": "1b4fa6d6_c14fbbc4",
+      "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
