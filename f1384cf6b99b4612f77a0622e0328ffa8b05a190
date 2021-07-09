@@ -51,6 +51,42 @@
       "message": "lol, i hadn\u0027t noticed this wasn\u0027t merged yet so i have the fairly useless AOSP sync https://android-review.googlesource.com/c/platform/external/libjpeg-turbo/+/1761049 which gets the change before this one.\n\ni\u0027ll let scroggo decide whether to +2 that, or just wait until this CL is merged since i\u0027ll have to do another update anyway...",
       "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce2acff8_a75609cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-07-09T09:50:15Z",
+      "side": 1,
+      "message": "Thanks, sorry for messing you around",
+      "parentUuid": "dbe2d9f1_00d81f0f",
+      "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b4fa6d6_c14fbbc4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-07-09T09:50:15Z",
+      "side": 1,
+      "message": "While the bad STM instruction is emitted when the -mthumb option is present, there\u0027s nothing stopping the compiler from emitting it when compiling explicitly for Arm - if the compiler implementation changes, this could break.",
+      "parentUuid": "f35b4fee_12553a49",
+      "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
