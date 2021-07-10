@@ -16,6 +16,23 @@
       "message": "Forgot to do this :(",
       "revId": "e9e400e0af31baf72d235655850bc00e55b6c145",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0cdb9d2e_278a66bc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2021-07-10T21:39:10Z",
+      "side": 1,
+      "message": "LGTM. I see this reflects the changes requested upstream.",
+      "revId": "e9e400e0af31baf72d235655850bc00e55b6c145",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
