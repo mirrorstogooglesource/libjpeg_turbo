@@ -139,6 +139,24 @@
       "parentUuid": "1b4fa6d6_c14fbbc4",
       "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "20ca510b_b7f44c97",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-07-12T15:30:35Z",
+      "side": 1,
+      "message": "Thanks for the confirmation about the compiler behavior for Android S.\n\nOn memory access performance, every Arm core has a publicly available Software Optimization Guide (SWOG). (The Cortex-A76 version can be downloaded here.[1]) Within the SWOG, there\u0027s a section on \"Load/Store Alignment.\" For the Cortex-A76, this section reads as follows:\n\n\"The Armv8.2-A architecture allows many types of load and store accesses to be arbitrarily aligned. The Cortex-A76 processor handles most unaligned accesses without performance penalties. However, there are cases which reduce bandwidth or incur additional latency, as described below.\n  •Load operations that cross a cache-line (64-byte) boundary.\n  •Quad-word load operations that are not 4B aligned.\n  •Store operations that cross a 16B boundary.\"\n\nNote that such characteristics are present from Armv8.0-A-generation cores - it says Armv8.2-A here because that\u0027s what the Cortex-A76 implements.\n\n[1] https://developer.arm.com/documentation/pjdoc466751330-7215/latest",
+      "parentUuid": "d5c5618a_9e077040",
+      "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
