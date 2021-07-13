@@ -175,6 +175,24 @@
       "parentUuid": "20ca510b_b7f44c97",
       "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2f28d33_d71161f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-07-13T09:17:49Z",
+      "side": 1,
+      "message": "(I would believe it, it\u0027s got me *so* many times.)\n\nHmm, yes - it does appear that the A53, A7 and A73 aren\u0027t available from our public pages. That said, the latencies and execution bandwidth stay pretty much the same between the A53 and A55. You may also wish to take a look at the guides for the new Cortex-X cores - which have significantly different characteristics to the Cortex-A7* big cores. See the Cortex-X1 guide here[1].\n\n[1] https://developer.arm.com/documentation/102174/latest",
+      "parentUuid": "41d3650c_106e7680",
+      "revId": "f1384cf6b99b4612f77a0622e0328ffa8b05a190",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
