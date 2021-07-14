@@ -33,6 +33,41 @@
       "message": "Whoops. Not sure how I missed this yesterday. LGTM.\n\nCC Jonathan. Is the non-fallthrough part related to your Thumb change?",
       "revId": "ad8b3b0f84baf155f3bde5626c3bf9d20535bcae",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2cbb4976_81af1701",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-07-14T16:44:43Z",
+      "side": 1,
+      "message": "Yes, we can abandon that[1] since it\u0027s included here - thanks. LGTM too.\n\n[1] https://chromium-review.googlesource.com/c/chromium/deps/libjpeg_turbo/+/3000934",
+      "parentUuid": "8075c179_4d8b37d8",
+      "revId": "ad8b3b0f84baf155f3bde5626c3bf9d20535bcae",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7e07e2bc_64e364e0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-07-14T16:44:43Z",
+      "side": 1,
+      "message": "LGTM too - thanks.",
+      "revId": "ad8b3b0f84baf155f3bde5626c3bf9d20535bcae",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
