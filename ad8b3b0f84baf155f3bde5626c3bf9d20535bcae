@@ -85,6 +85,24 @@
       "message": "(since Arm was asking about this last week...) AOSP sync here: https://android-review.googlesource.com/c/platform/external/libjpeg-turbo/+/1768605",
       "revId": "ad8b3b0f84baf155f3bde5626c3bf9d20535bcae",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2327a0c_c44cbf0a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-07-15T16:39:49Z",
+      "side": 1,
+      "message": "Thanks!",
+      "parentUuid": "93f3752b_54117ba7",
+      "revId": "ad8b3b0f84baf155f3bde5626c3bf9d20535bcae",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
