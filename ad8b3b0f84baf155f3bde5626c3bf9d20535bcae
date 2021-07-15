@@ -68,6 +68,23 @@
       "message": "LGTM too - thanks.",
       "revId": "ad8b3b0f84baf155f3bde5626c3bf9d20535bcae",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "93f3752b_54117ba7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004789
+      },
+      "writtenOn": "2021-07-15T16:31:57Z",
+      "side": 1,
+      "message": "(since Arm was asking about this last week...) AOSP sync here: https://android-review.googlesource.com/c/platform/external/libjpeg-turbo/+/1768605",
+      "revId": "ad8b3b0f84baf155f3bde5626c3bf9d20535bcae",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
