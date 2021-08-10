@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ace73e6e_b58d1d6f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-08-10T10:36:06Z",
+      "side": 1,
+      "message": "All unit tests pass for AArch32, AArch64 and x86_64. This also fixes the bug linked. PTAL.",
+      "revId": "ff19e5b2e176c61d552f68768e0e051867745321",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
