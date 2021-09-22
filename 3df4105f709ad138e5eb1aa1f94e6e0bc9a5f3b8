@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2fb87b20_3ef7d9e0",
+        "filename": "BUILD.gn",
+        "patchSetId": 3
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 1178490
+      },
+      "writtenOn": "2021-09-22T12:20:42Z",
+      "side": 1,
+      "message": "Can you run \"gn format \u003cPATH TO THIS FILE\u003e\"?\n\nI suspect this should be on 2 lines.",
+      "range": {
+        "startLine": 177,
+        "startChar": 35,
+        "endLine": 177,
+        "endChar": 54
+      },
+      "revId": "3df4105f709ad138e5eb1aa1f94e6e0bc9a5f3b8",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
