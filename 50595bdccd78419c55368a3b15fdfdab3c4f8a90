@@ -16,6 +16,29 @@
       "message": "Could you please review this CL?",
       "revId": "50595bdccd78419c55368a3b15fdfdab3c4f8a90",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3150bc91_fb6c4ea3",
+        "filename": "BUILD.gn",
+        "patchSetId": 6
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-09-30T17:50:08Z",
+      "side": 1,
+      "message": "This feels like it should be defined for all CPU targets. Could you remove this from here and add the following under line 139: \"defines \u003d [ \"MANGLE_JPEG_NAMES\" ]\"\n\nYou\u0027ll then need to change the \"\u003d\" on this defines block to \"+\u003d\".",
+      "range": {
+        "startLine": 179,
+        "startChar": 6,
+        "endLine": 179,
+        "endChar": 26
+      },
+      "revId": "50595bdccd78419c55368a3b15fdfdab3c4f8a90",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
