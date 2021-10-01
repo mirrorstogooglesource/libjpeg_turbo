@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aa225f58_cdbf0841",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-10-01T16:19:19Z",
+      "side": 1,
+      "message": "LGTM, thanks.\n\nPassed CQ dry-run here: https://chromium-review.googlesource.com/c/chromium/src/+/3198878",
+      "revId": "49836d72bd22c7a78bc0250483f04162278cdc6a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
