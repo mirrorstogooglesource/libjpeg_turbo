@@ -50,6 +50,24 @@
       "message": "LGTM as well.\nI wonder if we can get rid of the turbojpeg files.",
       "revId": "02959c3ee17abacfd1339ec22ea93301292ffd56",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b5438798_5077b7a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2021-11-22T15:42:36Z",
+      "side": 1,
+      "message": "We use turbojpeg as a way of getting at the unit tests[1] so we\u0027d need to keep hold of turbojpeg.[ch] as well as tjbench.c, tjutil.c and tjunittest.c.\n\nI do think there is some excess fat that we could trim though - probably all of the *.in and *.1 files. I\u0027m unsure if AOSP makes use of the JNI-related files - if we know they\u0027re not needed, they can have the boot as well.\n\n[1] https://source.chromium.org/chromium/chromium/src/+/main:third_party/libjpeg_turbo/BUILD.gn;l\u003d272",
+      "parentUuid": "8e906c54_f917da1b",
+      "revId": "02959c3ee17abacfd1339ec22ea93301292ffd56",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
