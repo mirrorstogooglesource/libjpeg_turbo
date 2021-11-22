@@ -33,6 +33,23 @@
       "message": "Thanks!",
       "revId": "02959c3ee17abacfd1339ec22ea93301292ffd56",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e906c54_f917da1b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2021-11-22T15:25:11Z",
+      "side": 1,
+      "message": "LGTM as well.\nI wonder if we can get rid of the turbojpeg files.",
+      "revId": "02959c3ee17abacfd1339ec22ea93301292ffd56",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
