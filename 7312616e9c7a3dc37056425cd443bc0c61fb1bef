@@ -16,6 +16,184 @@
       "message": "All unit tests pass for Android (AArch32 and AArch64), Windows on Arm and Linux (x86_64). PTAL.",
       "revId": "7312616e9c7a3dc37056425cd443bc0c61fb1bef",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e057964_f85f3cad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2022-03-02T20:01:37Z",
+      "side": 1,
+      "message": "*mostly* LGTM. But give me a moment to look deeper into one curious thing from upstream.\n\n(A bunch of comments but they can be ignored. One to consider is whether removing the .in and .1 files should be a separate commit. It isn\u0027t very important so I don\u0027t mind if it stays in this commit.)",
+      "revId": "7312616e9c7a3dc37056425cd443bc0c61fb1bef",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "000fc5e3_9bac9231",
+        "filename": "README.chromium",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2022-03-02T20:01:37Z",
+      "side": 1,
+      "message": "I agree with removing the .in and .1 config files.\n\nWe\u0027re already selectively choosing which libjpeg-turbo files to include. We\u0027re leaving out ones we don\u0027t need. And we don\u0027t have a separate build step to run the config. We\u0027re storing the results of the config.\n\nSo these extra files aren\u0027t *really* part of the build.\n\nAlthough, maybe that should be a separate commit?",
+      "range": {
+        "startLine": 24,
+        "startChar": 2,
+        "endLine": 24,
+        "endChar": 38
+      },
+      "revId": "7312616e9c7a3dc37056425cd443bc0c61fb1bef",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "807e1c46_8a60ce41",
+        "filename": "jmemmgr.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 1161,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2022-03-02T20:01:37Z",
+      "side": 1,
+      "message": "Same (line 1159)",
+      "range": {
+        "startLine": 1161,
+        "startChar": 26,
+        "endLine": 1161,
+        "endChar": 28
+      },
+      "revId": "7312616e9c7a3dc37056425cd443bc0c61fb1bef",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78e47bb5_9d345448",
+        "filename": "simd/arm/aarch32/jsimd.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2022-03-02T20:01:37Z",
+      "side": 1,
+      "message": "Same (line 108)",
+      "range": {
+        "startLine": 134,
+        "startChar": 21,
+        "endLine": 134,
+        "endChar": 22
+      },
+      "revId": "7312616e9c7a3dc37056425cd443bc0c61fb1bef",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb6c350b_b6d7c8d1",
+        "filename": "simd/arm/aarch64/jsimd.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2022-03-02T20:01:37Z",
+      "side": 1,
+      "message": "Same (line 128).",
+      "range": {
+        "startLine": 150,
+        "startChar": 21,
+        "endLine": 150,
+        "endChar": 22
+      },
+      "revId": "7312616e9c7a3dc37056425cd443bc0c61fb1bef",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dce4b1fc_bb2db371",
+        "filename": "simd/i386/jsimd.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2022-03-02T20:01:37Z",
+      "side": 1,
+      "message": "Same (line 47)",
+      "range": {
+        "startLine": 57,
+        "startChar": 21,
+        "endLine": 57,
+        "endChar": 22
+      },
+      "revId": "7312616e9c7a3dc37056425cd443bc0c61fb1bef",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d5853f2_25def235",
+        "filename": "simd/x86_64/jsimd.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2022-03-02T20:01:37Z",
+      "side": 1,
+      "message": "Again, I wish upstream didn\u0027t use magic numbers for their array sizes.\n\n(Originally from line 47.)",
+      "range": {
+        "startLine": 57,
+        "startChar": 21,
+        "endLine": 57,
+        "endChar": 22
+      },
+      "revId": "7312616e9c7a3dc37056425cd443bc0c61fb1bef",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "25044479_a6d93aa1",
+        "filename": "turbojpeg.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 291,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2022-03-02T20:01:37Z",
+      "side": 1,
+      "message": "I realize this isn\u0027t something to change here (more of an upstream issue to be raised), but I wish this magic number of the array length was in a const or macro or something.\n\n(Originally used on line 283.)\n\nJust pointing it out as I came across it. No need to change anything.",
+      "range": {
+        "startLine": 291,
+        "startChar": 21,
+        "endLine": 291,
+        "endChar": 22
+      },
+      "revId": "7312616e9c7a3dc37056425cd443bc0c61fb1bef",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
