@@ -22,6 +22,30 @@
       },
       "revId": "02959c3ee17abacfd1339ec22ea93301292ffd56",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8670771_270f6d9e",
+        "filename": "jdarith.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 702,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2022-03-02T20:15:01Z",
+      "side": 0,
+      "message": "This change comes from https://github.com/libjpeg-turbo/libjpeg-turbo/commit/e869a81a7a4be2415f60f29c55d8c5ad7e730aaa\n\nThe check for cinfo-\u003eSe \u003c DCTSIZE2 is already handled by a switch in jdinput.c.",
+      "parentUuid": "5c945309_f951c5dc",
+      "range": {
+        "startLine": 702,
+        "startChar": 9,
+        "endLine": 702,
+        "endChar": 29
+      },
+      "revId": "02959c3ee17abacfd1339ec22ea93301292ffd56",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
