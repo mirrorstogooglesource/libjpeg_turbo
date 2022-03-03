@@ -16,6 +16,23 @@
       "message": "Thanks for taking a look Chris. I tried PS1 on the bots[1] and it broke the Mac build.\n\nThis is because __WORDSIZE is defined in stdint.h on Mac platforms and not in bit/wordsize.h like on Linux (and limits.h includes bits/wordsize.h.) Since stdint.h includes limits.h, I\u0027ve updated the patch to just use stdint.h.\n\nPS2 passes the CQ dry-run now so we should be good.[1]\n\n[1] https://chromium-review.googlesource.com/c/chromium/src/+/3500594/2",
       "revId": "22f1a22c99e9dde8cd3c72ead333f425c5a7aa77",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c8d5f07_5d678ea2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2022-03-03T19:44:40Z",
+      "side": 1,
+      "message": "LGTM\n\nAlso, no luck fixing the magic numbers upstream.\nhttps://github.com/libjpeg-turbo/libjpeg-turbo/pull/585",
+      "revId": "22f1a22c99e9dde8cd3c72ead333f425c5a7aa77",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
