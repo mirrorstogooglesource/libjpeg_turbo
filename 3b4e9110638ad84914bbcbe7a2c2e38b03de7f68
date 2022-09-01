@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "096b20b6_23f76145",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004841
+      },
+      "writtenOn": "2022-09-01T03:39:45Z",
+      "side": 1,
+      "message": "The only change I made was applying https://github.com/libjpeg-turbo/libjpeg-turbo/commit/a0148454030bddfabcebe59724e64fbb7b7ad678 to the other uses of snprintf in the same file.  I am building Android rather than Chromium, but this is the upstream for AOSP as you know.  Seems to be working as intended on Android.",
+      "revId": "3b4e9110638ad84914bbcbe7a2c2e38b03de7f68",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
