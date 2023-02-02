@@ -15,12 +15,12 @@ This consists of the components:
 * A codereview.settings file
 * A DIR_METADATA file
 * Patched header files used by Chromium
-* Deleted unused directories: cmakescripts, doc, fuzz, java, release,
+* Deleted unused directories: .github, cmakescripts, doc, fuzz, java, release,
   sharedlib, simd/mips, simd/mips64, simd/powerpc, and win
 * Deleted unused files: appveyor.yml, CMakeLists.txt, cjpeg.1, croptest.in,
-  djpeg.1, doxygen.config, doxygen-extra.css, .gitattributes, jpegtran.1,
-  md5/CMakeLists.txt, md5/md5cmp.c, rdjpgcom.1, simd/CMakeLists.txt, strtest.c,
-  tjbenchtest.in, tjbenchtest.java.in, tjexample.c, tjexampletest.in,
+  djpeg.1, doxygen.config, doxygen-extra.css, example.txt, .gitattributes, 
+  jpegtran.1, md5/CMakeLists.txt, md5/md5cmp.c, rdjpgcom.1, simd/CMakeLists.txt, 
+  strtest.c, tjbenchtest.in, tjbenchtest.java.in, tjexample.c, tjexampletest.in,
   tjexampletest.java.in and wrjpgcom.1
 * Deleted legacy Arm Neon assembly files (supporting old compiler versions that
   do not generate performant code from intrinsics):
