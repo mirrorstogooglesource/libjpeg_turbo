@@ -16,6 +16,24 @@
       "message": "Hi Jake, thanks for submitting this patch. I will get to this, but it may take a few days - I\u0027ve got a lot on right now.\n\nI am curious as to how you managed to upload the change without a change-ID though.",
       "revId": "321790cecba553e4e73c5dd4b413b6a381744e24",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d1e4093c_dba5298d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004841
+      },
+      "writtenOn": "2023-02-03T17:09:52Z",
+      "side": 1,
+      "message": "git push origin HEAD:refs/for/main I guess bypasses the checks for that.  I was surprised it worked also.  It said pushing without a Change-ID is deprecated and won\u0027t be allowed soon.  I didn\u0027t have a Chromium checkout since I really only work on this downstream in Android.  Anyway, I\u0027ll amend with the Change-ID.  No issues noticed thus far in Android.\n\nThe changes aren\u0027t critical, so no rush.",
+      "parentUuid": "1df6fd51_c6703380",
+      "revId": "321790cecba553e4e73c5dd4b413b6a381744e24",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
