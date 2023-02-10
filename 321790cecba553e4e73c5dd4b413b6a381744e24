@@ -34,6 +34,23 @@
       "parentUuid": "1df6fd51_c6703380",
       "revId": "321790cecba553e4e73c5dd4b413b6a381744e24",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0d4e835_b66b7bdf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-02-10T02:54:29Z",
+      "side": 1,
+      "message": "You have \"Superseded with \u003clink\u003e\".\nBut the link goes back here? I think you pasted the wrong link.",
+      "revId": "321790cecba553e4e73c5dd4b413b6a381744e24",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ],
   "submitRequirementResults": [
