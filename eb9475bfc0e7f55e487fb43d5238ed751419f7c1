@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2b04751_88727300",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004841
+      },
+      "writtenOn": "2023-02-20T20:49:44Z",
+      "side": 1,
+      "message": "minor bug fix released, so I squashed that into here.  https://github.com/libjpeg-turbo/libjpeg-turbo/commit/d743a2c12e889f7605a56f5144ae2e3899c9dd4f is the only functional change.",
+      "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
