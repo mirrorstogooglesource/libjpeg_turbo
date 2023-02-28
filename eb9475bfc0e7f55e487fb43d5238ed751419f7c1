@@ -102,6 +102,29 @@
       },
       "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9f274e87_f1114db8",
+        "filename": "tjunittest.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 942,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2023-02-28T00:22:15Z",
+      "side": 1,
+      "message": "This needs to be changed to yuvAlign - the libjpeg_turbo_unittests target fails to build (undeclared identifier.)",
+      "range": {
+        "startLine": 942,
+        "startChar": 2,
+        "endLine": 942,
+        "endChar": 5
+      },
+      "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
