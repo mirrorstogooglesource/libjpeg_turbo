@@ -35,6 +35,24 @@
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a3541fa6_f753344a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004841
+      },
+      "writtenOn": "2023-02-28T22:07:53Z",
+      "side": 1,
+      "message": "Done but one question: did I do the integer correctly?  Should it be 2001005001 instead?",
+      "parentUuid": "6a0a2206_7d65e673",
+      "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bea4dcab_51027092",
@@ -48,6 +66,30 @@
       "writtenOn": "2023-02-28T00:01:20Z",
       "side": 1,
       "message": "This needs to be updated to 2.1.5.1.",
+      "range": {
+        "startLine": 11,
+        "startChar": 16,
+        "endLine": 11,
+        "endChar": 21
+      },
+      "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "576c60b5_89b7ba6e",
+        "filename": "README.chromium",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1004841
+      },
+      "writtenOn": "2023-02-28T22:07:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bea4dcab_51027092",
       "range": {
         "startLine": 11,
         "startChar": 16,
@@ -81,6 +123,30 @@
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "87fe1956_1b210f15",
+        "filename": "README.chromium",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1004841
+      },
+      "writtenOn": "2023-02-28T22:07:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "235f6dac_c2dc3c50",
+      "range": {
+        "startLine": 21,
+        "startChar": 74,
+        "endLine": 21,
+        "endChar": 75
+      },
+      "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a60cf0d8_98703a58",
@@ -104,6 +170,30 @@
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7b9747b2_bce4f057",
+        "filename": "README.chromium",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1004841
+      },
+      "writtenOn": "2023-02-28T22:07:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a60cf0d8_98703a58",
+      "range": {
+        "startLine": 22,
+        "startChar": 80,
+        "endLine": 22,
+        "endChar": 81
+      },
+      "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9f274e87_f1114db8",
@@ -117,6 +207,30 @@
       "writtenOn": "2023-02-28T00:22:15Z",
       "side": 1,
       "message": "This needs to be changed to yuvAlign - the libjpeg_turbo_unittests target fails to build (undeclared identifier.)",
+      "range": {
+        "startLine": 942,
+        "startChar": 2,
+        "endLine": 942,
+        "endChar": 5
+      },
+      "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8fe105a3_3d26eaa3",
+        "filename": "tjunittest.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 942,
+      "author": {
+        "id": 1004841
+      },
+      "writtenOn": "2023-02-28T22:07:53Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9f274e87_f1114db8",
       "range": {
         "startLine": 942,
         "startChar": 2,
