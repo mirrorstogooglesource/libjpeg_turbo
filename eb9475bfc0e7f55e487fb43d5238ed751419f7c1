@@ -53,6 +53,24 @@
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "08810b3a_7f531ae1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2023-02-28T23:04:08Z",
+      "side": 1,
+      "message": "What you\u0027ve done is correct, thanks.",
+      "parentUuid": "a3541fa6_f753344a",
+      "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bea4dcab_51027092",
@@ -90,6 +108,30 @@
       "side": 1,
       "message": "Done",
       "parentUuid": "bea4dcab_51027092",
+      "range": {
+        "startLine": 11,
+        "startChar": 16,
+        "endLine": 11,
+        "endChar": 21
+      },
+      "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f468c2ab_adcfc946",
+        "filename": "README.chromium",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2023-02-28T23:04:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "576c60b5_89b7ba6e",
       "range": {
         "startLine": 11,
         "startChar": 16,
