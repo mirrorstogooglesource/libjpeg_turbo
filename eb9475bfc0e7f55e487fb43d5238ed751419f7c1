@@ -16,6 +16,92 @@
       "message": "minor bug fix released, so I squashed that into here.  https://github.com/libjpeg-turbo/libjpeg-turbo/commit/d743a2c12e889f7605a56f5144ae2e3899c9dd4f is the only functional change.",
       "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a0a2206_7d65e673",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2023-02-28T00:01:20Z",
+      "side": 1,
+      "message": "This looks mostly fine but there are a few things - other than the inline comments - that need to be taken care of:\n\nThe library version number needs to be updated in jconfig.h (in two places) and jconfigint.h.",
+      "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bea4dcab_51027092",
+        "filename": "README.chromium",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2023-02-28T00:01:20Z",
+      "side": 1,
+      "message": "This needs to be updated to 2.1.5.1.",
+      "range": {
+        "startLine": 11,
+        "startChar": 16,
+        "endLine": 11,
+        "endChar": 21
+      },
+      "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "235f6dac_c2dc3c50",
+        "filename": "README.chromium",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2023-02-28T00:01:20Z",
+      "side": 1,
+      "message": "This whitespace should be removed.",
+      "range": {
+        "startLine": 21,
+        "startChar": 74,
+        "endLine": 21,
+        "endChar": 75
+      },
+      "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a60cf0d8_98703a58",
+        "filename": "README.chromium",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2023-02-28T00:01:20Z",
+      "side": 1,
+      "message": "Ditto.",
+      "range": {
+        "startLine": 22,
+        "startChar": 80,
+        "endLine": 22,
+        "endChar": 81
+      },
+      "revId": "eb9475bfc0e7f55e487fb43d5238ed751419f7c1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
