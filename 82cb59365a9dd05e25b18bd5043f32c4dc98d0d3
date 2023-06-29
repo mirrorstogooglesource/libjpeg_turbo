@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2956db4c_f3145ece",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2023-06-29T16:26:33Z",
+      "side": 1,
+      "message": "I\u0027m not familiar with how these inputs works. I thought these were included in the same way headers are?\n\nI also don\u0027t clearly see how this relates to the bug filed. What does this fix?",
+      "revId": "82cb59365a9dd05e25b18bd5043f32c4dc98d0d3",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f8edcb6b_354a15f5",
+        "filename": "BUILD.gn",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2023-06-29T16:26:33Z",
+      "side": 1,
+      "message": "nit: If you\u0027re going to reformat this line, might as well remove \"on\", which I don\u0027t think is necessary.",
+      "range": {
+        "startLine": 16,
+        "startChar": 22,
+        "endLine": 16,
+        "endChar": 24
+      },
+      "revId": "82cb59365a9dd05e25b18bd5043f32c4dc98d0d3",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
