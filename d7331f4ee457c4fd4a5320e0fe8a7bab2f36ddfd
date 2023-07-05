@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b7b68d5e_7a223fb3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-07-05T06:43:29Z",
+      "side": 1,
+      "message": "I am outside of Google now and cannot read the bug.\nI defer to Leon for his approval.\n\nThe parts I see seem fine. LGTM.",
+      "revId": "d7331f4ee457c4fd4a5320e0fe8a7bab2f36ddfd",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
