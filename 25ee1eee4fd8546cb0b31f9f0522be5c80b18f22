@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "489341b7_ab7eb757",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-07-28T04:40:30Z",
+      "side": 1,
+      "message": "PTAL\n\nI did notice something strange though. There are other files which were modified upstream but not included in our fork. They weren\u0027t between the current 2.1.5.1 we have and 3.0.0. So maybe somewhere along the lines we missed some upstream changes?\n\n(The modified files aren\u0027t our local changes, I think. For example, wrtarga.c is changed upstream.)",
+      "revId": "25ee1eee4fd8546cb0b31f9f0522be5c80b18f22",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
