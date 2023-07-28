@@ -16,6 +16,24 @@
       "message": "PTAL\n\nI did notice something strange though. There are other files which were modified upstream but not included in our fork. They weren\u0027t between the current 2.1.5.1 we have and 3.0.0. So maybe somewhere along the lines we missed some upstream changes?\n\n(The modified files aren\u0027t our local changes, I think. For example, wrtarga.c is changed upstream.)",
       "revId": "25ee1eee4fd8546cb0b31f9f0522be5c80b18f22",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ae429a5a_badbbc29",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2023-07-28T14:26:40Z",
+      "side": 1,
+      "message": "Sorry, can you explain this a little better? I *think* you\u0027re saying that\n- we were on 2.1.5.1 (with tracked and possibly untracked local changes)\n- some subset of files are different between our version and 3.0.0\n- the upstream files\u0027 modifications predate 2.1.5.1\n\nDoes that sound right? Did you look at the blame?",
+      "parentUuid": "489341b7_ab7eb757",
+      "revId": "25ee1eee4fd8546cb0b31f9f0522be5c80b18f22",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
