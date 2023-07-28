@@ -34,6 +34,24 @@
       "parentUuid": "489341b7_ab7eb757",
       "revId": "25ee1eee4fd8546cb0b31f9f0522be5c80b18f22",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc31dd10_b623a826",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-07-28T14:46:36Z",
+      "side": 1,
+      "message": "I think the third bullet is the issue. I will investigate in a sec.\n\nBut to clarify: Ignore our local changes for a sec. We claimed to be on 2.1.5.1. But we may have been missing changes and not entirely on 2.1.5.1.\n\nThis CL includes all changes from 2.1.5.1 to 3.0.0.\n\nHowever, there are still files which don\u0027t match. And the mismatch isn\u0027t just our local changes. wrarga.c is an example of that. It was not changed between 2.1.5.1 and 3.0.0. But our copy doesn\u0027t match the one found in 3.0.0 and it isn\u0027t due to local changes.",
+      "parentUuid": "ae429a5a_badbbc29",
+      "revId": "25ee1eee4fd8546cb0b31f9f0522be5c80b18f22",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
