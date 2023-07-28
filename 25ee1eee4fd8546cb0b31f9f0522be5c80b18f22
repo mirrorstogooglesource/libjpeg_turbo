@@ -52,6 +52,24 @@
       "parentUuid": "ae429a5a_badbbc29",
       "revId": "25ee1eee4fd8546cb0b31f9f0522be5c80b18f22",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3205b76a_37d61e65",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-07-28T17:42:35Z",
+      "side": 1,
+      "message": "The wrtarga.c change was made in e8b40f3, Nov 4, 2022. That would have been the 2.1.5 update (prior to 2.1.5.1 that we were supposed to be on).",
+      "parentUuid": "fc31dd10_b623a826",
+      "revId": "25ee1eee4fd8546cb0b31f9f0522be5c80b18f22",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
