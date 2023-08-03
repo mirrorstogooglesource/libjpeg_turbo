@@ -87,6 +87,24 @@
       "message": "Apologies for being slow here.",
       "revId": "25ee1eee4fd8546cb0b31f9f0522be5c80b18f22",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e435655a_1c56c52e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-08-03T05:56:02Z",
+      "side": 1,
+      "message": "No worries. I\u0027m moving slowly right now, too. (The PNG spec is nearing completion and I\u0027m prioritizing its smooth release.)\n\nYou are right about what you found. I\u0027m worried that I missed it, actually. I\u0027m going to review this CL and double check the only changes listed are from upstream.",
+      "parentUuid": "3949c387_2e131bbf",
+      "revId": "25ee1eee4fd8546cb0b31f9f0522be5c80b18f22",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
