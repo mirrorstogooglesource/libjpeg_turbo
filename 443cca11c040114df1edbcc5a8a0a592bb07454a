@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ecb95aac_0cae039f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-09-18T09:59:51Z",
+      "side": 1,
+      "message": "Whoops. I meant to reply that my last patchset should have addressed your concerns.\nEverything should be good now.\n\nI double checked our current fork vs upstream 2.1.5.1. We\u0027re still different, but not in ways that really matter...just ways that are strange. For example, we don\u0027t build with BITS_IN_JSAMPLE \u003d\u003d 12. So things that are #ifdef\u0027d behind that are removed. See jccolor.c and RANGE_LIMIT.\n\nThere were also some missed changed from JCOEF to UJCOEF. That changes behavior. Unsigned int overflows wrap around. Signed int overflows are undefined behavior. So I looked into this a bit. But I don\u0027t think we have a problem. (And once this CL lands, it\u0027ll be updated anyway.)\n\nI also double checked this change vs. upstream 3.0.0 to make sure I preserve our local changes. I believe that is good, too.",
+      "revId": "443cca11c040114df1edbcc5a8a0a592bb07454a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
