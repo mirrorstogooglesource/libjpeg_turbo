@@ -97,6 +97,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "eb6ed3c8_19d31a77",
+        "filename": "jpeglib.h",
+        "patchSetId": 5
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2023-09-18T21:28:28Z",
+      "side": 0,
+      "message": "I think we want this added back in to avoid symbol collisions with the system libjpeg",
+      "range": {
+        "startLine": 21,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 24
+      },
+      "revId": "aa4075f116e4312537d0d3e9dbd5e31096539f94",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "5cbcfe65_cb6e669b",
         "filename": "tjbench.c",
         "patchSetId": 1
@@ -278,6 +301,29 @@
         "startChar": 0,
         "endLine": 938,
         "endChar": 12
+      },
+      "revId": "aa4075f116e4312537d0d3e9dbd5e31096539f94",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "be9f1c08_11935b5d",
+        "filename": "tjunittest.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 832,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2023-09-18T21:28:28Z",
+      "side": 0,
+      "message": "We need this added back in if we want to run the Chromium libjpeg-turbo unit tests on Android devices.",
+      "range": {
+        "startLine": 825,
+        "startChar": 0,
+        "endLine": 832,
+        "endChar": 6
       },
       "revId": "aa4075f116e4312537d0d3e9dbd5e31096539f94",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
