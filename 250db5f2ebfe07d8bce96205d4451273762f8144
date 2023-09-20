@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "80407ae3_897695e3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2023-09-20T07:59:20Z",
+      "side": 1,
+      "message": "Last question, could you confirm that the unit tests target builds and runs without issue?\n\nninja -C \u003cout/build-dir\u003e third_party/libjpeg_turbo:libjpeg_turbo_unittests\n\n(Then run the binary that gets produced from that.)",
+      "revId": "250db5f2ebfe07d8bce96205d4451273762f8144",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
