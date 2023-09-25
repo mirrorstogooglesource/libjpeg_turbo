@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f9ecec5_9a0eaefc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-09-25T20:28:59Z",
+      "side": 1,
+      "message": "When I build libjpeg-turbo\u0027s unittests locally, things seem fine.\nWhen I build through our build system, I get errors for undefined UJCOEF (perhaps why we deviated from upstream in that way) as well as undefined c_derived_tbl.\n\nI\u0027m going through the two builds to see how we differ. But for the time being, here are several fixes.",
+      "revId": "e0ce4147b026628ccb684c81d0169260f45af3e8",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "66675f7f_647c8f4f",
+        "filename": "turbojpeg.c",
+        "patchSetId": 7
+      },
+      "lineNbr": 621,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-09-25T20:28:59Z",
+      "side": 1,
+      "message": "I commented out this break (and the ones on 626 and 631) because they trigger the combination of -Werror and -Wunreachable-code-break when building the unit tests.\n\nStrangely, I don\u0027t think -Wunreachable-code-break is supposed to be enabled for non-Chromium code, which we\u0027ve set in our BUILD.gn.\n\nI tried to explicitly remove just that from cflags but cflags wasn\u0027t yet created (prior to the final lines in our BUILD.gn). So I guess I need to learn more about how this gets built before I can do it right. For now, I\u0027m commenting.",
+      "revId": "e0ce4147b026628ccb684c81d0169260f45af3e8",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
