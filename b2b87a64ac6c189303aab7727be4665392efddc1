@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c322e98b_1de8bffe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1553262
+      },
+      "writtenOn": "2023-09-28T02:07:36Z",
+      "side": 1,
+      "message": "Gentle ping on this one. Are you happy for this license field to be updated with this value?",
+      "revId": "b2b87a64ac6c189303aab7727be4665392efddc1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
