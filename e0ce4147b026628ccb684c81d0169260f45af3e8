@@ -18,6 +18,23 @@
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "975fd69f_54f98bc6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-09-28T14:23:02Z",
+      "side": 1,
+      "message": "I am flying out today and return (hopefully) Tuesday.\nI\u0027ve been busy preparing for the trip and haven\u0027t made much progress on how our build system differs from upstream. I\u0027ll resume this on Wednesday.",
+      "revId": "e0ce4147b026628ccb684c81d0169260f45af3e8",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "66675f7f_647c8f4f",
