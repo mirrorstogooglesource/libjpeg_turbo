@@ -34,6 +34,24 @@
       "parentUuid": "c322e98b_1de8bffe",
       "revId": "b2b87a64ac6c189303aab7727be4665392efddc1",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bdd3aebd_b30b889d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1553262
+      },
+      "writtenOn": "2023-10-10T21:29:53Z",
+      "side": 1,
+      "message": "I think I\u0027m that person at the moment. For more context, I made this CL due to the open source license review for Chrome which you can see at b/300466236. We can\u0027t use custom license types and as far as I could tell, all three of these apply to this library based on the license file linked.",
+      "parentUuid": "bbb0d70b_744409d1",
+      "revId": "b2b87a64ac6c189303aab7727be4665392efddc1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
