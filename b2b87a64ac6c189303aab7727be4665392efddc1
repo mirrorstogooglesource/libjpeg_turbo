@@ -16,6 +16,24 @@
       "message": "Gentle ping on this one. Are you happy for this license field to be updated with this value?",
       "revId": "b2b87a64ac6c189303aab7727be4665392efddc1",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bbb0d70b_744409d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000164
+      },
+      "writtenOn": "2023-10-10T21:11:19Z",
+      "side": 1,
+      "message": "I\u0027m not really familiar with the rules here. This looks like it matches [`LICENSE.md`](https://chromium.googlesource.com/chromium/deps/libjpeg_turbo/+/b2b87a64ac6c189303aab7727be4665392efddc1/LICENSE.md), though. Do you have someone more familiar with licensing who can LGTM this, and then I can just provide OWNERS approval?",
+      "parentUuid": "c322e98b_1de8bffe",
+      "revId": "b2b87a64ac6c189303aab7727be4665392efddc1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
