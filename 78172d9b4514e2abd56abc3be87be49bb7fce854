@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e895699e_f1b6e0d3",
+        "filename": "turbojpeg.c",
+        "patchSetId": 8
+      },
+      "lineNbr": 1145,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-10-12T20:18:05Z",
+      "side": 1,
+      "message": "So this part needs a bit of explanation.\nIn BUILD.gn you normally list all source \u0026 header files. They are listed together, under sources \u003d [].\nNinja then looks at the file extension to decide how to build it.\n\nturbojpeg-mp.c is included multiple times here, with different BITS_IN_JSAMPLE values defined. Then the code in turbojpeg-mp.c generates functions with names that match the appropriate bits.\n\nThe important detail here is turbojpeg-mp.c should not be compiled on its own, which is what Ninja wants to do when it sees a .c file. As a result, I deliberately did not include turbojpeg-mp.c in BUILD.gn. I tried a few things to have it treated as a header but was unsuccessful.\n\nJust something to know.",
+      "range": {
+        "startLine": 1135,
+        "startChar": 0,
+        "endLine": 1145,
+        "endChar": 22
+      },
+      "revId": "78172d9b4514e2abd56abc3be87be49bb7fce854",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}

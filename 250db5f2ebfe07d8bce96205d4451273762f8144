@@ -34,6 +34,24 @@
       "parentUuid": "80407ae3_897695e3",
       "revId": "250db5f2ebfe07d8bce96205d4451273762f8144",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ff56215f_82b33fa6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-10-12T20:18:05Z",
+      "side": 1,
+      "message": "libjpeg_turbo_unittests now builds on my Windows machine. But I believe the test isn\u0027t executing correctly. I\u0027ll try building and testing on a Linux machine. I wish we had those bots...",
+      "parentUuid": "5c9b52f1_0e3c642d",
+      "revId": "250db5f2ebfe07d8bce96205d4451273762f8144",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
