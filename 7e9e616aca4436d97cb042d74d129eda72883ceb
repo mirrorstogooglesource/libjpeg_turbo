@@ -16,6 +16,24 @@
       "message": "fyi\nhttps://github.com/libjpeg-turbo/libjpeg-turbo/releases/tag/3.0.1\n\nlet me know if you would like me to apply the changes to this CL.",
       "revId": "7e9e616aca4436d97cb042d74d129eda72883ceb",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b2b55987_741c2c28",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-10-17T03:13:06Z",
+      "side": 1,
+      "message": "I suggest putting that in a separate CL which depends on this CL.\nBut like 3.0.0, none of this really applied to Chromium immediately. Just a nice-to-have to not appear behind.",
+      "parentUuid": "6013e0d0_09ab1e20",
+      "revId": "7e9e616aca4436d97cb042d74d129eda72883ceb",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
