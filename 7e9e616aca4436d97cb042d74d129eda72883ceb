@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6013e0d0_09ab1e20",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1004841
+      },
+      "writtenOn": "2023-10-17T01:12:30Z",
+      "side": 1,
+      "message": "fyi\nhttps://github.com/libjpeg-turbo/libjpeg-turbo/releases/tag/3.0.1\n\nlet me know if you would like me to apply the changes to this CL.",
+      "revId": "7e9e616aca4436d97cb042d74d129eda72883ceb",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
