@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5e9340b1_becd70d4",
+        "filename": "jconfig.h",
+        "patchSetId": 12
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2023-10-18T20:19:09Z",
+      "side": 1,
+      "message": "Are we sure this shouldn\u0027t be defined here?\n\nI\u0027m getting a large number of build errors on Arm Neon paths because DCTELEM * \u003d\u003d int * instead of short *. (short * is selected if BITS_IN_JSAMPLE \u003d\u003d 8 and WITH_SIMD is defined.)",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 22
+      },
+      "revId": "aad358b8dc234ef8003e782fbe936f0136b496f0",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
