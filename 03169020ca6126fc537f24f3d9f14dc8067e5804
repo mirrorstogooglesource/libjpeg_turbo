@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2d7fe311_8ff8d40b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-10-18T08:15:07Z",
+      "side": 1,
+      "message": "libjpeg_turbo_unittests now build and run on Windows and Linux.\n\nSome of the tests fail.\nThis might be expected, as there is new functionality added in 3.0.0. I\u0027m not sure yet.",
+      "revId": "03169020ca6126fc537f24f3d9f14dc8067e5804",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
