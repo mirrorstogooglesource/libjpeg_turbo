@@ -1,7 +1,7 @@
 Name: libjpeg-turbo
 URL: https://github.com/libjpeg-turbo/libjpeg-turbo/
-Version: 2.1.5.1
-License: Custom license
+Version: 3.0.0
+License: IJG, BSD-3, Zlib
 License File: LICENSE.md
 Security Critical: yes
 Shipped: yes
@@ -9,7 +9,7 @@ License Android Compatible: yes
 
 Description:
 This consists of the components:
-* libjpeg-turbo 2.1.5.1
+* libjpeg-turbo 3.0.0
 * This file (README.chromium)
 * A build file (BUILD.gn)
 * An OWNERS file
