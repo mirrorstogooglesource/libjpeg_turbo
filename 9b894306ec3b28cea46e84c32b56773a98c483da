@@ -16,6 +16,23 @@
       "message": "Leon@\n\nChris@\n\nPTAL thank you",
       "revId": "9b894306ec3b28cea46e84c32b56773a98c483da",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2fcd3d9f_1b510a9f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1543262
+      },
+      "writtenOn": "2023-10-20T19:35:15Z",
+      "side": 1,
+      "message": "Leon@\n\nCan you help me merge this patch？Thank you.",
+      "revId": "9b894306ec3b28cea46e84c32b56773a98c483da",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
