@@ -68,6 +68,24 @@
       "parentUuid": "2fcd3d9f_1b510a9f",
       "revId": "9b894306ec3b28cea46e84c32b56773a98c483da",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ceaabef1_f0fd9a53",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1543262
+      },
+      "writtenOn": "2023-10-23T04:47:25Z",
+      "side": 1,
+      "message": "Is it to modify the revised version in libjpeg-turbo in DEPS?  Like updating some third-party libraries, are there any other steps required?",
+      "parentUuid": "3479af23_6ed9f31c",
+      "revId": "9b894306ec3b28cea46e84c32b56773a98c483da",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ],
   "submitRequirementResults": [
