@@ -22,6 +22,30 @@
       },
       "revId": "b2b87a64ac6c189303aab7727be4665392efddc1",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "849cbc22_3f758eeb",
+        "filename": "tjunittest.c",
+        "patchSetId": 12
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-10-23T20:48:30Z",
+      "side": 0,
+      "message": "It will be a little bit before I can test on Android.\n\nMy Linux machines aren\u0027t running a flavor of Linux that the Chromium project supports. I\u0027ve ordered more non-volatile storage so I have room for a VM, which can then run a supported Linux (currently Ubuntu 18.04, 20.04, 22.04, or Debian 10+).",
+      "parentUuid": "47ec0b7d_1500d828",
+      "range": {
+        "startLine": 106,
+        "startChar": 0,
+        "endLine": 106,
+        "endChar": 40
+      },
+      "revId": "b2b87a64ac6c189303aab7727be4665392efddc1",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
