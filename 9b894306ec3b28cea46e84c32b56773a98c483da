@@ -50,6 +50,24 @@
       "message": "LGTM as well",
       "revId": "9b894306ec3b28cea46e84c32b56773a98c483da",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3479af23_6ed9f31c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-10-23T04:31:07Z",
+      "side": 1,
+      "message": "I just landed this.\nThe next step is to update Chromium\u0027s deps to use the SHA with this commit. We can help you with that if you want. Have you done that before?",
+      "parentUuid": "2fcd3d9f_1b510a9f",
+      "revId": "9b894306ec3b28cea46e84c32b56773a98c483da",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ],
   "submitRequirementResults": [
