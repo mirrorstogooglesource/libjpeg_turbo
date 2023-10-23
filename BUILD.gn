@@ -201,57 +201,151 @@ config("libjpeg_config") {
   defines = [ "MANGLE_JPEG_NAMES" ]
 }
 
-static_library("libjpeg") {
+# Certain files are build multiple times with BITS_IN_JSAMPLE
+# set to different values. These files show up here in build
+# targets named ____16 and ____12 (along with their default
+# BITS_IN_JSAMPLE=8 build target).
+# This mimics C++'s templates in C.
+static_library("libjpeg16") {
   sources = [
-    "jcapimin.c",
     "jcapistd.c",
-    "jccoefct.c",
     "jccolor.c",
-    "jcdctmgr.c",
-    "jchuff.c",
-    "jcicc.c",
-    "jcinit.c",
+    "jcdiffct.c",
+    "jclossls.c",
     "jcmainct.c",
-    "jcmarker.c",
-    "jcmaster.c",
-    "jcomapi.c",
-    "jcparam.c",
-    "jcphuff.c",
     "jcprepct.c",
     "jcsample.c",
-    "jctrans.c",
-    "jdapimin.c",
     "jdapistd.c",
-    "jdatadst.c",
-    "jdatasrc.c",
-    "jdcoefct.c",
     "jdcolor.c",
-    "jddctmgr.c",
-    "jdhuff.c",
-    "jdicc.c",
-    "jdinput.c",
+    "jddiffct.c",
+    "jdlossls.c",
     "jdmainct.c",
-    "jdmarker.c",
-    "jdmaster.c",
-    "jdmerge.c",
-    "jdphuff.c",
     "jdpostct.c",
     "jdsample.c",
-    "jdtrans.c",
-    "jerror.c",
-    "jfdctflt.c",
+    "jutils.c",
+  ]
+
+  defines = [ "BITS_IN_JSAMPLE=16" ]
+
+  configs += [ ":libjpeg_config" ]
+
+  public_configs = [ ":libjpeg_config" ]
+  public_deps =  [
+    ":libjpeg_headers",
+  ]
+}
+
+static_library("libjpeg12") {
+  sources = [
+    # Added in jpeg16
+    "jcapistd.c",
+    "jccolor.c",
+    "jcdiffct.c",
+    "jclossls.c",
+    "jcmainct.c",
+    "jcprepct.c",
+    "jcsample.c",
+    "jdapistd.c",
+    "jdcolor.c",
+    "jddiffct.c",
+    "jdlossls.c",
+    "jdmainct.c",
+    "jdpostct.c",
+    "jdsample.c",
+    "jutils.c",
+
+    # Added in jpeg12
+    "jccoefct.c",
+    "jcdctmgr.c",
+    "jdcoefct.c",
+    "jddctmgr.c",
+    "jdmerge.c",
     "jfdctfst.c",
     "jfdctint.c",
     "jidctflt.c",
     "jidctfst.c",
     "jidctint.c",
     "jidctred.c",
+    "jquant1.c",
+    "jquant2.c",
+  ]
+
+  defines = [ "BITS_IN_JSAMPLE=12" ]
+
+  configs += [ ":libjpeg_config" ]
+
+  public_configs = [ ":libjpeg_config" ]
+  public_deps = [
+    ":libjpeg_headers",
+  ]
+}
+
+
+static_library("libjpeg") {
+  sources = [
+    # Added in jpeg16
+    "jcapistd.c",
+    "jccolor.c",
+    "jcdiffct.c",
+    "jclossls.c",
+    "jcmainct.c",
+    "jcprepct.c",
+    "jcsample.c",
+    "jdapistd.c",
+    "jdcolor.c",
+    "jddiffct.c",
+    "jdlossls.c",
+    "jdmainct.c",
+    "jdpostct.c",
+    "jdsample.c",
+    "jutils.c",
+
+    # Added in jpeg12
+    "jccoefct.c",
+    "jcdctmgr.c",
+    "jdcoefct.c",
+    "jddctmgr.c",
+    "jdmerge.c",
+    "jfdctfst.c",
+    "jfdctint.c",
+    "jidctflt.c",
+    "jidctfst.c",
+    "jidctint.c",
+    "jidctred.c",
+    "jquant1.c",
+    "jquant2.c",
+
+    # Added in libjpeg
+    "jaricom.c",
+    "jcapimin.c",
+    "jcarith.c",
+    "jchuff.c",
+    "jcicc.c",
+    "jcinit.c",
+    "jclhuff.c",
+    "jcmarker.c",
+    "jcmaster.c",
+    "jcomapi.c",
+    "jcparam.c",
+    "jcphuff.c",
+    "jctrans.c",
+    "jdapimin.c",
+    "jdarith.c",
+    "jdatadst.c",
+    "jdatasrc.c",
+    "jdhuff.c",
+    "jdicc.c",
+    "jdinput.c",
+    "jdlhuff.c",
+    "jdmarker.c",
+    "jdmaster.c",
+    "jdphuff.c",
+    "jdtrans.c",
+    "jerror.c",
+    "jfdctflt.c",
     "jmemmgr.c",
     "jmemnobs.c",
     "jpeg_nbits_table.c",
-    "jquant1.c",
-    "jquant2.c",
-    "jutils.c",
   ]
 
   defines = [
@@ -263,7 +357,11 @@ static_library("libjpeg") {
   configs += [ ":libjpeg_config" ]
 
   public_configs = [ ":libjpeg_config" ]
-  public_deps = [ ":libjpeg_headers" ]
+  public_deps = [
+    ":libjpeg_headers",
+    ":libjpeg16",
+    ":libjpeg12",
+  ]
 
   # MemorySanitizer doesn't support assembly code, so keep it disabled in x86
   # and x64 MSan builds for now.
@@ -278,11 +376,42 @@ static_library("libjpeg") {
   }
 }
 
+static_library("turbojpeg16") {
+  sources = [
+    "rdppm.c",
+    "wrppm.c",
+  ]
+
+  defines = [
+    "BITS_IN_JSAMPLE=16",
+    "PPM_SUPPORTED",
+  ]
+
+  include_dirs = [ "." ]
+}
+
+static_library("turbojpeg12") {
+  sources = [
+    "rdcolmap.c",
+    "rdppm.c",
+    "wrppm.c",
+  ]
+
+  defines = [
+    "BITS_IN_JSAMPLE=12",
+    "PPM_SUPPORTED",
+  ]
+
+  include_dirs = [ "." ]
+}
+
+
 static_library("turbojpeg") {
   sources = [
     "jdatadst-tj.c",
     "jdatasrc-tj.c",
     "rdbmp.c",
+    "rdcolmap.c",
     "rdppm.c",
     "transupp.c",
     "turbojpeg.c",
@@ -299,7 +428,13 @@ static_library("turbojpeg") {
   configs += [ ":libjpeg_config" ]
 
   public_configs = [ ":libjpeg_config" ]
-  public_deps = [ ":libjpeg" ]
+  public_deps = [
+    ":libjpeg",
+    ":libjpeg16",
+    ":libjpeg12",
+    ":turbojpeg16",
+    ":turbojpeg12",
+  ]
 }
 
 if (build_with_chromium) {
@@ -321,7 +456,6 @@ if (build_with_chromium) {
       "jpegtran.c",
       "md5/md5.c",
       "md5/md5hl.c",
-      "rdcolmap.c",
       "rdgif.c",
       "rdswitch.c",
       "tjbench.c",
