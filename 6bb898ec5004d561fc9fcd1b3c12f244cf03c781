@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4e0f0f47_5539d646",
+        "filename": "tjunittest.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 992,
+      "author": {
+        "id": 1004841
+      },
+      "writtenOn": "2023-10-24T01:22:32Z",
+      "side": 1,
+      "message": "this section was the lone conflict from 3.0.1.  \n\nhttps://github.com/libjpeg-turbo/libjpeg-turbo/commit/035ea386d1b6a99a8a1e2ab57cc1fc903569136c",
+      "revId": "6bb898ec5004d561fc9fcd1b3c12f244cf03c781",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
