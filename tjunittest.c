@@ -46,7 +46,9 @@
 #include "jconfigint.h"
 #ifdef _WIN32
 #include <time.h>
+#include <process.h>
 #define random()  rand()
+#define getpid()  _getpid()
 #else
 #include <unistd.h>
 #endif
@@ -988,12 +990,12 @@ static int doBmpTest(const char *ext, int width, int align, int height, int pf,
   initBitmap(buf, width, pitch, height, pf, bottomUp);
 
 #if defined(ANDROID) && defined(GTEST)
-  SNPRINTF(filename, filenameSize, "/sdcard/test_bmp_%s_%d_%s.%s",
+  SNPRINTF(filename, filenameSize, "/sdcard/test_bmp_%s_%d_%s_%d.%s",
            pixFormatStr[pf], align, (flag & TJFLAG_BUTTOMUP) ? "bu" : "td",
-           ext);
+           getpid(), ext);
 #else
-  SNPRINTF(filename, 80, "test_bmp%d_%s_%d_%s.%s", precision, pixFormatStr[pf],
-           align, bottomUp ? "bu" : "td", ext);
+  SNPRINTF(filename, 80, "test_bmp%d_%s_%d_%s_%d.%s", precision, pixFormatStr[pf],
+           align, bottomUp ? "bu" : "td", getpid(), ext);
 #endif
   if (precision == 8) {
     TRY_TJ(handle, tj3SaveImage8(handle, filename, (unsigned char *)buf, width,
@@ -1006,6 +1008,10 @@ static int doBmpTest(const char *ext, int width, int align, int height, int pf,
                                   width, pitch, height, pf));
   }
   md5sum = MD5File(filename, md5buf);
+  if (!md5sum) {
+    printf("\n   Could not determine MD5 sum of %s\n", filename);
+    retval = -1;  goto bailout;
+  }
   if (strcasecmp(md5sum, md5ref))
     THROW_MD5(filename, md5sum, md5ref);
 
