@@ -22,6 +22,30 @@
       },
       "revId": "aad358b8dc234ef8003e782fbe936f0136b496f0",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9bfbe946_5b773202",
+        "filename": "jconfig.h",
+        "patchSetId": 12
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1189229
+      },
+      "writtenOn": "2023-11-01T16:10:29Z",
+      "side": 1,
+      "message": "This one is a little weird.\n\nI believe this would normally be defined to 1 when CMake is given WITH_SIMD.\njconfigint.h has its own #undef WITH_SIMD, which gets included by jinclude.h (which gets included all over the place).\n\nAnyway, I had to keep this commented out, also comment out the one in jconfigint.h, and then add WITH_SIMD to some targets which you can see in patchset 15.",
+      "parentUuid": "5e9340b1_becd70d4",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 22
+      },
+      "revId": "aad358b8dc234ef8003e782fbe936f0136b496f0",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
