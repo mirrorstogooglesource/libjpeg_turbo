@@ -16,6 +16,24 @@
       "message": "libjpeg_turbo_unittests now build and run on Windows and Linux.\n\nSome of the tests fail.\nThis might be expected, as there is new functionality added in 3.0.0. I\u0027m not sure yet.",
       "revId": "03169020ca6126fc537f24f3d9f14dc8067e5804",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8b649d5d_c38c9c90",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2023-11-06T14:10:59Z",
+      "side": 1,
+      "message": "A few of the unit test expected MD5 hashes were updated[1] (look in CMakeLists.txt), and will need to be updated in our copy too[2].\n\nIn addition to those trivial changes, there are other failures in tjunittest.c tests that look rather more worrying - I still haven\u0027t worked out what\u0027s going on there yet.\n\n[1] https://github.com/libjpeg-turbo/libjpeg-turbo/commit/fc01f4673b71c0b833c59c21e8c4478a9c4bcf21\n[2] https://source.chromium.org/chromium/chromium/src/+/main:third_party/libjpeg_turbo/gtest/tjbench-gtest-wrapper.cpp",
+      "parentUuid": "2d7fe311_8ff8d40b",
+      "revId": "03169020ca6126fc537f24f3d9f14dc8067e5804",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
