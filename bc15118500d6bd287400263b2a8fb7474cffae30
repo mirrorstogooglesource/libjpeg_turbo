@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2671b93f_97030da8",
+        "filename": "project.config",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1560543
+      },
+      "writtenOn": "2023-11-08T22:03:36Z",
+      "side": 1,
+      "message": "nit: maybe rename to non-committer?",
+      "range": {
+        "startLine": 11,
+        "startChar": 33,
+        "endLine": 11,
+        "endChar": 35
+      },
+      "revId": "bc15118500d6bd287400263b2a8fb7474cffae30",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
