@@ -22,6 +22,30 @@
       },
       "revId": "bc15118500d6bd287400263b2a8fb7474cffae30",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "72a67cc8_0a55adaa",
+        "filename": "project.config",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1272455
+      },
+      "writtenOn": "2023-11-08T22:04:24Z",
+      "side": 1,
+      "message": "Why? IMO that will look in the UI as if you need a code review from a non-committer.",
+      "parentUuid": "2671b93f_97030da8",
+      "range": {
+        "startLine": 11,
+        "startChar": 33,
+        "endLine": 11,
+        "endChar": 35
+      },
+      "revId": "bc15118500d6bd287400263b2a8fb7474cffae30",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
