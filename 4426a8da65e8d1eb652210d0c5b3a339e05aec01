@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "45edd315_b79a4980",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2024-08-09T16:36:58Z",
+      "side": 1,
+      "message": "Since we don\u0027t have bot coverage of libjpeg-turbo as an individual library, could you create a DEPS roll patch that references this change (example here[1]) so that we can try on the bots before merging this?\n\n[1] https://chromium-review.googlesource.com/c/chromium/src/+/3500594/1/DEPS",
+      "revId": "4426a8da65e8d1eb652210d0c5b3a339e05aec01",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
