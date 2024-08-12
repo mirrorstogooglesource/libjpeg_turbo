@@ -52,6 +52,24 @@
       "parentUuid": "c3d8ed42_7048fafe",
       "revId": "4426a8da65e8d1eb652210d0c5b3a339e05aec01",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bfd65bbc_83546335",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2024-08-12T16:01:28Z",
+      "side": 1,
+      "message": "Ok, thanks for trying. I\u0027m happy enough to merge this as-is and let the DEPS roll work as a safety net.",
+      "parentUuid": "5851f9e8_3b3c948f",
+      "revId": "4426a8da65e8d1eb652210d0c5b3a339e05aec01",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
