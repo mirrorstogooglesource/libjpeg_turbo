@@ -35,7 +35,17 @@ if (current_cpu == "x86" || current_cpu == "x64") {
 
     inputs = [
       "simd/nasm/jdct.inc",
+      "simd/nasm/jsimdcfg.inc",
       "simd/nasm/jsimdext.inc",
+      "simd/nasm/jcolsamp.inc",
+      "simd/x86_64/jccolext-avx2.asm",
+      "simd/x86_64/jccolext-sse2.asm",
+      "simd/x86_64/jcgryext-avx2.asm",
+      "simd/x86_64/jcgryext-sse2.asm",
+      "simd/x86_64/jdcolext-avx2.asm",
+      "simd/x86_64/jdcolext-sse2.asm",
+      "simd/x86_64/jdmrgext-sse2.asm",
+      "simd/x86_64/jdmrgext-avx2.asm",
     ]
 
     if (current_cpu == "x86") {
