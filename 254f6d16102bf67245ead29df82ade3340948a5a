@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "caccf591_a6d5668b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2024-09-04T11:24:58Z",
+      "side": 1,
+      "message": "What is this?",
+      "range": {
+        "startLine": 9,
+        "startChar": 20,
+        "endLine": 9,
+        "endChar": 24
+      },
+      "revId": "254f6d16102bf67245ead29df82ade3340948a5a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf70dfc3_ebdf8bf5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2024-09-04T11:24:58Z",
+      "side": 1,
+      "message": "Bug access is restricted so I can\u0027t see it. Could you help me to understand the context for this change?",
+      "revId": "254f6d16102bf67245ead29df82ade3340948a5a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    }
+  ]
+}
