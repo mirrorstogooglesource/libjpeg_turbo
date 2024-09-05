@@ -26,6 +26,30 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "efc6994e_d8a138e9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1161379
+      },
+      "writtenOn": "2024-09-05T04:38:20Z",
+      "side": 1,
+      "message": "This is tool which is replacing ninja, code is located in\nhttps://source.chromium.org/chromium/infra/infra_superproject/+/main:infra/go/src/infra/build/siso/;l\u003d1?q\u003df:siso\u0026sq\u003d",
+      "parentUuid": "caccf591_a6d5668b",
+      "range": {
+        "startLine": 9,
+        "startChar": 20,
+        "endLine": 9,
+        "endChar": 24
+      },
+      "revId": "254f6d16102bf67245ead29df82ade3340948a5a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "cf70dfc3_ebdf8bf5",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 4
@@ -37,6 +61,24 @@
       "writtenOn": "2024-09-04T11:24:58Z",
       "side": 1,
       "message": "Bug access is restricted so I can\u0027t see it. Could you help me to understand the context for this change?",
+      "revId": "254f6d16102bf67245ead29df82ade3340948a5a",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "be36001b_78d7ffe6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1161379
+      },
+      "writtenOn": "2024-09-05T04:38:20Z",
+      "side": 1,
+      "message": "I added more explanation in description. WDYT?",
+      "parentUuid": "cf70dfc3_ebdf8bf5",
       "revId": "254f6d16102bf67245ead29df82ade3340948a5a",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
