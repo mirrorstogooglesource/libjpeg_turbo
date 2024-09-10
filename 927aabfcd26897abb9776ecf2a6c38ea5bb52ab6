@@ -16,6 +16,23 @@
       "message": "ping?",
       "revId": "927aabfcd26897abb9776ecf2a6c38ea5bb52ab6",
       "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "31b82319_39adb133",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1247893
+      },
+      "writtenOn": "2024-09-10T11:22:49Z",
+      "side": 1,
+      "message": "Thanks for the extra explanation. LGTM.",
+      "revId": "927aabfcd26897abb9776ecf2a6c38ea5bb52ab6",
+      "serverId": "3ce6091f-6c88-37e8-8c75-72f92ae8dfba"
     }
   ]
 }
